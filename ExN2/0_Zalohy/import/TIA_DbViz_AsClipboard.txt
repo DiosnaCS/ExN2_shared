@@ -1,0 +1,398 @@
+	Static											
+	iSecond	Int	0.0	0		False	True	True	True	False		
+	iWMU_Temp	Int	2.0	0		False	True	True	True	False		0,1°C
+	iWMU_WaterValve	Int	4.0	0		False	True	True	True	False		0,1%
+	iWMU_Ticks	Int	6.0	0		False	True	True	True	False		dílky
+	diWMU_Dose	DInt	8.0	0		False	True	True	True	False		1g
+	diFF1_Weight	DInt	12.0	0		False	True	True	True	False		1g
+	diSF1_Weight	DInt	16.0	0		False	True	True	True	False		1g
+	diSF2_Weight	DInt	20.0	0		False	True	True	True	False		1g
+	diSF3_Weight	DInt	24.0	0		False	True	True	True	False		1g
+	diSF4_Weight	DInt	28.0	0		False	True	True	True	False		1g
+	diSF5_Weight	DInt	32.0	0		False	True	True	True	False		1g
+	diSF6_Weight	DInt	36.0	0		False	True	True	True	False		1g
+	iMP_Speed	Int	40.0	0		False	True	True	True	False		0.1Hz
+	iMP_ValvePos	Int	42.0	0		False	True	True	True	False		0.1%
+	iMP_Temp	Int	44.0	0		False	True	True	True	False		0,1°C
+	iSF1_TempSide	Int	46.0	0		False	True	True	True	False		0,1°C
+	iSF1_TempBottom	Int	48.0	0		False	True	True	True	False		0,1°C
+	iSF2_TempSide	Int	50.0	0		False	True	True	True	False		0,1°C
+	iSF2_TempBottom	Int	52.0	0		False	True	True	True	False		0,1°C
+	iSF3_TempSide	Int	54.0	0		False	True	True	True	False		0,1°C
+	iSF3_TempBottom	Int	56.0	0		False	True	True	True	False		0,1°C
+	iSF4_TempSide	Int	58.0	0		False	True	True	True	False		0,1°C
+	iSF4_TempBottom	Int	60.0	0		False	True	True	True	False		0,1°C
+	iSF5_TempSide	Int	62.0	0		False	True	True	True	False		0,1°C
+	iSF5_TempBottom	Int	64.0	0		False	True	True	True	False		0,1°C
+	iSF6_TempSide	Int	66.0	0		False	True	True	True	False		0,1°C
+	iSF6_TempBottom	Int	68.0	0		False	True	True	True	False		0,1°C
+	iMP_Pressure	Int	70.0	0		False	True	True	True	False		0,01 Bar
+	iPIG1_Pressure	Int	72.0	0		False	True	True	True	False		0,01 Bar
+	iPIG2_Pressure	Int	74.0	0		False	True	True	True	False		0,01 Bar
+	iDP1_Pressure	Int	76.0	0		False	True	True	True	False		0,01 Bar
+	iDP2_Pressure	Int	78.0	0		False	True	True	True	False		0,01 Bar
+	iDP3_Pressure	Int	80.0	0		False	True	True	True	False		0,01 Bar
+	iCLN_Pump1_Pressure	Int	82.0	0		False	True	True	True	False		0,01 Bar
+	iCLN_Pump2_Pressure	Int	84.0	0		False	True	True	True	False		0,01 Bar
+	usiMP_Pump	Byte	86.0	16#0		False	True	True	True	False		
+	usiMP_Status	Byte	87.0	16#0		False	True	True	True	False		
+	usiMP_Flour_Status	Byte	88.0	16#0		False	True	True	True	False		
+	usiMP_Water_Status	Byte	89.0	16#0		False	True	True	True	False		
+	diMP_FlourFlow_need	DInt	90.0	0		False	True	True	True	False		0,1kg/min
+	diMP_FlourFlow_curr	DInt	94.0	0		False	True	True	True	False		0,1kg/min
+	diMP_WaterFlow_need	DInt	98.0	0		False	True	True	True	False		0,1kg/min
+	diMP_WaterFlow_curr	DInt	102.0	0		False	True	True	True	False		0,1kg/min
+	iMP_WaterTemp_need	Int	106.0	0		False	True	True	True	False		0,1°C
+	iMP_WaterTemp_curr	Int	108.0	0		False	True	True	True	False		0,1°C
+	diMP_FlourTotal_need	DInt	110.0	0		False	True	True	True	False		1g
+	diMP_FlourTotal_curr	DInt	114.0	0		False	True	True	True	False		1g
+	diMP_WaterTotal_need	DInt	118.0	0		False	True	True	True	False		1g
+	diMP_WaterTotal_curr	DInt	122.0	0		False	True	True	True	False		1g
+	diMP_HooperWeight	DInt	126.0	0		False	True	True	True	False		
+	iDP1_Speed	Int	130.0	0		False	True	True	True	False		0,1Hz
+	iDP2_Speed	Int	132.0	0		False	True	True	True	False		0,1Hz
+	iDP3_Speed	Int	134.0	0		False	True	True	True	False		0,1Hz
+	iMP_Owner	Int	136.0	0		False	True	True	True	False		
+	usiMP_Step	Byte	138.0	16#0		False	True	True	True	False		
+	usiMP_Valve_Flour	Byte	139.0	16#0		False	True	True	True	False		
+	usiMP_Valve_ProdToX	Byte	140.0	16#0		False	True	True	True	False		
+	usiMP_Valve_ProdFromXToOut	Byte	141.0	16#0		False	True	True	True	False		
+	iMP_Curent	Int	142.0	0		False	True	True	True	False		
+	iSF1_RCP_No	Int	144.0	0		False	True	True	True	False		cislo RCP
+	usiSF1_RCP_Status	Byte	146.0	16#0		False	True	True	True	False		stav
+	usiSF1_RCP_Step	Byte	147.0	16#0		False	True	True	True	False		krok
+	sSF1_RCP_Name	String[40]	148.0	''		False	True	True	True	False		jmeno RCP
+	diSF1_RCP_Starter_need	DInt	190.0	0		False	True	True	True	False		1g
+	diSF1_RCP_Starter_done	DInt	194.0	0		False	True	True	True	False		1g
+	diSF1_RCP_Mother_need	DInt	198.0	0		False	True	True	True	False		1g
+	diSF1_RCP_Mother_done	DInt	202.0	0		False	True	True	True	False		1g
+	diSF1_RCP_Amount_need	DInt	206.0	0		False	True	True	True	False		1g
+	diSF1_RCP_Amount_done	DInt	210.0	0		False	True	True	True	False		1g
+	iSF1_RCP_TA	Int	214.0	0		False	True	True	True	False		
+	diSF1_RCP_Ferment_need	DInt	216.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF1_RCP_Ferment_done	DInt	220.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF1_RCP_Cooling_need	DInt	224.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF1_RCP_Cooling_done	DInt	228.0	0		False	True	True	True	False		0,00027777778 hr
+	iSF1_RCP_Res1	Int	232.0	0		False	True	True	True	False		0,1 °C
+	iSF1_RCP_CoolingTemp_need	Int	234.0	0		False	True	True	True	False		0,1 °C
+	iSF1_RCP_CoolingTemp_curr	Int	236.0	0		False	True	True	True	False		0,1 °C
+	iSF1_RCP_Res2	Int	238.0	0		False	True	True	True	False		0,1 °C
+	usiSF1_RCP_CleanShower_Icon	Byte	240.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_PreCleanMP_Icon	Byte	241.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_Mother_Icon	Byte	242.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_Filling_Icon	Byte	243.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_Pig_Icon	Byte	244.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_PostCleanMP_Icon	Byte	245.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_Ferment_Icon	Byte	246.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_Cooling_Icon	Byte	247.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_Using_Icon	Byte	248.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_TankClean_Icon	Byte	249.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_Agit	Byte	250.0	16#0		False	True	True	True	False		
+	usiSF1_RCP_ProdStatus	Byte	251.0	16#0		False	True	True	True	False		stav produktu 1 = young, 2=usable, 3=too old
+	usiSF1_Valve_Water	Byte	252.0	16#0		False	True	True	True	False		
+	usiSF1_Valve_Cooling	Byte	253.0	16#0		False	True	True	True	False		
+	usiSF1_Valve_Output	Byte	254.0	16#0		False	True	True	True	False		
+	usiSF1_AgitStyle	Byte	255.0	16#0		False	True	True	True	False		
+	diSF1_RCP_Age	DInt	256.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF1_RCP_AgeReady	DInt	260.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF1_RCP_MaxAge	DInt	264.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF1_Res1	DInt	268.0	0		False	True	True	True	False		
+	diSF1_Res2	DInt	272.0	0		False	True	True	True	False		
+	iSF1_Res1	Int	276.0	0		False	True	True	True	False		
+	iSF1_Res2	Int	278.0	0		False	True	True	True	False		
+	iSF2_RCP_No	Int	280.0	0		False	True	True	True	False		cislo RCP
+	usiSF2_RCP_Status	Byte	282.0	16#0		False	True	True	True	False		stav
+	usiSF2_RCP_Step	Byte	283.0	16#0		False	True	True	True	False		krok
+	sSF2_RCP_Name	String[40]	284.0	''		False	True	True	True	False		jmeno RCP
+	diSF2_RCP_Starter_need	DInt	326.0	0		False	True	True	True	False		1g
+	diSF2_RCP_Starter_done	DInt	330.0	0		False	True	True	True	False		1g
+	diSF2_RCP_Mother_need	DInt	334.0	0		False	True	True	True	False		1g
+	diSF2_RCP_Mother_done	DInt	338.0	0		False	True	True	True	False		1g
+	diSF2_RCP_Amount_need	DInt	342.0	0		False	True	True	True	False		1g
+	diSF2_RCP_Amount_done	DInt	346.0	0		False	True	True	True	False		1g
+	iSF2_RCP_TA	Int	350.0	0		False	True	True	True	False		
+	diSF2_RCP_Ferment_need	DInt	352.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF2_RCP_Ferment_done	DInt	356.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF2_RCP_Cooling_need	DInt	360.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF2_RCP_Cooling_done	DInt	364.0	0		False	True	True	True	False		0,00027777778 hr
+	iSF2_RCP_Res1	Int	368.0	0		False	True	True	True	False		0,1 °C
+	iSF2_RCP_CoolingTemp_need	Int	370.0	0		False	True	True	True	False		0,1 °C
+	iSF2_RCP_CoolingTemp_curr	Int	372.0	0		False	True	True	True	False		0,1 °C
+	iSF2_RCP_Res2	Int	374.0	0		False	True	True	True	False		0,1 °C
+	usiSF2_RCP_CleanShower_Icon	Byte	376.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_PreCleanMP_Icon	Byte	377.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_Mother_Icon	Byte	378.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_Filling_Icon	Byte	379.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_Pig_Icon	Byte	380.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_PostCleanMP_Icon	Byte	381.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_Ferment_Icon	Byte	382.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_Cooling_Icon	Byte	383.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_Using_Icon	Byte	384.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_TankClean_Icon	Byte	385.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_Agit	Byte	386.0	16#0		False	True	True	True	False		
+	usiSF2_RCP_ProdStatus	Byte	387.0	16#0		False	True	True	True	False		stav produktu 1 = young, 2=usable, 3=too old
+	usiSF2_Valve_Water	Byte	388.0	16#0		False	True	True	True	False		
+	usiSF2_Valve_Cooling	Byte	389.0	16#0		False	True	True	True	False		
+	usiSF2_Valve_Output	Byte	390.0	16#0		False	True	True	True	False		
+	usiSF2_AgitStyle	Byte	391.0	16#0		False	True	True	True	False		
+	diSF2_RCP_Age	DInt	392.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF2_RCP_AgeReady	DInt	396.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF2_RCP_MaxAge	DInt	400.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF2_Res1	DInt	404.0	0		False	True	True	True	False		
+	diSF2_Res2	DInt	408.0	0		False	True	True	True	False		
+	iSF2_Res1	Int	412.0	0		False	True	True	True	False		
+	iSF2_Res2	Int	414.0	0		False	True	True	True	False		
+	iSF3_RCP_No	Int	416.0	0		False	True	True	True	False		cislo RCP
+	usiSF3_RCP_Status	Byte	418.0	16#0		False	True	True	True	False		stav
+	usiSF3_RCP_Step	Byte	419.0	16#0		False	True	True	True	False		krok
+	sSF3_RCP_Name	String[40]	420.0	''		False	True	True	True	False		jmeno RCP
+	diSF3_RCP_Starter_need	DInt	462.0	0		False	True	True	True	False		1g
+	diSF3_RCP_Starter_done	DInt	466.0	0		False	True	True	True	False		1g
+	diSF3_RCP_Mother_need	DInt	470.0	0		False	True	True	True	False		1g
+	diSF3_RCP_Mother_done	DInt	474.0	0		False	True	True	True	False		1g
+	diSF3_RCP_Amount_need	DInt	478.0	0		False	True	True	True	False		1g
+	diSF3_RCP_Amount_done	DInt	482.0	0		False	True	True	True	False		1g
+	iSF3_RCP_TA	Int	486.0	0		False	True	True	True	False		
+	diSF3_RCP_Ferment_need	DInt	488.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF3_RCP_Ferment_done	DInt	492.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF3_RCP_Cooling_need	DInt	496.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF3_RCP_Cooling_done	DInt	500.0	0		False	True	True	True	False		0,00027777778 hr
+	iSF3_RCP_Res1	Int	504.0	0		False	True	True	True	False		0,1 °C
+	iSF3_RCP_CoolingTemp_need	Int	506.0	0		False	True	True	True	False		0,1 °C
+	iSF3_RCP_CoolingTemp_curr	Int	508.0	0		False	True	True	True	False		0,1 °C
+	iSF3_RCP_Res2	Int	510.0	0		False	True	True	True	False		0,1 °C
+	usiSF3_RCP_CleanShower_Icon	Byte	512.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_PreCleanMP_Icon	Byte	513.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_Mother_Icon	Byte	514.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_Filling_Icon	Byte	515.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_Pig_Icon	Byte	516.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_PostCleanMP_Icon	Byte	517.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_Ferment_Icon	Byte	518.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_Cooling_Icon	Byte	519.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_Using_Icon	Byte	520.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_TankClean_Icon	Byte	521.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_Agit	Byte	522.0	16#0		False	True	True	True	False		
+	usiSF3_RCP_ProdStatus	Byte	523.0	16#0		False	True	True	True	False		stav produktu 1 = young, 2=usable, 3=too old
+	usiSF3_Valve_Water	Byte	524.0	16#0		False	True	True	True	False		
+	usiSF3_Valve_Cooling	Byte	525.0	16#0		False	True	True	True	False		
+	usiSF3_Valve_Output	Byte	526.0	16#0		False	True	True	True	False		
+	usiSF3_AgitStyle	Byte	527.0	16#0		False	True	True	True	False		
+	diSF3_RCP_Age	DInt	528.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF3_RCP_AgeReady	DInt	532.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF3_RCP_MaxAge	DInt	536.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF3_Res1	DInt	540.0	0		False	True	True	True	False		
+	diSF3_Res2	DInt	544.0	0		False	True	True	True	False		
+	iSF3_Res1	Int	548.0	0		False	True	True	True	False		
+	iSF3_Res2	Int	550.0	0		False	True	True	True	False		
+	iSF4_RCP_No	Int	552.0	0		False	True	True	True	False		cislo RCP
+	usiSF4_RCP_Status	Byte	554.0	16#0		False	True	True	True	False		stav
+	usiSF4_RCP_Step	Byte	555.0	16#0		False	True	True	True	False		krok
+	sSF4_RCP_Name	String[40]	556.0	''		False	True	True	True	False		jmeno RCP
+	diSF4_RCP_Starter_need	DInt	598.0	0		False	True	True	True	False		1g
+	diSF4_RCP_Starter_done	DInt	602.0	0		False	True	True	True	False		1g
+	diSF4_RCP_Mother_need	DInt	606.0	0		False	True	True	True	False		1g
+	diSF4_RCP_Mother_done	DInt	610.0	0		False	True	True	True	False		1g
+	diSF4_RCP_Amount_need	DInt	614.0	0		False	True	True	True	False		1g
+	diSF4_RCP_Amount_done	DInt	618.0	0		False	True	True	True	False		1g
+	iSF4_RCP_TA	Int	622.0	0		False	True	True	True	False		
+	diSF4_RCP_Ferment_need	DInt	624.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF4_RCP_Ferment_done	DInt	628.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF4_RCP_Cooling_need	DInt	632.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF4_RCP_Cooling_done	DInt	636.0	0		False	True	True	True	False		0,00027777778 hr
+	iSF4_RCP_Res1	Int	640.0	0		False	True	True	True	False		0,1 °C
+	iSF4_RCP_CoolingTemp_need	Int	642.0	0		False	True	True	True	False		0,1 °C
+	iSF4_RCP_CoolingTemp_curr	Int	644.0	0		False	True	True	True	False		0,1 °C
+	iSF4_RCP_Res2	Int	646.0	0		False	True	True	True	False		0,1 °C
+	usiSF4_RCP_CleanShower_Icon	Byte	648.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_PreCleanMP_Icon	Byte	649.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_Mother_Icon	Byte	650.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_Filling_Icon	Byte	651.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_Pig_Icon	Byte	652.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_PostCleanMP_Icon	Byte	653.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_Ferment_Icon	Byte	654.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_Cooling_Icon	Byte	655.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_Using_Icon	Byte	656.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_TankClean_Icon	Byte	657.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_Agit	Byte	658.0	16#0		False	True	True	True	False		
+	usiSF4_RCP_ProdStatus	Byte	659.0	16#0		False	True	True	True	False		stav produktu 1 = young, 2=usable, 3=too old
+	usiSF4_Valve_Water	Byte	660.0	16#0		False	True	True	True	False		
+	usiSF4_Valve_Cooling	Byte	661.0	16#0		False	True	True	True	False		
+	usiSF4_Valve_Output	Byte	662.0	16#0		False	True	True	True	False		
+	usiSF4_AgitStyle	Byte	663.0	16#0		False	True	True	True	False		
+	diSF4_RCP_Age	DInt	664.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF4_RCP_AgeReady	DInt	668.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF4_RCP_MaxAge	DInt	672.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF4_Res1	DInt	676.0	0		False	True	True	True	False		
+	diSF4_Res2	DInt	680.0	0		False	True	True	True	False		
+	iSF4_Res1	Int	684.0	0		False	True	True	True	False		
+	iSF4_Res2	Int	686.0	0		False	True	True	True	False		
+	iSF5_RCP_No	Int	688.0	0		False	True	True	True	False		cislo RCP
+	usiSF5_RCP_Status	Byte	690.0	16#0		False	True	True	True	False		stav
+	usiSF5_RCP_Step	Byte	691.0	16#0		False	True	True	True	False		krok
+	sSF5_RCP_Name	String[40]	692.0	''		False	True	True	True	False		jmeno RCP
+	diSF5_RCP_Starter_need	DInt	734.0	0		False	True	True	True	False		1g
+	diSF5_RCP_Starter_done	DInt	738.0	0		False	True	True	True	False		1g
+	diSF5_RCP_Mother_need	DInt	742.0	0		False	True	True	True	False		1g
+	diSF5_RCP_Mother_done	DInt	746.0	0		False	True	True	True	False		1g
+	diSF5_RCP_Amount_need	DInt	750.0	0		False	True	True	True	False		1g
+	diSF5_RCP_Amount_done	DInt	754.0	0		False	True	True	True	False		1g
+	iSF5_RCP_TA	Int	758.0	0		False	True	True	True	False		
+	diSF5_RCP_Ferment_need	DInt	760.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF5_RCP_Ferment_done	DInt	764.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF5_RCP_Cooling_need	DInt	768.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF5_RCP_Cooling_done	DInt	772.0	0		False	True	True	True	False		0,00027777778 hr
+	iSF5_RCP_Res1	Int	776.0	0		False	True	True	True	False		0,1 °C
+	iSF5_RCP_CoolingTemp_need	Int	778.0	0		False	True	True	True	False		0,1 °C
+	iSF5_RCP_CoolingTemp_curr	Int	780.0	0		False	True	True	True	False		0,1 °C
+	iSF5_RCP_Res2	Int	782.0	0		False	True	True	True	False		0,1 °C
+	usiSF5_RCP_CleanShower_Icon	Byte	784.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_PreCleanMP_Icon	Byte	785.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_Mother_Icon	Byte	786.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_Filling_Icon	Byte	787.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_Pig_Icon	Byte	788.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_PostCleanMP_Icon	Byte	789.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_Ferment_Icon	Byte	790.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_Cooling_Icon	Byte	791.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_Using_Icon	Byte	792.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_TankClean_Icon	Byte	793.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_Agit	Byte	794.0	16#0		False	True	True	True	False		
+	usiSF5_RCP_ProdStatus	Byte	795.0	16#0		False	True	True	True	False		stav produktu 1 = young, 2=usable, 3=too old
+	usiSF5_Valve_Water	Byte	796.0	16#0		False	True	True	True	False		
+	usiSF5_Valve_Cooling	Byte	797.0	16#0		False	True	True	True	False		
+	usiSF5_Valve_Output	Byte	798.0	16#0		False	True	True	True	False		
+	usiSF5_AgitStyle	Byte	799.0	16#0		False	True	True	True	False		
+	diSF5_RCP_Age	DInt	800.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF5_RCP_AgeReady	DInt	804.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF5_RCP_MaxAge	DInt	808.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF5_Res1	DInt	812.0	0		False	True	True	True	False		
+	diSF5_Res2	DInt	816.0	0		False	True	True	True	False		
+	iSF5_Res1	Int	820.0	0		False	True	True	True	False		
+	iSF5_Res2	Int	822.0	0		False	True	True	True	False		
+	iSF6_RCP_No	Int	824.0	0		False	True	True	True	False		cislo RCP
+	usiSF6_RCP_Status	Byte	826.0	16#0		False	True	True	True	False		stav
+	usiSF6_RCP_Step	Byte	827.0	16#0		False	True	True	True	False		krok
+	sSF6_RCP_Name	String[40]	828.0	''		False	True	True	True	False		jmeno RCP
+	diSF6_RCP_Starter_need	DInt	870.0	0		False	True	True	True	False		1g
+	diSF6_RCP_Starter_done	DInt	874.0	0		False	True	True	True	False		1g
+	diSF6_RCP_Mother_need	DInt	878.0	0		False	True	True	True	False		1g
+	diSF6_RCP_Mother_done	DInt	882.0	0		False	True	True	True	False		1g
+	diSF6_RCP_Amount_need	DInt	886.0	0		False	True	True	True	False		1g
+	diSF6_RCP_Amount_done	DInt	890.0	0		False	True	True	True	False		1g
+	iSF6_RCP_TA	Int	894.0	0		False	True	True	True	False		
+	diSF6_RCP_Ferment_need	DInt	896.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF6_RCP_Ferment_done	DInt	900.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF6_RCP_Cooling_need	DInt	904.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF6_RCP_Cooling_done	DInt	908.0	0		False	True	True	True	False		0,00027777778 hr
+	iSF6_RCP_Res1	Int	912.0	0		False	True	True	True	False		0,1 °C
+	iSF6_RCP_CoolingTemp_need	Int	914.0	0		False	True	True	True	False		0,1 °C
+	iSF6_RCP_CoolingTemp_curr	Int	916.0	0		False	True	True	True	False		0,1 °C
+	iSF6_RCP_Res2	Int	918.0	0		False	True	True	True	False		0,1 °C
+	usiSF6_RCP_CleanShower_Icon	Byte	920.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_PreCleanMP_Icon	Byte	921.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_Mother_Icon	Byte	922.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_Filling_Icon	Byte	923.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_Pig_Icon	Byte	924.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_PostCleanMP_Icon	Byte	925.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_Ferment_Icon	Byte	926.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_Cooling_Icon	Byte	927.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_Using_Icon	Byte	928.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_TankClean_Icon	Byte	929.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_Agit	Byte	930.0	16#0		False	True	True	True	False		
+	usiSF6_RCP_ProdStatus	Byte	931.0	16#0		False	True	True	True	False		stav produktu 1 = young, 2=usable, 3=too old
+	usiSF6_Valve_Water	Byte	932.0	16#0		False	True	True	True	False		
+	usiSF6_Valve_Cooling	Byte	933.0	16#0		False	True	True	True	False		
+	usiSF6_Valve_Output	Byte	934.0	16#0		False	True	True	True	False		
+	usiSF6_AgitStyle	Byte	935.0	16#0		False	True	True	True	False		
+	diSF6_RCP_Age	DInt	936.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF6_RCP_AgeReady	DInt	940.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF6_RCP_MaxAge	DInt	944.0	0		False	True	True	True	False		0,00027777778 hr
+	diSF6_Res1	DInt	948.0	0		False	True	True	True	False		
+	diSF6_Res2	DInt	952.0	0		False	True	True	True	False		
+	iSF6_Res1	Int	956.0	0		False	True	True	True	False		
+	iSF6_Res2	Int	958.0	0		False	True	True	True	False		
+	usiCleanTank_Status	Byte	960.0	16#0		False	True	True	True	False		
+	usiCleanTank_Step	Byte	961.0	16#0		False	True	True	True	False		
+	usiCleanTank_TankId	Byte	962.0	16#0		False	True	True	True	False		
+	usiCleanTank_Owner	Byte	963.0	16#0		False	True	True	True	False		
+	usiCleanTankMan_Status	Byte	964.0	16#0		False	True	True	True	False		
+	usiCleanTankMan_Step	Byte	965.0	16#0		False	True	True	True	False		
+	usiCleanTankMan_TankId	Byte	966.0	16#0		False	True	True	True	False		
+	usiCleanTankMan_Owner	Byte	967.0	16#0		False	True	True	True	False		
+	usiCleanTankShower_Status	Byte	968.0	16#0		False	True	True	True	False		
+	usiCleanTankShower_Step	Byte	969.0	16#0		False	True	True	True	False		
+	usiCleanTankShower_TankId	Byte	970.0	16#0		False	True	True	True	False		
+	usiCleanTankShower_Owner	Byte	971.0	16#0		False	True	True	True	False		
+	usiCleanTankChem_Status	Byte	972.0	16#0		False	True	True	True	False		
+	usiCleanTankChem_Step	Byte	973.0	16#0		False	True	True	True	False		
+	usiCleanTankChem_TankId	Byte	974.0	16#0		False	True	True	True	False		
+	usiCleanTankChem_Owner	Byte	975.0	16#0		False	True	True	True	False		
+	usiDischTank_Status	Byte	976.0	16#0		False	True	True	True	False		
+	usiDischTank_Step	Byte	977.0	16#0		False	True	True	True	False		
+	usiDischTank_TankId	Byte	978.0	16#0		False	True	True	True	False		
+	usiDischTank_Owner	Byte	979.0	16#0		False	True	True	True	False		
+	usiCleanPipe1_Status	Byte	980.0	16#0		False	True	True	True	False		
+	usiCleanPipe1_Step	Byte	981.0	16#0		False	True	True	True	False		
+	usiCleanPipe1_Owner	Byte	982.0	16#0		False	True	True	True	False		
+	usiCleanPipe2_Status	Byte	983.0	16#0		False	True	True	True	False		
+	usiCleanPipe2_Step	Byte	984.0	16#0		False	True	True	True	False		
+	usiCleanPipe2_Owner	Byte	985.0	16#0		False	True	True	True	False		
+	usiPipe1_Status	Byte	986.0	16#0		False	True	True	True	False		
+	usiPipe1_Step	Byte	987.0	16#0		False	True	True	True	False		
+	usiPipe1_Dest	Byte	988.0	16#0		False	True	True	True	False		
+	usiPipe1_Owner	Byte	989.0	16#0		False	True	True	True	False		
+	diPipe1_NeedAmnt	DInt	990.0	0		False	True	True	True	False		
+	diPipe1_CurrAmnt	DInt	994.0	0		False	True	True	True	False		
+	usiDO_Step	Byte	998.0	16#0		False	True	True	True	False		
+	usiDO_SelTank	Byte	999.0	16#0		False	True	True	True	False		
+	usiDO_MD_Step	Byte	1000.0	16#0		False	True	True	True	False		
+	usiDO_MD_Status	Byte	1001.0	16#0		False	True	True	True	False		
+	usiDO_MD_Dest	Byte	1002.0	16#0		False	True	True	True	False		
+	usiDO_MD_Owner	Byte	1003.0	16#0		False	True	True	True	False		
+	diDO_MD_NeedAmnt	DInt	1004.0	0		False	True	True	True	False		
+	diDO_MD_CurrAmnt	DInt	1008.0	0		False	True	True	True	False		
+	usiPig1_Status	Byte	1012.0	16#0		False	True	True	True	False		
+	usiPig1_Step	Byte	1013.0	16#0		False	True	True	True	False		
+	usiPig1_LastPos	Byte	1014.0	16#0		False	True	True	True	False		
+	usiPig1_Dest	Byte	1015.0	16#0		False	True	True	True	False		
+	usiPig1_Owner	Byte	1016.0	16#0		False	True	True	True	False		
+	usiPig2_Status	Byte	1017.0	16#0		False	True	True	True	False		
+	usiPig2_Step	Byte	1018.0	16#0		False	True	True	True	False		
+	usiPig2_LastPos	Byte	1019.0	16#0		False	True	True	True	False		
+	usiPig2_Dest	Byte	1020.0	16#0		False	True	True	True	False		
+	usiPig2_Owner	Byte	1021.0	16#0		False	True	True	True	False		
+	iValidTemp_SF1	Int	1022.0	0		False	True	True	True	False		valid temperature
+	iValidTemp_SF2	Int	1024.0	0		False	True	True	True	False		
+	iValidTemp_SF3	Int	1026.0	0		False	True	True	True	False		
+	iValidTemp_SF4	Int	1028.0	0		False	True	True	True	False		
+	iValidTemp_SF5	Int	1030.0	0		False	True	True	True	False		
+	iValidTemp_SF6	Int	1032.0	0		False	True	True	True	False		
+	iDP1_Owner	Int	1034.0	0		False	True	True	True	False		
+	iDP2_Owner	Int	1036.0	0		False	True	True	True	False		
+	iDP3_Owner	Int	1038.0	0		False	True	True	True	False		
+	iRes4	Int	1040.0	0		False	True	True	True	False		
+	bDO_AutoSelect	Bool	1042.0	false		False	True	True	True	False		
+	bMP_LidOpen	Bool	1042.1	false		False	True	True	True	False		
+	bSF1_LidOpen	Bool	1042.2	false		False	True	True	True	False		
+	bSF2_LidOpen	Bool	1042.3	false		False	True	True	True	False		
+	bSF3_LidOpen	Bool	1042.4	false		False	True	True	True	False		
+	bSF4_LidOpen	Bool	1042.5	false		False	True	True	True	False		
+	bSF5_LidOpen	Bool	1042.6	false		False	True	True	True	False		
+	bSF6_LidOpen	Bool	1042.7	false		False	True	True	True	False		
+	bSF1_Cool	Bool	1043.0	false		False	True	True	True	False		
+	bSF2_Cool	Bool	1043.1	false		False	True	True	True	False		
+	bSF3_Cool	Bool	1043.2	false		False	True	True	True	False		
+	bSF4_Cool	Bool	1043.3	false		False	True	True	True	False		
+	bSF5_Cool	Bool	1043.4	false		False	True	True	True	False		
+	bSF6_Cool	Bool	1043.5	false		False	True	True	True	False		
+	bLine1_Request	Bool	1043.6	false		False	True	True	True	False		
+	usiDO_Dest	Byte	1044.0	16#0		False	True	True	True	False		
+	usiDO_LN1_Step	Byte	1045.0	16#0		False	True	True	True	False		
+	usiDO_LN1_Status	Byte	1046.0	16#0		False	True	True	True	False		
+	usiDO_LN1_Mode	Byte	1047.0	16#0		False	True	True	True	False		0 - - -, 1=from Esteve, 2=from Buttons
+	diDO_LN1_NeedAmnt	DInt	1048.0	0		False	True	True	True	False		
+	diDO_LN1_CurrAmnt	DInt	1052.0	0		False	True	True	True	False		
+	usiDO_DS1_Step	Byte	1056.0	16#0		False	True	True	True	False		
+	usiDO_DS1_Status	Byte	1057.0	16#0		False	True	True	True	False		
+	diDO_DS1_NeedAmnt	DInt	1058.0	0		False	True	True	True	False		
+	diDO_DS1_CurrAmnt	DInt	1062.0	0		False	True	True	True	False		
+	iEnd	Int	1066.0	0		False	True	True	True	False		reserve

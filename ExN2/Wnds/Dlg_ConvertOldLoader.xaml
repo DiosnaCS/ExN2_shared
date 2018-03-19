@@ -1,0 +1,51 @@
+﻿<Window x:Class="ExN2.Dlg_ConvertOldLoader"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExN2"
+        mc:Ignorable="d"
+        Title="Converter: Old Loader Files" Height="342" Width="584" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" ResizeMode="NoResize" WindowStyle="ToolWindow" Background="LightGray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lbl_SrcFile" Content="src.file:" Grid.Column="0" FontSize="11" HorizontalAlignment="Right"/>
+            <TextBox x:Name="textBox_SrcFile" Grid.Column="1"  Margin="5" Text="" FontSize="11"/>
+            <Button x:Name="btn_SelSrcFile" Content="..." Grid.Column="2" Margin="2" Click="btn_SelSrcFile_Click" />
+        </Grid>
+
+        <Grid Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lbl_DstFile" Content="dest.file:" Grid.Column="0" FontSize="11" HorizontalAlignment="Right"/>
+            <TextBox x:Name="textBox_DstFile" Grid.Column="1"  Margin="5" Text="" FontSize="11" />
+            <Button x:Name="btn_SelDstFile" Content="..." Grid.Column="2" Margin="2" Click="btn_SelDstFile_Click" />
+        </Grid>
+
+        <TextBox x:Name="textBox_Log" Grid.Row="2" TextWrapping="Wrap" Text="" Margin="5"/>
+
+        <Grid Grid.Row="3" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btn_Convert" Content="Convert" Grid.Column="0" Margin="20,2" Click="btn_Convert_Click" />
+            <Button x:Name="btn_Cancel" Content="Cancel" Grid.Column="1" Margin="20,2" IsCancel="True" />
+        </Grid>
+
+    </Grid>
+</Window>

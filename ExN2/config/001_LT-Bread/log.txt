@@ -1,0 +1,981 @@
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+DoArchive exception: 42601: syntax error at or near "F"
+DoArchive exception: 42601: syntax error at or near "F"
+DoArchive exception: 42601: syntax error at or near "F"
+DoArchive exception: 42601: syntax error at or near "F"
+DoArchive exception: 42601: syntax error at or near "F"
+DoArchive exception: 42601: syntax error at or near "F"
+DoArchive exception: 42601: syntax error at or near "F"
+DoArchive exception: 22001: value too long for type character varying(40)
+DoArchive exception: 22001: value too long for type character varying(40)
+DoArchive exception: 22001: value too long for type character varying(40)
+DoArchive exception: 08P01: invalid message format
+DoArchive exception: 08P01: invalid message format
+ SEND request
+ RECEIVED, in 31 ms
+ SEND request
+ RECEIVED, in 41 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 40 ms
+ SEND request
+ RECEIVED, in 42 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ RECEIVED, in 41 ms
+ SEND request
+ RECEIVED, in 53 ms
+ SEND request
+ RECEIVED, in 30 ms
+ SEND request
+ RECEIVED, in 33 ms
+ SEND request
+ RECEIVED, in 31 ms
+ SEND request
+ RECEIVED, in 57 ms
+ SEND request
+ RECEIVED, in 30 ms
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 24 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 28 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 29 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 57 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 29 ms
+ SEND request
+ RECEIVED, in 31 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 35 ms
+ SEND request
+ RECEIVED, in 54 ms
+ SEND request
+ RECEIVED, in 105 ms
+ SEND request
+ RECEIVED, in 115 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 24 ms
+ SEND request
+ RECEIVED, in 50 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 62 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 59 ms
+ SEND request
+ RECEIVED, in 28 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 24 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 102 ms
+ SEND request
+ RECEIVED, in 28 ms
+ SEND request
+ RECEIVED, in 245 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 254 ms
+ SEND request
+ RECEIVED, in 50 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 113 ms
+ SEND request
+ RECEIVED, in 36 ms
+ SEND request
+ RECEIVED, in 30 ms
+ SEND request
+ RECEIVED, in 98 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 162 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SEND request
+ RECEIVED, in 172 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 21 ms
+ ... recieve timeout
+ ... recieve timeout
+ SEND request
+ RECEIVED, in 32 ms
+ SEND request
+ RECEIVED, in 30 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 24 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 28 ms
+ SEND request
+ RECEIVED, in 24 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SEND request
+ RECEIVED, in 47 ms
+ SEND request
+ RECEIVED, in 37 ms
+ SEND request
+ RECEIVED, in 38 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 24 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 24 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 45 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 43 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 97 ms
+ SEND request
+ RECEIVED, in 47 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ RECEIVED, in 30 ms
+ SQL INSERT, in 210 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SQL INSERT, in 10 ms
+ SEND request
+ RECEIVED, in 44 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SQL INSERT, in 68 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SQL INSERT, in 8 ms
+ SEND request
+ RECEIVED, in 43 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 32 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SQL INSERT, in 8 ms
+ SEND request
+ RECEIVED, in 29 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 42 ms
+ SEND request
+ RECEIVED, in 10299 ms
+ SQL INSERT, in 4 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 35 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 27 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 1403 ms
+ SQL INSERT, in 22 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SQL INSERT, in 4 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 16 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SQL INSERT, in 1 ms
+ SEND request
+ RECEIVED, in 57 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 33 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ RECEIVED, in 34 ms
+ SEND request
+ RECEIVED, in 30 ms
+ SEND request
+ RECEIVED, in 34 ms
+ SQL INSERT, in 218 ms
+ SEND request
+ RECEIVED, in 57 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 49 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SQL INSERT, in 10 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 27 ms
+ SEND request
+ RECEIVED, in 16 ms
+ SQL INSERT, in 7 ms
+ SEND request
+ RECEIVED, in 24 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 48 ms
+ SEND request
+ RECEIVED, in 27 ms
+DoArchive exception: 23505: duplicate key value violates unique constraint "tabul1_pkey"
+ SQL INSERT, in 8012 ms
+ SEND request
+ RECEIVED, in 125 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 288 ms
+ SEND request
+ RECEIVED, in 17 ms
+DoArchive exception: 23505: duplicate key value violates unique constraint "tabul1_pkey"
+ SQL INSERT, in 19 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 24 ms
+DoArchive exception: 23505: duplicate key value violates unique constraint "tabul1_pkey"
+ SQL INSERT, in 18 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SEND request
+ RECEIVED, in 18 ms
+DoArchive exception: 23505: duplicate key value violates unique constraint "tabul1_pkey"
+ SQL INSERT, in 16 ms
+ SEND request
+ RECEIVED, in 24 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 32 ms
+ SEND request
+ RECEIVED, in 17 ms
+DoArchive exception: 23505: duplicate key value violates unique constraint "tabul1_pkey"
+ SQL INSERT, in 24 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 23 ms
+DoArchive exception: 23505: duplicate key value violates unique constraint "tabul1_pkey"
+ SQL INSERT, in 12 ms
+ SEND request
+ RECEIVED, in 24 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 25 ms
+ SEND request
+ RECEIVED, in 36 ms
+DoArchive exception: 23505: duplicate key value violates unique constraint "tabul1_pkey"
+ SQL INSERT, in 14 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 46 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 27 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SQL INSERT, in 19 ms
+ SEND request
+ RECEIVED, in 36 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SQL INSERT, in 24 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 16 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SQL INSERT, in 4 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SEND request
+ RECEIVED, in 36 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SQL INSERT, in 5 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SQL INSERT, in 5 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SEND request
+ RECEIVED, in 42 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SQL INSERT, in 7 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 74 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SQL INSERT, in 11 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 28 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 31 ms
+ SQL INSERT, in 4 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 44 ms
+ SQL INSERT, in 5 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SQL INSERT, in 7 ms
+ SEND request
+ RECEIVED, in 23 ms
+ SEND request
+ RECEIVED, in 38 ms
+ SEND request
+ RECEIVED, in 30 ms
+ SEND request
+ RECEIVED, in 19 ms
+ SQL INSERT, in 8 ms
+ SEND request
+ RECEIVED, in 26 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 45 ms
+ SQL INSERT, in 5 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 20 ms
+ SEND request
+ RECEIVED, in 21 ms
+ SEND request
+ RECEIVED, in 51 ms
+ SQL INSERT, in 3 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SEND request
+ RECEIVED, in 22 ms
+ SEND request
+ RECEIVED, in 17 ms
+ SQL INSERT, in 9 ms
+ SEND request
+ RECEIVED, in 18 ms
+ SEND request
+ RECEIVED, in 4 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 1181 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SQL INSERT, in 14 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SQL INSERT, in 7 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 4 ms
+ SQL INSERT, in 12 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 5 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 13 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 14 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 9 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 4 ms
+ SQL INSERT, in 11 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 7 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 11 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ RECEIVED, in 3 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 5 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 312 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 3 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 320 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 13 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 10 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 6 ms
+ SQL INSERT, in 11 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 319 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 8 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 9 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SQL INSERT, in 325 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 6 ms

@@ -1,0 +1,12 @@
+﻿ExN2 - versions
+---------------
+
+05 (2018-03-02)
+- oprava: adresa vnořené struktury je zarovnávána vždy na 2 bajty
+
+04 (2018-03-01)
+- umí i vnořené struktury do dvou úrovní
+
+1.06 (2018-03-06)
+- oprava generování schedule pro DINT:
+ -vybere Solve_3dp apod, nepoužívá dělení po volání programu, protože to v CW nechodí

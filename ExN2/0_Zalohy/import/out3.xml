@@ -1,0 +1,4440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDbVisuItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iSecond</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>0</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>diWMU_Dose</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,001 kg      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>2</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>diSP_Dose</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,001 kg      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>6</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>diMF1_Weight</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,001 kg      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>10</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>diPF1_Weight</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,001 kg      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>14</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>diPF2_Weight</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,001 kg      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>18</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>diSF1_Weight</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,001 kg      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>22</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>diSF2_Weight</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,001 kg      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>26</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>diSF3_Weight</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,001 kg      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>30</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iWMU_Temp</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,1�C      </sComment>
+    <sCommentFlags>t</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>34</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>°C</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>10</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iMF1_Temp</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,1�C      </sComment>
+    <sCommentFlags>t</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>36</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>°C</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>10</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iPF1_Temp</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,1�C      </sComment>
+    <sCommentFlags>t</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>38</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>°C</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>10</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iPF2_Temp</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,1�C      </sComment>
+    <sCommentFlags>t</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>40</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>°C</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>10</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iSF1_Temp</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,1�C      </sComment>
+    <sCommentFlags>t</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>42</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>°C</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>10</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iSF2_Temp</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,1�C      </sComment>
+    <sCommentFlags>t</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>44</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>°C</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>10</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iSF3_Temp</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,1�C      </sComment>
+    <sCommentFlags>t</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>46</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>°C</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>10</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uMF1_iRcpNr</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> ��slo receptury      </sComment>
+    <sCommentFlags>ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>48</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_strRcpName</sVarName>
+    <Type>String</Type>
+    <iOptLen>40</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>50</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_usiProcessStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>92</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_usiStep</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>ar20</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>93</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_usiTankStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>ar20</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>94</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_usiProductStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0=empty, 1=young, 2=usable, 3=old     </sComment>
+    <sCommentFlags>ar60;tL:Stav_Kvas</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>95</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>stav_kvas</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uMF1_Agit_iFwd_On</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>96</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Agit_iFwd_Off</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>98</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Agit_iRev_On</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>100</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Agit_iRev_Off</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>102</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uMF1_Ico_usiMixture</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>104</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Ico_usiStarter</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>105</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Ico_usiFerm1</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>106</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Ico_usiFerm2</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>107</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Ico_usiStorage</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>108</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uMF1_Need_iTA</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>110</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_diAmount</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; po�adovan� mno�stv� kvasu      </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>112</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_iTempWater</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,1�C; teplota vody      </sComment>
+    <sCommentFlags>t;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>116</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>°C</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>10</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_diFerm1</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; Doba fermentace 1      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>118</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_diFerm2</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; Doba fermentace 2      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>122</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_diUsing</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba pou�itelnosti      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>126</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_diStarter</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka starteru      </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>130</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_diRest</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka zbytku mate�n�ho kvasu      </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>134</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_diFlour</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka mouky      </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>138</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_diWater</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka vody      </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>142</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_diWaterFlour</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka vody+mouky      </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>146</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Need_diAgeMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; po t�to dob� je kvas star� (neupot�ebiteln�)      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>150</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uMF1_Current_diStarter</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka starteru      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>154</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Current_diWaterFlour</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka vody+mouky      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>158</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Current_diWater</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka vody      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>162</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Current_diFlour</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka mouky      </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>166</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Current_diFerm1</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba fermentace 1      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>170</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Current_diFerm2</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba fermentace 2      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>174</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Current_diAge</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,00027777778 hr      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>178</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF1_iRcpNr</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> ��slo receptury      </sComment>
+    <sCommentFlags>ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>182</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_strRcpName</sVarName>
+    <Type>String</Type>
+    <iOptLen>40</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>184</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_usiProcessStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>226</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_usiStep</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>227</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_usiTankStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>228</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_usiProductStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0=empty, 1=young, 2=usable, 3=old     </sComment>
+    <sCommentFlags>ar60;tL:Stav_Kvas</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>229</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>stav_kvas</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF1_Agit_iFwd_On</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>230</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Agit_iFwd_Off</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>232</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF1_Ico_usiBread</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>234</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Ico_usiWater</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>235</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Ico_usiSoakingStop</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>236</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Ico_usiSoakingMix</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>237</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Ico_usiFlourDose</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>238</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Ico_usiFlourMix</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>239</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Ico_usiMotherdough</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>240</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Ico_usiFerm1</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>241</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Ico_usiFerm2</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>242</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Ico_usiRepump</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>243</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF1_Need_diAmount</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; po�adovan� mno�stv� kvasu       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>244</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_iTempWater</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,1�C; teplota vody       </sComment>
+    <sCommentFlags>t;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>248</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>°C</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>10</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diMotherdough</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka mate�n�ho kvasu       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>250</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diBread</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka chleba       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>254</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diFlour</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka mouky       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>258</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diFlourAdd</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; korekce d�vky mouky podle d�vky chleba       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>262</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diWater</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka vody       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>266</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diSoakingStop</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba namaceni - nemichat       </sComment>
+    <sCommentFlags>Tm;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>270</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>min</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>60</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diSoakingMix</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba namaceni - michat      </sComment>
+    <sCommentFlags>Tm;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>274</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>min</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>60</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diFlourMix</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba rozm�ch�n� mouky      </sComment>
+    <sCommentFlags>Tm;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>278</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>min</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>60</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diFerm1</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; Doba fermentace 1      </sComment>
+    <sCommentFlags>Th;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>282</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diFerm2</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; Doba fermentace 2      </sComment>
+    <sCommentFlags>Th;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>286</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diRipen</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba zr�n�      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>290</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diUsing</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba pou�itelnosti     </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>294</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Need_diAgeMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; po t�to dob� je kvas star� (neupot�ebiteln�)     </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>298</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF1_Current_diMotherdough</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka mate�n�ho kvasu        </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>302</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Current_diBread</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka chleba        </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>306</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Current_diFlour</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka mouky        </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>310</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Current_diWater</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka vody        </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>314</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Current_diSoakingStop</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba namaceni - nemichat        </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>318</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Current_diSoakingMix</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba namaceni - michat       </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>322</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Current_diFlourMix</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba rozm�ch�n� mouky       </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>326</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Current_diFerm1</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; Doba fermentace 1       </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>330</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Current_diFerm2</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; Doba fermentace 2       </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>334</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Current_diRipen</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba zr�n�       </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>338</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Current_diAge</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,00027777778 hr       </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>342</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF2_iRcpNr</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> ��slo receptury       </sComment>
+    <sCommentFlags>ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>346</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_strRcpName</sVarName>
+    <Type>String</Type>
+    <iOptLen>40</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>348</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_usiProcessStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>390</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_usiStep</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>391</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_usiTankStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>392</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_usiProductStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0=empty, 1=young, 2=usable, 3=old     </sComment>
+    <sCommentFlags>ar60;tL:Stav_Kvas</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>393</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>stav_kvas</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF2_Agit_iFwd_On</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>394</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Agit_iFwd_Off</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>396</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF2_Ico_usiBread</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>398</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Ico_usiWater</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>399</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Ico_usiSoakingStop</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>400</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Ico_usiSoakingMix</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>401</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Ico_usiFlourDose</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>402</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Ico_usiFlourMix</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>403</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Ico_usiMotherdough</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>404</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Ico_usiFerm1</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>405</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Ico_usiFerm2</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>406</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Ico_usiRepump</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>407</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF2_Need_diAmount</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; po�adovan� mno�stv� kvasu       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>408</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_iTempWater</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,1�C; teplota vody       </sComment>
+    <sCommentFlags>t;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>412</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>°C</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>10</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diMotherdough</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka mate�n�ho kvasu       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>414</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diBread</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka chleba       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>418</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diFlour</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka mouky       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>422</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diFlourAdd</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; korekce d�vky mouky podle d�vky chleba       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>426</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diWater</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka vody       </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>430</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diSoakingStop</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba namaceni - nemichat       </sComment>
+    <sCommentFlags>Tm;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>434</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>min</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>60</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diSoakingMix</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba namaceni - michat      </sComment>
+    <sCommentFlags>Tm;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>438</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>min</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>60</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diFlourMix</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba rozm�ch�n� mouky      </sComment>
+    <sCommentFlags>Tm;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>442</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>min</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>60</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diFerm1</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; Doba fermentace 1      </sComment>
+    <sCommentFlags>Th;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>446</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diFerm2</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; Doba fermentace 2      </sComment>
+    <sCommentFlags>Th;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>450</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diRipen</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba zr�n�      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>454</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diUsing</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba pou�itelnosti     </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>458</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Need_diAgeMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; po t�to dob� je kvas star� (neupot�ebiteln�)     </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>462</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF2_Current_diMotherdough</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka mate�n�ho kvasu        </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>466</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Current_diBread</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka chleba        </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>470</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Current_diFlour</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka mouky        </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>474</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Current_diWater</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; d�vka vody        </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>478</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Current_diSoakingStop</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba namaceni - nemichat        </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>482</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Current_diSoakingMix</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba namaceni - michat        </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>486</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Current_diFlourMix</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba rozm�ch�n� mouky        </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>490</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Current_diFerm1</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; Doba fermentace 1        </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>494</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Current_diFerm2</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; Doba fermentace 2        </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>498</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Current_diRipen</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba zr�n�        </sComment>
+    <sCommentFlags>Ts</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>502</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Current_diAge</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,00027777778 hr        </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>506</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF1_iRcpNr</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> ��slo receptury         </sComment>
+    <sCommentFlags>ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>510</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_strRcpName</sVarName>
+    <Type>String</Type>
+    <iOptLen>40</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>512</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_usiProcessStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>554</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_usiStep</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>555</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_usiTankStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>556</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_usiProductStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0=empty, 1=young, 2=usable, 3=old     </sComment>
+    <sCommentFlags>ar60;tL:Stav_Kvas</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>557</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>stav_kvas</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF1_Agit_iFwd_On</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>558</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Agit_iFwd_Off</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>560</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF1_Ico_usiFilling</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>562</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Ico_usiRipening</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>563</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Ico_usiStoring</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>564</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF1_Need_diRipen</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>566</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Need_diUsing</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>570</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Need_diAgeMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>574</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF1_Current_diWeight</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; vypo�ten� hmotnost kvasu ve fermentoru       </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>578</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Current_diAge</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,00027777778 hr      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>582</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF2_iRcpNr</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> ��slo receptury         </sComment>
+    <sCommentFlags>ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>586</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_strRcpName</sVarName>
+    <Type>String</Type>
+    <iOptLen>40</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>588</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_usiProcessStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>630</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_usiStep</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>631</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_usiTankStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>632</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_usiProductStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0=empty, 1=young, 2=usable, 3=old     </sComment>
+    <sCommentFlags>ar60;tL:Stav_Kvas</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>633</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>stav_kvas</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF2_Agit_iFwd_On</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>634</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Agit_iFwd_Off</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>636</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF2_Ico_usiFilling</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>638</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Ico_usiRipening</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>639</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Ico_usiStoring</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>640</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF2_Need_diRipen</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>642</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Need_diUsing</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>646</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Need_diAgeMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>650</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF2_Current_diWeight</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; vypo�ten� hmotnost kvasu ve fermentoru       </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>654</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Current_diAge</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,00027777778 hr      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>658</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF3_iRcpNr</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> ��slo receptury        </sComment>
+    <sCommentFlags>ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>662</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_strRcpName</sVarName>
+    <Type>String</Type>
+    <iOptLen>40</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>664</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_usiProcessStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>706</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_usiStep</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>707</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_usiTankStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>708</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist />
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_usiProductStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0=empty, 1=young, 2=usable, 3=old     </sComment>
+    <sCommentFlags>ar60;tL:Stav_Kvas</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>709</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>stav_kvas</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF3_Agit_iFwd_On</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>710</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Agit_iFwd_Off</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>712</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>s</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF3_Ico_usiFilling</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>714</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Ico_usiRipening</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>715</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Ico_usiStoring</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>716</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF3_Need_diRipen</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba zr�n�</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>718</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Need_diUsing</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; doba pou�itelnosti</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>722</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Need_diAgeMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1s; po t�to dob� je kvas star� (neupot�ebiteln�)</sComment>
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>726</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF3_Current_diWeight</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 1g; vypo�ten� hmotnost kvasu ve fermentoru       </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>730</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Current_diAge</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> 0,00027777778 hr      </sComment>
+    <sCommentFlags>Th</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>734</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>ClnTankComplete_usiStep</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>738</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>ClnTankComplete_usiStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIstatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>739</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>ClnTankComplete_usiTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:id_All</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>740</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>id_all</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>ClnTankDisch_usiStep</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>742</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist />
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>ClnTankDisch_usiStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIstatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>743</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>ClnTankDisch_usiTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:id_All</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>744</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>id_all</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>DO_usiStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>746</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>DO_usiSourceTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:TankSF_Dosing</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>747</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>tanksf_dosing</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>DO_usiDestID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:id_All</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>748</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>id_all</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>DO_diDoseCurr</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>750</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>Pipe1_usiStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Status_ST</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>754</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>status_st</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe1_usiSrcTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:TankMF</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>755</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>tankmf</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe1_usiDestTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:DestPipe1_MF-&gt;PF</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>756</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>destpipe1_mf-&gt;pf</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe1_diDoseCurr</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>758</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe1_diDoseNeed</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>762</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>Pipe2_usiStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Status_ST</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>766</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>status_st</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe2_usiSrcTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:TankPF</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>767</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>tankpf</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe2_usiDestTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:DestPipe2_PF-&gt;SF_AutCtrl</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>768</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>destpipe2_pf-&gt;sf_autctrl</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe2_diDoseCurr</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>770</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe2_diDoseNeed</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>774</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>Pipe3_usiStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Status_ST</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>778</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>status_st</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe3_usiSrcTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:TankSF_Dosing</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>779</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>tanksf_dosing</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe3_usiDestTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:DestOutdosing</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>780</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>destoutdosing</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe3_diDoseCurr</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>m</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>782</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>Pipe3_diDoseNeed</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>m;ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>786</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <sUnit>kg</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>1000</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>ClnPipeTanks_usiStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIstatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>790</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>ClnPipeTanks_usiSrcTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:TankAll</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>791</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>tankall</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>ClnPipeTanks_usiDestTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:TankAll</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>792</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>tankall</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>ClnPipeOut_usiStatus</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:HMIstatus2</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>794</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>hmistatus2</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>ClnPipeOut_usiSrcTankID</sVarName>
+    <Type>Byte</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:TankSF</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>795</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>tanksf</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uMF1_Act_usiFlour_Y1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>796</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Act_usiClnWater_Y2</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>797</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Act_usiTechWater_Y3</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>798</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Act_usiBottom_Y4</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>799</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Act_usiTransfer_Y5</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>800</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Act_usiGully_Y6</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>801</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Act_usiAgit_M1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>802</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_Act_usiPump_M2</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>803</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF1_Act_usiFlour_Y1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>804</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Act_usiClnWater_Y2</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>805</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Act_usiTechWater_Y3</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>806</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Act_usiInput_Y4</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>807</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Act_usiTransfer_Y5</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>808</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Act_usiGully_Y6</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>809</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Act_usiAgit_M1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>810</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_Act_usiPump_M2</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>811</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF2_Act_usiFlour_Y1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>812</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Act_usiClnWater_Y2</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>813</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Act_usiTechWater_Y3</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>814</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Act_usiInput_Y4</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>815</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Act_usiTransfer_Y5</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>816</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Act_usiGully_Y6</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>817</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Act_usiAgit_M1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>818</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_Act_usiPump_M2</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>819</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF1_Act_usiClnWater_Y1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>820</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Act_usiInput_Y2</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>821</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Act_usiTransfer_Y3</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>822</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Act_usiGully_Y4</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>823</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Act_usiAgit_M1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>824</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_Act_usiRes</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>825</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF2_Act_usiClnWater_Y1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>826</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Act_usiInput_Y2</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>827</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Act_usiTransfer_Y3</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>828</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Act_usiGully_Y4</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>829</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Act_usiAgit_M1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>830</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_Act_usiRes</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>831</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF3_Act_usiClnWater_Y1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>832</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Act_usiInput_Y2</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>833</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Act_usiTransfer_Y3</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>834</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Act_usiGully_Y4</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>835</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Act_usiAgit_M1</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>836</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_Act_usiRes</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>837</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>usiRes420</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>838</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>usiMF1_Dest</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:DestPipe1_MF-&gt;PF</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>839</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>destpipe1_mf-&gt;pf</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>usiPF1_Dest</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:DestPipe2_PF-&gt;SF_AutCtrl</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>840</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>destpipe2_pf-&gt;sf_autctrl</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>usiPF2_Dest</sVarName>
+    <Type>USint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:DestPipe2_PF-&gt;SF_AutCtrl</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>841</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>destpipe2_pf-&gt;sf_autctrl</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iRes_422_Low</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>842</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iPF1_RCP_TA</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>844</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iPF2_RCP_TA</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>ar60</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>846</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>60</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iRez_425</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>848</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iRez_426</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>850</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iRez_427</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>852</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iRez_428</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>854</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iRez_429</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>856</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bMF1_Lid</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Lid</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>858</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>lid</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bPF1_Lid</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Lid</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>858</iOffsByte>
+    <iOffsBit>1</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>lid</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bPF2_Lid</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Lid</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>858</iOffsByte>
+    <iOffsBit>2</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>lid</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bSF1_Lid</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Lid</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>858</iOffsByte>
+    <iOffsBit>3</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>lid</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bSF2_Lid</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Lid</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>858</iOffsByte>
+    <iOffsBit>4</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>lid</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bSF3_Lid</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Lid</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>858</iOffsByte>
+    <iOffsBit>5</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>lid</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bSF1_NotEmpty</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Empty</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>858</iOffsByte>
+    <iOffsBit>6</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>empty</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bSF2_NotEmpty</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Empty</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>858</iOffsByte>
+    <iOffsBit>7</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>empty</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bSF3_NotEmpty</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Empty</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>859</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>empty</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bPF1_RepumpAuto</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Repump</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>859</iOffsByte>
+    <iOffsBit>1</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>repump</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>bPF2_RepumpAuto</sVarName>
+    <Type>Bool</Type>
+    <iOptLen>0</iOptLen>
+    <sComment> </sComment>
+    <sCommentFlags>tL:Repump</sCommentFlags>
+    <bArchive>true</bArchive>
+    <iOffsByte>859</iOffsByte>
+    <iOffsBit>2</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <sUnit />
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+    <sTextlist>repump</sTextlist>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uMF1_TimeBar_diReady</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>860</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_TimeBar_diMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>864</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uMF1_TimeBar_diLength</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>868</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF1_TimeBar_diReady</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>872</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_TimeBar_diMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>876</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF1_TimeBar_diLength</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>880</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uPF2_TimeBar_diReady</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>884</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_TimeBar_diMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>888</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uPF2_TimeBar_diLength</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>892</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF1_TimeBar_diReady</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>896</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_TimeBar_diMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>900</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF1_TimeBar_diLength</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>904</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF2_TimeBar_diReady</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>908</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_TimeBar_diMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>912</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF2_TimeBar_diLength</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>916</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>Byte2</ForceRounding>
+    <sVarName>uSF3_TimeBar_diReady</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>920</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_TimeBar_diMax</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>924</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>uSF3_TimeBar_diLength</sVarName>
+    <Type>Dint</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>true</bArchive>
+    <iOffsByte>928</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>300</iPeriod>
+    <sUnit>hr</sUnit>
+    <rScaling>1</rScaling>
+    <iDivisor>3600</iDivisor>
+  </DbVisuItem>
+  <DbVisuItem>
+    <ForceRounding>None</ForceRounding>
+    <sVarName>iEnd</sVarName>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <sComment />
+    <sCommentFlags />
+    <bArchive>false</bArchive>
+    <iOffsByte>932</iOffsByte>
+    <iOffsBit>0</iOffsBit>
+    <iPeriod>20</iPeriod>
+    <rScaling>1</rScaling>
+    <iDivisor>1</iDivisor>
+  </DbVisuItem>
+</ArrayOfDbVisuItem>

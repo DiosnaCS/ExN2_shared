@@ -1,0 +1,28 @@
+﻿<Window x:Class="ExN2.Dlg_About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExN2"
+        mc:Ignorable="d"
+        Title="About" Height="250" Width="300" ShowInTaskbar="False" ResizeMode="NoResize" WindowStyle="ToolWindow" WindowStartupLocation="CenterOwner">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="label" Grid.Row="0" Content="ExN2 - data communicator &amp; archiver&#xD;&#xA;DiosnaCS, Liberec" HorizontalAlignment="Stretch" Margin="7" FontSize="11"/>
+        <DockPanel Grid.Row="1" LastChildFill="True" >
+            <Label x:Name="label2" Content="version:" Margin="3" FontSize="11"/>
+            <TextBox x:Name="textBox_version" Margin="5" Text="ver." FontSize="11" IsEnabled="False" />
+        </DockPanel>
+        <StackPanel Orientation="Horizontal">
+        </StackPanel>
+        <TextBox x:Name="textBox_empty" Grid.Row="2" HorizontalAlignment="Stretch" Margin="5" TextWrapping="Wrap" Text="- - -"  FontSize="11" IsEnabled="False"/>
+        <Button x:Name="btn_Back" Grid.Row="3" Content="Close" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10" Width="75" Click="button_Cancel" Height="31"/>
+
+    </Grid>
+ </Window>

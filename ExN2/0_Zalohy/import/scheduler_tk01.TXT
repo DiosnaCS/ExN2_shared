@@ -1,0 +1,277 @@
+frequently types of tags: 
+=========================
+
+  #type;coeficient;unit;archivePeriod;tL:TextList
+  
+  temperature  
+  t: t;c0,1;°C:ar20
+  
+  mass
+  m: m;c0,001;kg;ar20
+  
+  pressure
+  p: p;c0,01;Bar;ar20
+   
+  times
+  Ts:   Ts;c1;s;ar20
+  Tmin: Tmin;c0,016666667;min;ar20
+  Thr:  Thr;c0,00027777778;hr;ar20  
+
+  pH
+  pH;c0,1;-;ar20
+
+  (ByteOffsetAddr/2)*coef
+    
+  / c0,1 :   ~    drv_AR.{ByteOffsetAddr/2}*0.1
+
+
+Pøeddefinované typy:
+  hmotnost: m
+  teplota:  t
+  tlak:     p
+  cas:      Ts, Tm, Th
+
+
+  c0,001  - prefix c  (násobitel Real)
+  uBar    - prefix u
+  ar20    - prefix ar
+  d60     - prefix d (dìlitel INT)
+
+
+
+sections headers / footers
+==========================
+
+  schedule sch_AR_vizd_LTRIV {period = 10; period_offset = 3; period_origin = midnight};
+  end_schedule;
+
+  schedule sch_AR_alarm_LTRIV {period = 5; period_offset = 1; period_origin = midnight; condition = true};
+    iW0_alarm = drv_AR.ByteOffsetAddr/2;
+    iW1_alarm = drv_AR.ByteOffsetAddr/2;
+    iW2_alarm = drv_AR.ByteOffsetAddr/2;
+    iW3_alarm = drv_AR.ByteOffsetAddr/2;
+    ...
+  end_schedule;
+ 
+  archive AR_norm_LTRIV {dsn = 'psql_LTRIV.dsn'; database_type = sql; table_name = 'arAR_norm'; user_name = sPostgresNm; password = sPostgresPw; period = 20; period_offset = 3; period_origin = midnight; condition = com_Status_LTRIV.enbArch_AR};
+    iWMU_Temp = sch_AR_vizd_LTRIV.iWMU_Temp;
+    ...
+  end_archive;
+
+  archive AR_slow_LTRIV {dsn = 'psql_LTRIV.dsn'; database_type = sql; table_name = 'arAR_slow'; user_name = sPostgresNm; password = sPostgresPw; period = 60; period_offset = 3; period_origin = midnight; condition = com_Status_LTRIV.enbArch_AR};
+  end_archive;
+
+  
+data types conversions
+======================
+
+Low_High_INT(16) -> DINT(32)
+--------------------
+ 
+  {1}   
+    program_Low_High_DINT.Solve(drv_AR.{ByteOffsetAddr/2+1} , drv_AR.{ByteOffsetAddr/2})
+
+  {0.001} / g -> kg
+    
+    program_Low_High_DINT.Solve_3dp(drv_AR.{ByteOffsetAddr/2+1} , drv_AR.{ByteOffsetAddr/2})
+   
+  {0,0002777777778} / s -> hr 
+  
+    program_Low_High_DINT.Solve_Hours(drv_AR.{ByteOffsetAddr/2+1} , drv_AR.{ByteOffsetAddr/2})
+  
+  {0,0166666666667} / s -> min
+
+    program_Low_High_DINT.Solve_Minutes(drv_AR.{ByteOffsetAddr/2+1} , drv_AR.{ByteOffsetAddr/2})
+
+
+INT(16) > HighByte(8), LowByte(8)
+---------------------------------
+    
+    usiAH1_RCP_Shower_Icon = program_INT_TO_LOW_HIGH.KHigh( drv_AR.{ByteOffsetAddr/2} );
+    usiAH1_RCP_Filling_Icon = program_INT_TO_LOW_HIGH.KLow( drv_AR.{ByteOffsetAddr/2} );
+
+INT(16) > bits(1)    
+
+    b00 = bitget( drv_AR.{ByteOffsetAddr/2}, 8 );
+    b01 = bitget( drv_AR.{ByteOffsetAddr/2}, 9 );
+    ...
+    b08 = bitget( drv_AR.{ByteOffsetAddr/2}, 0 );
+    b09 = bitget( drv_AR.{ByteOffsetAddr/2}, 1 );
+    ...
+    
+    
+RCP
+---
+ Rcp_name(string) -> INTs
+ první INT délka
+     
+ Rcp_name_0_1 = drv_AR.{Rcp_name.ByteOffsetAddr/2+1};
+ Rcp_name_2_3 = drv_AR.{Rcp_name.ByteOffsetAddr/2+2};
+ ....
+ 
+detail funkcí:
+==============
+
+program_Low_High_DINT
+---------------------
+
+    procedure Solve( High, Low : longint ): longint;
+    begin
+     if (bitget(Low,15) = 1 ) then 
+        return(High);
+      else
+        return(bitor( bitand( High, 65535 ), bitshl( Low, 16 )));
+      end;
+    end_procedure;
+
+    procedure Solve_1dp( High, Low : longint ): real;
+    begin
+     if (bitget(Low,15) = 1 ) then 
+        return(High * 0.1);
+      else
+        return(bitor( bitand( High, 65535 ), bitshl( Low, 16 )) * 0.1);
+      end;
+    end_procedure;
+
+    procedure Solve_3dp( High, Low : longint ): real;
+    begin
+     if (bitget(Low,15) = 1 ) then 
+        return(High * 0.001);
+      else
+        return(bitor( bitand( High, 65535 ), bitshl( Low, 16 )) * 0.001);
+      end;
+    end_procedure;
+
+    procedure Solve_Hours( High, Low : longint ): longint;
+    begin
+     if (bitget(Low,15) = 1 ) then 
+        return(High / 3600);
+      else
+        return(bitor( bitand( High, 65535 ), bitshl( Low, 16 )) / 3600);
+      end;
+    end_procedure;
+
+    procedure Solve_Minutes( High, Low : longint ): longint;
+    begin
+     if (bitget(Low,15) = 1 ) then 
+        return(High / 60);
+      else
+        return(bitor( bitand( High, 65535 ), bitshl( Low, 16 )) / 60);
+      end;
+    end_procedure;
+
+    
+program_INT_TO_LOW_HIGH
+-----------------------
+    
+    procedure KHigh( K : cardinal ): real;
+         (* WORD na HighBYTE *)
+            begin
+              return (bitand(32512,K))/256;
+    end_procedure;
+    
+    procedure KLow( K : cardinal ): real;
+             (* WORD na LowBYTE *)
+                begin
+                  return bitand(255,K);
+    end_procedure;
+    
+    
+program RCP
+
+24 znakù
+--------
+
+procedure Name_RCP( var W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11 : integer ): string;
+begin
+  aiRCP_Tmp_pole[0] := W0;
+  aiRCP_Tmp_pole[1] := W1;
+  aiRCP_Tmp_pole[2] := W2;
+  aiRCP_Tmp_pole[3] := W3;
+  aiRCP_Tmp_pole[4] := W4;
+  aiRCP_Tmp_pole[5] := W5;   
+  aiRCP_Tmp_pole[6] := W6;
+  aiRCP_Tmp_pole[7] := W7;
+  aiRCP_Tmp_pole[8] := W8;
+  aiRCP_Tmp_pole[9] := W9;   
+  aiRCP_Tmp_pole[10] := W10;
+  aiRCP_Tmp_pole[11] := W11;
+
+(* Name *)
+for m = 0 to 11 do
+aiRCP_High[m]:=program_INT_TO_LOW_HIGH.KLow(aiRCP_Tmp_pole[m]);
+aiRCP_Low[m]:=program_INT_TO_LOW_HIGH.KHigh(aiRCP_Tmp_pole[m]);
+end;
+
+sRCP_Name:=char(aiRCP_Low[0])+char(aiRCP_High[0])+char(aiRCP_Low[1])+char(aiRCP_High[1])+char(aiRCP_Low[2])+char(aiRCP_High[2])+char(aiRCP_Low[3])+char(aiRCP_High[3])+char(aiRCP_Low[4])+char(aiRCP_High[4])+char(aiRCP_Low[5])+char(aiRCP_High[5])+char(aiRCP_Low[6])+char(aiRCP_High[6])+char(aiRCP_Low[7])+char(aiRCP_High[7])+char(aiRCP_Low[8])+char(aiRCP_High[8])+char(aiRCP_Low[9])+char(aiRCP_High[9])+char(aiRCP_Low[10])+char(aiRCP_High[10])+char(aiRCP_Low[11])+char(aiRCP_High[11]);
+return sRCP_Name;
+end_procedure;
+
+40 znakù
+--------
+
+procedure Name_RCP40( var W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19 : integer ): string;
+begin
+  aiRCP_Tmp_pole[0] := W0;
+  aiRCP_Tmp_pole[1] := W1;
+  aiRCP_Tmp_pole[2] := W2;
+  aiRCP_Tmp_pole[3] := W3;
+  aiRCP_Tmp_pole[4] := W4;
+  aiRCP_Tmp_pole[5] := W5;   
+  aiRCP_Tmp_pole[6] := W6;
+  aiRCP_Tmp_pole[7] := W7;
+  aiRCP_Tmp_pole[8] := W8;
+  aiRCP_Tmp_pole[9] := W9;   
+  aiRCP_Tmp_pole[10] := W10;
+  aiRCP_Tmp_pole[11] := W11;
+  aiRCP_Tmp_pole[12] := W12;
+  aiRCP_Tmp_pole[13] := W13;
+  aiRCP_Tmp_pole[14] := W14;
+  aiRCP_Tmp_pole[15] := W15;
+  aiRCP_Tmp_pole[16] := W16;
+  aiRCP_Tmp_pole[17] := W17;   
+  aiRCP_Tmp_pole[18] := W18;
+  aiRCP_Tmp_pole[19] := W19;
+
+(* Name *)
+for m = 0 to 19 do
+aiRCP_High[m]:=program_INT_TO_LOW_HIGH.KLow(aiRCP_Tmp_pole[m]);
+aiRCP_Low[m]:=program_INT_TO_LOW_HIGH.KHigh(aiRCP_Tmp_pole[m]);
+end;
+
+sRCP_Name := char(aiRCP_Low[0])+char(aiRCP_High[0])+char(aiRCP_Low[1])+char(aiRCP_High[1])+char(aiRCP_Low[2])+char(aiRCP_High[2])+char(aiRCP_Low[3])+char(aiRCP_High[3])+char(aiRCP_Low[4])+char(aiRCP_High[4])+char(aiRCP_Low[5])+char(aiRCP_High[5])+char(aiRCP_Low[6])+char(aiRCP_High[6])+char(aiRCP_Low[7])+char(aiRCP_High[7])+char(aiRCP_Low[8])+char(aiRCP_High[8])+char(aiRCP_Low[9])+char(aiRCP_High[9])+char(aiRCP_Low[10])+char(aiRCP_High[10])+char(aiRCP_Low[11])+char(aiRCP_High[11])+char(aiRCP_Low[12])+char(aiRCP_High[12])+char(aiRCP_Low[13])+char(aiRCP_High[13])+char(aiRCP_Low[14])+char(aiRCP_High[14])+char(aiRCP_Low[15])+char(aiRCP_High[15])+char(aiRCP_Low[16])+char(aiRCP_High[16])+char(aiRCP_Low[17])+char(aiRCP_High[17])+char(aiRCP_Low[18])+char(aiRCP_High[18])+char(aiRCP_Low[19])+char(aiRCP_High[19]);
+return sRCP_Name;
+end_procedure;
+
+
+
+28 znakù :
+----------
+
+procedure Name_RCP( var W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13 : integer ): string;
+begin
+  aiRCP_Tmp_pole[0] := W0;
+  aiRCP_Tmp_pole[1] := W1;
+  aiRCP_Tmp_pole[2] := W2;
+  aiRCP_Tmp_pole[3] := W3;
+  aiRCP_Tmp_pole[4] := W4;
+  aiRCP_Tmp_pole[5] := W5;   
+  aiRCP_Tmp_pole[6] := W6;
+  aiRCP_Tmp_pole[7] := W7;
+  aiRCP_Tmp_pole[8] := W8;
+  aiRCP_Tmp_pole[9] := W9;   
+  aiRCP_Tmp_pole[10] := W10;
+  aiRCP_Tmp_pole[11] := W11;
+  aiRCP_Tmp_pole[12] := W12;
+  aiRCP_Tmp_pole[13] := W13;
+
+(* Name *)
+for m = 0 to 13 do
+aiRCP_High[m]:=program_INT_TO_LOW_HIGH.KLow(aiRCP_Tmp_pole[m]);
+aiRCP_Low[m]:=program_INT_TO_LOW_HIGH.KHigh(aiRCP_Tmp_pole[m]);
+end;
+
+sRCP_Name := char(aiRCP_Low[0])+char(aiRCP_High[0])+char(aiRCP_Low[1])+char(aiRCP_High[1])+char(aiRCP_Low[2])+char(aiRCP_High[2])+char(aiRCP_Low[3])+char(aiRCP_High[3])+char(aiRCP_Low[4])+char(aiRCP_High[4])+char(aiRCP_Low[5])+char(aiRCP_High[5])+char(aiRCP_Low[6])+char(aiRCP_High[6])+char(aiRCP_Low[7])+char(aiRCP_High[7])+char(aiRCP_Low[8])+char(aiRCP_High[8])+char(aiRCP_Low[9])+char(aiRCP_High[9])+char(aiRCP_Low[10])+char(aiRCP_High[10])+char(aiRCP_Low[11])+char(aiRCP_High[11])+char(aiRCP_Low[12])+char(aiRCP_High[12])+char(aiRCP_Low[13])+char(aiRCP_High[13]);
+return sRCP_Name;
+end_procedure;
+    

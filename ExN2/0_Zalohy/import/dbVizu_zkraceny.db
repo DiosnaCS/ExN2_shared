@@ -1,0 +1,45 @@
+﻿DATA_BLOCK "dbVizu"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+NON_RETAIN
+   STRUCT 
+      iSecond : Int;
+      iWMU_Temp : Int;   // 0,1°C      #t
+      iWMU_Ticks : Int;   // dílky      #ar60
+      diAH1_Weight : DInt;   // 1g     #m
+      iAH1_TempSide : Int;   // 0,1°C      #t
+      iPIG1_Pressure : Int;   // 0,01 Bar      #p;c0,01;Bar;ar20
+      iAH1_RCP_No : Int;   // cislo RCP     #ar20
+      usiAH1_RCP_Status : Byte;   // stav     #ar20;tL:HMIStatus2
+      usiAH1_RCP_Step : Byte;   // krok     #ar20;tL:AH_Step
+      sAH1_RCP_Name : String[40];   // jmeno RCP
+      iAH1_RCP_Shower_Step : Int;   // #ar20;tL:Showering
+      iAH1_RCP_TA : Int;   // #ar20
+      diAH1_RCP_Mixture_need : DInt;   // 0,001 kg       #m;c0,001;kg;ar60
+      diAH1_RCP_Mixture_done : DInt;   // 0,001 kg       #m;c0,001;kg;ar20
+      diAH1_RCP_Mixing1_need : DInt;   // 0,016666667 min       #Tmin;c0,016666667;min;ar60
+      diAH1_RCP_Mixing1_done : DInt;   // 0,016666667 min       #Tmin;c0,016666667;min;ar20
+      iAH1_Agit_Fwd_On : Int;   // s       #Ts;c1;s;ar20
+      iAH1_Agit_Fwd_Off : Int;   // s       #Ts;c1;s;ar20
+      iAH1_Agit_Fwd_Speed : Int;   // Hz       #f;c0,1;Hz;ar20
+      usiAH1_RCP_Shower_Icon : Byte;
+      usiAH1_RCP_Filling_Icon : Byte;
+      iAK1_RCP_Cooling_Temp : Int;   // 0,1 °C     #t;c0,1;°C;ar20
+      diAK1_RCP_Cooling_need : DInt;   // 0,00027777778 hr       #Thr;c0,00027777778;hr;ar60
+      diAK1_RCP_Cooling_done : DInt;   // 0,00027777778 hr       #Thr;c0,00027777778 ;hr;ar20
+      diAK1_RCP_Storing_need : DInt;   // 0,00027777778 hr       #Thr;c0,00027777778;hr;ar60
+      diAK1_RCP_Storing_done : DInt;   // 0,00027777778 hr       #Thr;c0,00027777778 ;hr;ar20
+      diAK1_RCP_Age : DInt;   // 0,00027777778 hr       #Thr;c0,00027777778;hr;ar60
+      diAK1_RCP_AgeReady : DInt;   // 0,00027777778 hr       #Thr;c0,00027777778 ;hr;ar20
+      diAK1_BarLength : DInt;   // 0,00027777778 hr       #Thr;c0,00027777778;hr;
+      usiAK1_RCP_ProdStatus : Byte;   // #ar20;tL:Stav_Kvas
+      bAH1_RCP_AutoClean : Bool;
+      bAH1_RepumAuto : Bool;
+      iEnd : Int;
+   END_STRUCT;
+
+
+BEGIN
+
+END_DATA_BLOCK
+

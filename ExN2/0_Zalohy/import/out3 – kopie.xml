@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDbVisuItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DbVisuItem>
+    <sNameInDB>iSecond</sNameInDB>
+    <sNameInTable>iSecond</sNameInTable>
+    <Type>Int</Type>
+    <iOptLen>0</iOptLen>
+    <bArchive>false</bArchive>
+  </DbVisuItem>
+</ArrayOfDbVisuItem>

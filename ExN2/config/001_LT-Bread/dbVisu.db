@@ -1,0 +1,414 @@
+DATA_BLOCK "dbVizu"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+NON_RETAIN
+   STRUCT 
+      iSecond : Int;
+      diWMU_Dose : DInt;   // 0,001 kg      #m
+      diSP_Dose : DInt;   // 0,001 kg      #m
+      diMF1_Weight : DInt;   // 0,001 kg      #m
+      diPF1_Weight : DInt;   // 0,001 kg      #m
+      diPF2_Weight : DInt;   // 0,001 kg      #m
+      diSF1_Weight : DInt;   // 0,001 kg      #m
+      diSF2_Weight : DInt;   // 0,001 kg      #m
+      diSF3_Weight : DInt;   // 0,001 kg      #m
+      iWMU_Temp : Int;   // 0,1°C      #t
+      iMF1_Temp : Int;   // 0,1°C      #t
+      iPF1_Temp : Int;   // 0,1°C      #t
+      iPF2_Temp : Int;   // 0,1°C      #t
+      iSF1_Temp : Int;   // 0,1°C      #t
+      iSF2_Temp : Int;   // 0,1°C      #t
+      iSF3_Temp : Int;   // 0,1°C      #t
+      uMF1 : Struct
+         iRcpNr : Int;   // eíslo receptury      #ar60
+         strRcpName : String[40];
+         usiProcessStatus : Byte;   // #tL:HMIStatus2
+         usiStep : Byte;   // #ar20
+         usiTankStatus : Byte;   // #ar20
+         usiProductStatus : Byte;   // 0=empty, 1=young, 2=usable, 3=old     #ar60;tL:Stav_Kvas
+         Agit : Struct   // #Ts;ar300
+            iFwd_On : Int;   // 1s
+            iFwd_Off : Int;   // 1s
+            iRev_On : Int;   // 1s
+            iRev_Off : Int;   // 1s
+         END_STRUCT;
+         Ico : Struct
+            usiMixture : Byte;
+            usiStarter : Byte;
+            usiFerm1 : Byte;
+            usiFerm2 : Byte;
+            usiStorage : Byte;
+         END_STRUCT;
+         Need : Struct
+            iTA : Int;   // #ar60
+            diAmount : DInt;   // 1g; požadované množství kvasu      #m;ar60
+            iTempWater : Int;   // 0,1°C; teplota vody      #t;ar60
+            diFerm1 : DInt;   // 1s; Doba fermentace 1      #Th
+            diFerm2 : DInt;   // 1s; Doba fermentace 2      #Th
+            diUsing : DInt;   // 1s; doba použitelnosti      #Th
+            diStarter : DInt;   // 1g; dávka starteru      #m;ar60
+            diRest : DInt;   // 1g; dávka zbytku mateeného kvasu      #m;ar60
+            diFlour : DInt;   // 1g; dávka mouky      #m;ar60
+            diWater : DInt;   // 1g; dávka vody      #m;ar60
+            diWaterFlour : DInt;   // 1g; dávka vody+mouky      #m;ar60
+            diAgeMax : DInt;   // 1s; po této dobi je kvas starý (neupotoebitelný)      #Th
+         END_STRUCT;
+         Current : Struct
+            diStarter : DInt;   // 1g; dávka starteru      #m
+            diWaterFlour : DInt;   // 1g; dávka vody+mouky      #m
+            diWater : DInt;   // 1g; dávka vody      #m
+            diFlour : DInt;   // 1g; dávka mouky      #m
+            diFerm1 : DInt;   // 1s; doba fermentace 1      #Th
+            diFerm2 : DInt;   // 1s; doba fermentace 2      #Th
+            diAge : DInt;   // 0,00027777778 hr      #Th
+         END_STRUCT;
+      END_STRUCT;
+      uPF1 : Struct
+         iRcpNr : Int;   // eíslo receptury      #ar60
+         strRcpName : String[40];
+         usiProcessStatus : Byte;   // #tL:HMIStatus2
+         usiStep : Byte;
+         usiTankStatus : Byte;
+         usiProductStatus : Byte;   // 0=empty, 1=young, 2=usable, 3=old     #ar60;tL:Stav_Kvas
+         Agit : Struct   // #Ts;ar300
+            iFwd_On : Int;   // 1s
+            iFwd_Off : Int;   // 1s
+         END_STRUCT;
+         Ico : Struct
+            usiBread : Byte;
+            usiWater : Byte;
+            usiSoakingStop : Byte;
+            usiSoakingMix : Byte;
+            usiFlourDose : Byte;
+            usiFlourMix : Byte;
+            usiMotherdough : Byte;
+            usiFerm1 : Byte;
+            usiFerm2 : Byte;
+            usiRepump : Byte;
+         END_STRUCT;
+         Need : Struct
+            diAmount : DInt;   // 1g; požadované množství kvasu       #m;ar60
+            iTempWater : Int;   // 0,1°C; teplota vody       #t;ar60
+            diMotherdough : DInt;   // 1g; dávka mateeného kvasu       #m;ar60
+            diBread : DInt;   // 1g; dávka chleba       #m;ar60
+            diFlour : DInt;   // 1g; dávka mouky       #m;ar60
+            diFlourAdd : DInt;   // 1g; korekce dávky mouky podle dávky chleba       #m;ar60
+            diWater : DInt;   // 1g; dávka vody       #m;ar60
+            diSoakingStop : DInt;   // 1s; doba namaceni - nemichat       #Tm;ar60
+            diSoakingMix : DInt;   // 1s; doba namaceni - michat      #Tm;ar60
+            diFlourMix : DInt;   // 1s; doba rozmíchání mouky      #Tm;ar60
+            diFerm1 : DInt;   // 1s; Doba fermentace 1      #Th;ar60
+            diFerm2 : DInt;   // 1s; Doba fermentace 2      #Th;ar60
+            diRipen : DInt;   // 1s; doba zrání      #Th
+            diUsing : DInt;   // 1s; doba použitelnosti     #Th
+            diAgeMax : DInt;   // 1s; po této dobi je kvas starý (neupotoebitelný)     #Th
+         END_STRUCT;
+         Current : Struct
+            diMotherdough : DInt;   // 1g; dávka mateeného kvasu        #m
+            diBread : DInt;   // 1g; dávka chleba        #m
+            diFlour : DInt;   // 1g; dávka mouky        #m
+            diWater : DInt;   // 1g; dávka vody        #m
+            diSoakingStop : DInt;   // 1s; doba namaceni - nemichat        #Ts
+            diSoakingMix : DInt;   // 1s; doba namaceni - michat       #Ts
+            diFlourMix : DInt;   // 1s; doba rozmíchání mouky       #Ts
+            diFerm1 : DInt;   // 1s; Doba fermentace 1       #Ts
+            diFerm2 : DInt;   // 1s; Doba fermentace 2       #Ts
+            diRipen : DInt;   // 1s; doba zrání       #Ts
+            diAge : DInt;   // 0,00027777778 hr       #Th
+         END_STRUCT;
+      END_STRUCT;
+      uPF2 : Struct
+         iRcpNr : Int;   // eíslo receptury       #ar60
+         strRcpName : String[40];
+         usiProcessStatus : Byte;   // #tL:HMIStatus2
+         usiStep : Byte;
+         usiTankStatus : Byte;
+         usiProductStatus : Byte;   // 0=empty, 1=young, 2=usable, 3=old     #ar60;tL:Stav_Kvas
+         Agit : Struct   // #Ts;ar300
+            iFwd_On : Int;   // 1s
+            iFwd_Off : Int;   // 1s
+         END_STRUCT;
+         Ico : Struct
+            usiBread : Byte;
+            usiWater : Byte;
+            usiSoakingStop : Byte;
+            usiSoakingMix : Byte;
+            usiFlourDose : Byte;
+            usiFlourMix : Byte;
+            usiMotherdough : Byte;
+            usiFerm1 : Byte;
+            usiFerm2 : Byte;
+            usiRepump : Byte;
+         END_STRUCT;
+         Need : Struct
+            diAmount : DInt;   // 1g; požadované množství kvasu       #m;ar60
+            iTempWater : Int;   // 0,1°C; teplota vody       #t;ar60
+            diMotherdough : DInt;   // 1g; dávka mateeného kvasu       #m;ar60
+            diBread : DInt;   // 1g; dávka chleba       #m;ar60
+            diFlour : DInt;   // 1g; dávka mouky       #m;ar60
+            diFlourAdd : DInt;   // 1g; korekce dávky mouky podle dávky chleba       #m;ar60
+            diWater : DInt;   // 1g; dávka vody       #m;ar60
+            diSoakingStop : DInt;   // 1s; doba namaceni - nemichat       #Tm;ar60
+            diSoakingMix : DInt;   // 1s; doba namaceni - michat      #Tm;ar60
+            diFlourMix : DInt;   // 1s; doba rozmíchání mouky      #Tm;ar60
+            diFerm1 : DInt;   // 1s; Doba fermentace 1      #Th;ar60
+            diFerm2 : DInt;   // 1s; Doba fermentace 2      #Th;ar60
+            diRipen : DInt;   // 1s; doba zrání      #Th
+            diUsing : DInt;   // 1s; doba použitelnosti     #Th
+            diAgeMax : DInt;   // 1s; po této dobi je kvas starý (neupotoebitelný)     #Th
+         END_STRUCT;
+         Current : Struct
+            diMotherdough : DInt;   // 1g; dávka mateeného kvasu        #m
+            diBread : DInt;   // 1g; dávka chleba        #m
+            diFlour : DInt;   // 1g; dávka mouky        #m
+            diWater : DInt;   // 1g; dávka vody        #m
+            diSoakingStop : DInt;   // 1s; doba namaceni - nemichat        #Ts
+            diSoakingMix : DInt;   // 1s; doba namaceni - michat        #Ts
+            diFlourMix : DInt;   // 1s; doba rozmíchání mouky        #Ts
+            diFerm1 : DInt;   // 1s; Doba fermentace 1        #Ts
+            diFerm2 : DInt;   // 1s; Doba fermentace 2        #Ts
+            diRipen : DInt;   // 1s; doba zrání        #Ts
+            diAge : DInt;   // 0,00027777778 hr        #Th
+         END_STRUCT;
+      END_STRUCT;
+      uSF1 : Struct
+         iRcpNr : Int;   // eíslo receptury         #ar60
+         strRcpName : String[40];
+         usiProcessStatus : Byte;   // #tL:HMIStatus2
+         usiStep : Byte;
+         usiTankStatus : Byte;
+         usiProductStatus : Byte;   // 0=empty, 1=young, 2=usable, 3=old     #ar60;tL:Stav_Kvas
+         Agit : Struct   // #Ts;ar300
+            iFwd_On : Int;   // 1s
+            iFwd_Off : Int;   // 1s
+         END_STRUCT;
+         Ico : Struct
+            usiFilling : Byte;
+            usiRipening : Byte;
+            usiStoring : Byte;
+         END_STRUCT;
+         Need : Struct   // #Th
+            diRipen : DInt;
+            diUsing : DInt;
+            diAgeMax : DInt;
+         END_STRUCT;
+         Current : Struct
+            diWeight : DInt;   // 1g; vypoetená hmotnost kvasu ve fermentoru       #m
+            diAge : DInt;   // 0,00027777778 hr      #Th
+         END_STRUCT;
+      END_STRUCT;
+      uSF2 : Struct
+         iRcpNr : Int;   // eíslo receptury         #ar60
+         strRcpName : String[40];
+         usiProcessStatus : Byte;   // #tL:HMIStatus2
+         usiStep : Byte;
+         usiTankStatus : Byte;
+         usiProductStatus : Byte;   // 0=empty, 1=young, 2=usable, 3=old     #ar60;tL:Stav_Kvas
+         Agit : Struct   // #Ts;ar300
+            iFwd_On : Int;   // 1s
+            iFwd_Off : Int;   // 1s
+         END_STRUCT;
+         Ico : Struct
+            usiFilling : Byte;
+            usiRipening : Byte;
+            usiStoring : Byte;
+         END_STRUCT;
+         Need : Struct   // #Th
+            diRipen : DInt;
+            diUsing : DInt;
+            diAgeMax : DInt;
+         END_STRUCT;
+         Current : Struct
+            diWeight : DInt;   // 1g; vypoetená hmotnost kvasu ve fermentoru       #m
+            diAge : DInt;   // 0,00027777778 hr      #Th
+         END_STRUCT;
+      END_STRUCT;
+      uSF3 : Struct
+         iRcpNr : Int;   // eíslo receptury        #ar60
+         strRcpName : String[40];
+         usiProcessStatus : Byte;   // #tL:HMIStatus2
+         usiStep : Byte;
+         usiTankStatus : Byte;   // #tL:
+         usiProductStatus : Byte;   // 0=empty, 1=young, 2=usable, 3=old     #ar60;tL:Stav_Kvas
+         Agit : Struct   // #Ts;ar300
+            iFwd_On : Int;   // 1s
+            iFwd_Off : Int;   // 1s
+         END_STRUCT;
+         Ico : Struct
+            usiFilling : Byte;
+            usiRipening : Byte;
+            usiStoring : Byte;
+         END_STRUCT;
+         Need : Struct   // #Th
+            diRipen : DInt;   // 1s; doba zrání
+            diUsing : DInt;   // 1s; doba použitelnosti
+            diAgeMax : DInt;   // 1s; po této dobi je kvas starý (neupotoebitelný)
+         END_STRUCT;
+         Current : Struct
+            diWeight : DInt;   // 1g; vypoetená hmotnost kvasu ve fermentoru       #m
+            diAge : DInt;   // 0,00027777778 hr      #Th
+         END_STRUCT;
+      END_STRUCT;
+      ClnTankComplete : Struct
+         usiStep : Byte;
+         usiStatus : Byte;   // #tL:HMIstatus2
+         usiTankID : Byte;   // #tL:id_All
+      END_STRUCT;
+      ClnTankDisch : Struct
+         usiStep : Byte;   // #tL:
+         usiStatus : Byte;   // #tL:HMIstatus2
+         usiTankID : Byte;   // #tL:id_All
+      END_STRUCT;
+      DO : Struct
+         usiStatus : Byte;   // #tL:HMIStatus2
+         usiSourceTankID : Byte;   // #tL:TankSF_Dosing
+         usiDestID : Byte;   // #tL:id_All
+         diDoseCurr : DInt;   // #m
+      END_STRUCT;
+      Pipe1 : Struct   // MF->PF
+         usiStatus : Byte;   // #tL:Status_ST
+         usiSrcTankID : Byte;   // #tL:TankMF
+         usiDestTankID : Byte;   // #tL:DestPipe1_MF->PF
+         diDoseCurr : DInt;   // #m
+         diDoseNeed : DInt;   // #m;ar60
+      END_STRUCT;
+      Pipe2 : Struct   // PF->SF
+         usiStatus : Byte;   // #tL:Status_ST
+         usiSrcTankID : Byte;   // #tL:TankPF
+         usiDestTankID : Byte;   // #tL:DestPipe2_PF->SF_AutCtrl
+         diDoseCurr : DInt;   // #m
+         diDoseNeed : DInt;   // #m;ar60
+      END_STRUCT;
+      Pipe3 : Struct   // SF->
+         usiStatus : Byte;   // #tL:Status_ST
+         usiSrcTankID : Byte;   // #tL:TankSF_Dosing
+         usiDestTankID : Byte;   // #tL:DestOutdosing
+         diDoseCurr : DInt;   // #m
+         diDoseNeed : DInt;   // #m;ar60
+      END_STRUCT;
+      ClnPipeTanks : Struct
+         usiStatus : Byte;   // #tL:HMIstatus2
+         usiSrcTankID : Byte;   // #tL:TankAll
+         usiDestTankID : Byte;   // #tL:TankAll
+      END_STRUCT;
+      ClnPipeOut : Struct
+         usiStatus : Byte;   // #tL:HMIstatus2
+         usiSrcTankID : Byte;   // #tL:TankSF
+      END_STRUCT;
+      uMF1_Act : Struct
+         usiFlour_Y1 : USInt;
+         usiClnWater_Y2 : USInt;
+         usiTechWater_Y3 : USInt;
+         usiBottom_Y4 : USInt;
+         usiTransfer_Y5 : USInt;
+         usiGully_Y6 : USInt;
+         usiAgit_M1 : USInt;
+         usiPump_M2 : USInt;
+      END_STRUCT;
+      uPF1_Act : Struct
+         usiFlour_Y1 : USInt;
+         usiClnWater_Y2 : USInt;
+         usiTechWater_Y3 : USInt;
+         usiInput_Y4 : USInt;
+         usiTransfer_Y5 : USInt;
+         usiGully_Y6 : USInt;
+         usiAgit_M1 : USInt;
+         usiPump_M2 : USInt;
+      END_STRUCT;
+      uPF2_Act : Struct
+         usiFlour_Y1 : USInt;
+         usiClnWater_Y2 : USInt;
+         usiTechWater_Y3 : USInt;
+         usiInput_Y4 : USInt;
+         usiTransfer_Y5 : USInt;
+         usiGully_Y6 : USInt;
+         usiAgit_M1 : USInt;
+         usiPump_M2 : USInt;
+      END_STRUCT;
+      uSF1_Act : Struct
+         usiClnWater_Y1 : USInt;
+         usiInput_Y2 : USInt;
+         usiTransfer_Y3 : USInt;
+         usiGully_Y4 : USInt;
+         usiAgit_M1 : USInt;
+         usiRes : USInt;
+      END_STRUCT;
+      uSF2_Act : Struct
+         usiClnWater_Y1 : USInt;
+         usiInput_Y2 : USInt;
+         usiTransfer_Y3 : USInt;
+         usiGully_Y4 : USInt;
+         usiAgit_M1 : USInt;
+         usiRes : USInt;
+      END_STRUCT;
+      uSF3_Act : Struct
+         usiClnWater_Y1 : USInt;
+         usiInput_Y2 : USInt;
+         usiTransfer_Y3 : USInt;
+         usiGully_Y4 : USInt;
+         usiAgit_M1 : USInt;
+         usiRes : USInt;
+      END_STRUCT;
+      usiRes420 : USInt;
+      usiMF1_Dest : USInt;   // #tL:DestPipe1_MF->PF
+      usiPF1_Dest : USInt;   // #tL:DestPipe2_PF->SF_AutCtrl
+      usiPF2_Dest : USInt;   // #tL:DestPipe2_PF->SF_AutCtrl
+      iRes_422_Low : Int;
+      iPF1_RCP_TA : Int;   // #ar60
+      iPF2_RCP_TA : Int;   // #ar60
+      iRez_425 : Int;
+      iRez_426 : Int;
+      iRez_427 : Int;
+      iRez_428 : Int;
+      iRez_429 : Int;
+      bMF1_Lid : Bool;   // #tL:Lid
+      bPF1_Lid : Bool;   // #tL:Lid
+      bPF2_Lid : Bool;   // #tL:Lid
+      bSF1_Lid : Bool;   // #tL:Lid
+      bSF2_Lid : Bool;   // #tL:Lid
+      bSF3_Lid : Bool;   // #tL:Lid
+      bSF1_NotEmpty : Bool;   // #tL:Empty
+      bSF2_NotEmpty : Bool;   // #tL:Empty
+      bSF3_NotEmpty : Bool;   // #tL:Empty
+      bPF1_RepumpAuto : Bool;   // #tL:Repump
+      bPF2_RepumpAuto : Bool;   // #tL:Repump
+      uMF1_TimeBar : Struct   // #Th;arNone
+         diReady : DInt;
+         diMax : DInt;
+         diLength : DInt;
+      END_STRUCT;
+      uPF1_TimeBar : Struct   // #Th
+         diReady : DInt;
+         diMax : DInt;
+         diLength : DInt;
+      END_STRUCT;
+      uPF2_TimeBar : Struct   // #Th
+         diReady : DInt;
+         diMax : DInt;
+         diLength : DInt;
+      END_STRUCT;
+      uSF1_TimeBar : Struct   // #Th
+         diReady : DInt;
+         diMax : DInt;
+         diLength : DInt;
+      END_STRUCT;
+      uSF2_TimeBar : Struct   // #Th
+         diReady : DInt;
+         diMax : DInt;
+         diLength : DInt;
+      END_STRUCT;
+      uSF3_TimeBar : Struct   // #Th
+         diReady : DInt;
+         diMax : DInt;
+         diLength : DInt;
+      END_STRUCT;
+      rShortReal : Real;
+      rLongReal : LReal;
+      iEnd : Int;
+   END_STRUCT;
+
+
+BEGIN
+
+END_DATA_BLOCK
+

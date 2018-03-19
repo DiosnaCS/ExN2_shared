@@ -1,0 +1,415 @@
+DATA_BLOCK "dbVizu"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+NON_RETAIN
+   STRUCT 
+      iSecond : Int;
+      iWMU_Temp : Int;   // 0,1°C
+      iWMU_WaterValve : Int;   // 0,1%
+      iWMU_Ticks : Int;   // dílky
+      diWMU_Dose : DInt;   // 1g
+      diFF1_Weight : DInt;   // 1g
+      diSF1_Weight : DInt;   // 1g
+      diSF2_Weight : DInt;   // 1g
+      diSF3_Weight : DInt;   // 1g
+      diSF4_Weight : DInt;   // 1g
+      diSF5_Weight : DInt;   // 1g
+      diSF6_Weight : DInt;   // 1g
+      iMP_Speed : Int;   // 0.1Hz
+      iMP_ValvePos : Int;   // 0.1%
+      iMP_Temp : Int;   // 0,1°C
+      iSF1_TempSide : Int;   // 0,1°C
+      iSF1_TempBottom : Int;   // 0,1°C
+      iSF2_TempSide : Int;   // 0,1°C
+      iSF2_TempBottom : Int;   // 0,1°C
+      iSF3_TempSide : Int;   // 0,1°C
+      iSF3_TempBottom : Int;   // 0,1°C
+      iSF4_TempSide : Int;   // 0,1°C
+      iSF4_TempBottom : Int;   // 0,1°C
+      iSF5_TempSide : Int;   // 0,1°C
+      iSF5_TempBottom : Int;   // 0,1°C
+      iSF6_TempSide : Int;   // 0,1°C
+      iSF6_TempBottom : Int;   // 0,1°C
+      iMP_Pressure : Int;   // 0,01 Bar
+      iPIG1_Pressure : Int;   // 0,01 Bar
+      iPIG2_Pressure : Int;   // 0,01 Bar
+      iDP1_Pressure : Int;   // 0,01 Bar
+      iDP2_Pressure : Int;   // 0,01 Bar
+      iDP3_Pressure : Int;   // 0,01 Bar
+      iCLN_Pump1_Pressure : Int;   // 0,01 Bar
+      iCLN_Pump2_Pressure : Int;   // 0,01 Bar
+      usiMP_Pump : Byte;
+      usiMP_Status : Byte;
+      usiMP_Flour_Status : Byte;
+      usiMP_Water_Status : Byte;
+      diMP_FlourFlow_need : DInt;   // 0,1kg/min
+      diMP_FlourFlow_curr : DInt;   // 0,1kg/min
+      diMP_WaterFlow_need : DInt;   // 0,1kg/min
+      diMP_WaterFlow_curr : DInt;   // 0,1kg/min
+      iMP_WaterTemp_need : Int;   // 0,1°C
+      iMP_WaterTemp_curr : Int;   // 0,1°C
+      diMP_FlourTotal_need : DInt;   // 1g
+      diMP_FlourTotal_curr : DInt;   // 1g
+      diMP_WaterTotal_need : DInt;   // 1g
+      diMP_WaterTotal_curr : DInt;   // 1g
+      diMP_HooperWeight : DInt;
+      iDP1_Speed : Int;   // 0,1Hz
+      iDP2_Speed : Int;   // 0,1Hz
+      iDP3_Speed : Int;   // 0,1Hz
+      iMP_Owner : Int;
+      usiMP_Step : Byte;
+      usiMP_Valve_Flour : Byte;
+      usiMP_Valve_ProdToX : Byte;
+      usiMP_Valve_ProdFromXToOut : Byte;
+      iMP_Curent : Int;
+      iSF1_RCP_No : Int;   // cislo RCP
+      usiSF1_RCP_Status : Byte;   // stav
+      usiSF1_RCP_Step : Byte;   // krok
+      sSF1_RCP_Name : String[40];   // jmeno RCP
+      diSF1_RCP_Starter_need : DInt;   // 1g
+      diSF1_RCP_Starter_done : DInt;   // 1g
+      diSF1_RCP_Mother_need : DInt;   // 1g
+      diSF1_RCP_Mother_done : DInt;   // 1g
+      diSF1_RCP_Amount_need : DInt;   // 1g
+      diSF1_RCP_Amount_done : DInt;   // 1g
+      iSF1_RCP_TA : Int;
+      diSF1_RCP_Ferment_need : DInt;   // 0,00027777778 hr
+      diSF1_RCP_Ferment_done : DInt;   // 0,00027777778 hr
+      diSF1_RCP_Cooling_need : DInt;   // 0,00027777778 hr
+      diSF1_RCP_Cooling_done : DInt;   // 0,00027777778 hr
+      iSF1_RCP_Res1 : Int;   // 0,1 °C
+      iSF1_RCP_CoolingTemp_need : Int;   // 0,1 °C
+      iSF1_RCP_CoolingTemp_curr : Int;   // 0,1 °C
+      iSF1_RCP_Res2 : Int;   // 0,1 °C
+      usiSF1_RCP_CleanShower_Icon : Byte;
+      usiSF1_RCP_PreCleanMP_Icon : Byte;
+      usiSF1_RCP_Mother_Icon : Byte;
+      usiSF1_RCP_Filling_Icon : Byte;
+      usiSF1_RCP_Pig_Icon : Byte;
+      usiSF1_RCP_PostCleanMP_Icon : Byte;
+      usiSF1_RCP_Ferment_Icon : Byte;
+      usiSF1_RCP_Cooling_Icon : Byte;
+      usiSF1_RCP_Using_Icon : Byte;
+      usiSF1_RCP_TankClean_Icon : Byte;
+      usiSF1_RCP_Agit : Byte;
+      usiSF1_RCP_ProdStatus : Byte;   // stav produktu 1 = young, 2=usable, 3=too old
+      usiSF1_Valve_Water : Byte;
+      usiSF1_Valve_Cooling : Byte;
+      usiSF1_Valve_Output : Byte;
+      usiSF1_AgitStyle : Byte;
+      diSF1_RCP_Age : DInt;   // 0,00027777778 hr
+      diSF1_RCP_AgeReady : DInt;   // 0,00027777778 hr
+      diSF1_RCP_MaxAge : DInt;   // 0,00027777778 hr
+      diSF1_Res1 : DInt;
+      diSF1_Res2 : DInt;
+      iSF1_Res1 : Int;
+      iSF1_Res2 : Int;
+      iSF2_RCP_No : Int;   // cislo RCP
+      usiSF2_RCP_Status : Byte;   // stav
+      usiSF2_RCP_Step : Byte;   // krok
+      sSF2_RCP_Name : String[40];   // jmeno RCP
+      diSF2_RCP_Starter_need : DInt;   // 1g
+      diSF2_RCP_Starter_done : DInt;   // 1g
+      diSF2_RCP_Mother_need : DInt;   // 1g
+      diSF2_RCP_Mother_done : DInt;   // 1g
+      diSF2_RCP_Amount_need : DInt;   // 1g
+      diSF2_RCP_Amount_done : DInt;   // 1g
+      iSF2_RCP_TA : Int;
+      diSF2_RCP_Ferment_need : DInt;   // 0,00027777778 hr
+      diSF2_RCP_Ferment_done : DInt;   // 0,00027777778 hr
+      diSF2_RCP_Cooling_need : DInt;   // 0,00027777778 hr
+      diSF2_RCP_Cooling_done : DInt;   // 0,00027777778 hr
+      iSF2_RCP_Res1 : Int;   // 0,1 °C
+      iSF2_RCP_CoolingTemp_need : Int;   // 0,1 °C
+      iSF2_RCP_CoolingTemp_curr : Int;   // 0,1 °C
+      iSF2_RCP_Res2 : Int;   // 0,1 °C
+      usiSF2_RCP_CleanShower_Icon : Byte;
+      usiSF2_RCP_PreCleanMP_Icon : Byte;
+      usiSF2_RCP_Mother_Icon : Byte;
+      usiSF2_RCP_Filling_Icon : Byte;
+      usiSF2_RCP_Pig_Icon : Byte;
+      usiSF2_RCP_PostCleanMP_Icon : Byte;
+      usiSF2_RCP_Ferment_Icon : Byte;
+      usiSF2_RCP_Cooling_Icon : Byte;
+      usiSF2_RCP_Using_Icon : Byte;
+      usiSF2_RCP_TankClean_Icon : Byte;
+      usiSF2_RCP_Agit : Byte;
+      usiSF2_RCP_ProdStatus : Byte;   // stav produktu 1 = young, 2=usable, 3=too old
+      usiSF2_Valve_Water : Byte;
+      usiSF2_Valve_Cooling : Byte;
+      usiSF2_Valve_Output : Byte;
+      usiSF2_AgitStyle : Byte;
+      diSF2_RCP_Age : DInt;   // 0,00027777778 hr
+      diSF2_RCP_AgeReady : DInt;   // 0,00027777778 hr
+      diSF2_RCP_MaxAge : DInt;   // 0,00027777778 hr
+      diSF2_Res1 : DInt;
+      diSF2_Res2 : DInt;
+      iSF2_Res1 : Int;
+      iSF2_Res2 : Int;
+      iSF3_RCP_No : Int;   // cislo RCP
+      usiSF3_RCP_Status : Byte;   // stav
+      usiSF3_RCP_Step : Byte;   // krok
+      sSF3_RCP_Name : String[40];   // jmeno RCP
+      diSF3_RCP_Starter_need : DInt;   // 1g
+      diSF3_RCP_Starter_done : DInt;   // 1g
+      diSF3_RCP_Mother_need : DInt;   // 1g
+      diSF3_RCP_Mother_done : DInt;   // 1g
+      diSF3_RCP_Amount_need : DInt;   // 1g
+      diSF3_RCP_Amount_done : DInt;   // 1g
+      iSF3_RCP_TA : Int;
+      diSF3_RCP_Ferment_need : DInt;   // 0,00027777778 hr
+      diSF3_RCP_Ferment_done : DInt;   // 0,00027777778 hr
+      diSF3_RCP_Cooling_need : DInt;   // 0,00027777778 hr
+      diSF3_RCP_Cooling_done : DInt;   // 0,00027777778 hr
+      iSF3_RCP_Res1 : Int;   // 0,1 °C
+      iSF3_RCP_CoolingTemp_need : Int;   // 0,1 °C
+      iSF3_RCP_CoolingTemp_curr : Int;   // 0,1 °C
+      iSF3_RCP_Res2 : Int;   // 0,1 °C
+      usiSF3_RCP_CleanShower_Icon : Byte;
+      usiSF3_RCP_PreCleanMP_Icon : Byte;
+      usiSF3_RCP_Mother_Icon : Byte;
+      usiSF3_RCP_Filling_Icon : Byte;
+      usiSF3_RCP_Pig_Icon : Byte;
+      usiSF3_RCP_PostCleanMP_Icon : Byte;
+      usiSF3_RCP_Ferment_Icon : Byte;
+      usiSF3_RCP_Cooling_Icon : Byte;
+      usiSF3_RCP_Using_Icon : Byte;
+      usiSF3_RCP_TankClean_Icon : Byte;
+      usiSF3_RCP_Agit : Byte;
+      usiSF3_RCP_ProdStatus : Byte;   // stav produktu 1 = young, 2=usable, 3=too old
+      usiSF3_Valve_Water : Byte;
+      usiSF3_Valve_Cooling : Byte;
+      usiSF3_Valve_Output : Byte;
+      usiSF3_AgitStyle : Byte;
+      diSF3_RCP_Age : DInt;   // 0,00027777778 hr
+      diSF3_RCP_AgeReady : DInt;   // 0,00027777778 hr
+      diSF3_RCP_MaxAge : DInt;   // 0,00027777778 hr
+      diSF3_Res1 : DInt;
+      diSF3_Res2 : DInt;
+      iSF3_Res1 : Int;
+      iSF3_Res2 : Int;
+      iSF4_RCP_No : Int;   // cislo RCP
+      usiSF4_RCP_Status : Byte;   // stav
+      usiSF4_RCP_Step : Byte;   // krok
+      sSF4_RCP_Name : String[40];   // jmeno RCP
+      diSF4_RCP_Starter_need : DInt;   // 1g
+      diSF4_RCP_Starter_done : DInt;   // 1g
+      diSF4_RCP_Mother_need : DInt;   // 1g
+      diSF4_RCP_Mother_done : DInt;   // 1g
+      diSF4_RCP_Amount_need : DInt;   // 1g
+      diSF4_RCP_Amount_done : DInt;   // 1g
+      iSF4_RCP_TA : Int;
+      diSF4_RCP_Ferment_need : DInt;   // 0,00027777778 hr
+      diSF4_RCP_Ferment_done : DInt;   // 0,00027777778 hr
+      diSF4_RCP_Cooling_need : DInt;   // 0,00027777778 hr
+      diSF4_RCP_Cooling_done : DInt;   // 0,00027777778 hr
+      iSF4_RCP_Res1 : Int;   // 0,1 °C
+      iSF4_RCP_CoolingTemp_need : Int;   // 0,1 °C
+      iSF4_RCP_CoolingTemp_curr : Int;   // 0,1 °C
+      iSF4_RCP_Res2 : Int;   // 0,1 °C
+      usiSF4_RCP_CleanShower_Icon : Byte;
+      usiSF4_RCP_PreCleanMP_Icon : Byte;
+      usiSF4_RCP_Mother_Icon : Byte;
+      usiSF4_RCP_Filling_Icon : Byte;
+      usiSF4_RCP_Pig_Icon : Byte;
+      usiSF4_RCP_PostCleanMP_Icon : Byte;
+      usiSF4_RCP_Ferment_Icon : Byte;
+      usiSF4_RCP_Cooling_Icon : Byte;
+      usiSF4_RCP_Using_Icon : Byte;
+      usiSF4_RCP_TankClean_Icon : Byte;
+      usiSF4_RCP_Agit : Byte;
+      usiSF4_RCP_ProdStatus : Byte;   // stav produktu 1 = young, 2=usable, 3=too old
+      usiSF4_Valve_Water : Byte;
+      usiSF4_Valve_Cooling : Byte;
+      usiSF4_Valve_Output : Byte;
+      usiSF4_AgitStyle : Byte;
+      diSF4_RCP_Age : DInt;   // 0,00027777778 hr
+      diSF4_RCP_AgeReady : DInt;   // 0,00027777778 hr
+      diSF4_RCP_MaxAge : DInt;   // 0,00027777778 hr
+      diSF4_Res1 : DInt;
+      diSF4_Res2 : DInt;
+      iSF4_Res1 : Int;
+      iSF4_Res2 : Int;
+      iSF5_RCP_No : Int;   // cislo RCP
+      usiSF5_RCP_Status : Byte;   // stav
+      usiSF5_RCP_Step : Byte;   // krok
+      sSF5_RCP_Name : String[40];   // jmeno RCP
+      diSF5_RCP_Starter_need : DInt;   // 1g
+      diSF5_RCP_Starter_done : DInt;   // 1g
+      diSF5_RCP_Mother_need : DInt;   // 1g
+      diSF5_RCP_Mother_done : DInt;   // 1g
+      diSF5_RCP_Amount_need : DInt;   // 1g
+      diSF5_RCP_Amount_done : DInt;   // 1g
+      iSF5_RCP_TA : Int;
+      diSF5_RCP_Ferment_need : DInt;   // 0,00027777778 hr
+      diSF5_RCP_Ferment_done : DInt;   // 0,00027777778 hr
+      diSF5_RCP_Cooling_need : DInt;   // 0,00027777778 hr
+      diSF5_RCP_Cooling_done : DInt;   // 0,00027777778 hr
+      iSF5_RCP_Res1 : Int;   // 0,1 °C
+      iSF5_RCP_CoolingTemp_need : Int;   // 0,1 °C
+      iSF5_RCP_CoolingTemp_curr : Int;   // 0,1 °C
+      iSF5_RCP_Res2 : Int;   // 0,1 °C
+      usiSF5_RCP_CleanShower_Icon : Byte;
+      usiSF5_RCP_PreCleanMP_Icon : Byte;
+      usiSF5_RCP_Mother_Icon : Byte;
+      usiSF5_RCP_Filling_Icon : Byte;
+      usiSF5_RCP_Pig_Icon : Byte;
+      usiSF5_RCP_PostCleanMP_Icon : Byte;
+      usiSF5_RCP_Ferment_Icon : Byte;
+      usiSF5_RCP_Cooling_Icon : Byte;
+      usiSF5_RCP_Using_Icon : Byte;
+      usiSF5_RCP_TankClean_Icon : Byte;
+      usiSF5_RCP_Agit : Byte;
+      usiSF5_RCP_ProdStatus : Byte;   // stav produktu 1 = young, 2=usable, 3=too old
+      usiSF5_Valve_Water : Byte;
+      usiSF5_Valve_Cooling : Byte;
+      usiSF5_Valve_Output : Byte;
+      usiSF5_AgitStyle : Byte;
+      diSF5_RCP_Age : DInt;   // 0,00027777778 hr
+      diSF5_RCP_AgeReady : DInt;   // 0,00027777778 hr
+      diSF5_RCP_MaxAge : DInt;   // 0,00027777778 hr
+      diSF5_Res1 : DInt;
+      diSF5_Res2 : DInt;
+      iSF5_Res1 : Int;
+      iSF5_Res2 : Int;
+      iSF6_RCP_No : Int;   // cislo RCP
+      usiSF6_RCP_Status : Byte;   // stav
+      usiSF6_RCP_Step : Byte;   // krok
+      sSF6_RCP_Name : String[40];   // jmeno RCP
+      diSF6_RCP_Starter_need : DInt;   // 1g
+      diSF6_RCP_Starter_done : DInt;   // 1g
+      diSF6_RCP_Mother_need : DInt;   // 1g
+      diSF6_RCP_Mother_done : DInt;   // 1g
+      diSF6_RCP_Amount_need : DInt;   // 1g
+      diSF6_RCP_Amount_done : DInt;   // 1g
+      iSF6_RCP_TA : Int;
+      diSF6_RCP_Ferment_need : DInt;   // 0,00027777778 hr
+      diSF6_RCP_Ferment_done : DInt;   // 0,00027777778 hr
+      diSF6_RCP_Cooling_need : DInt;   // 0,00027777778 hr
+      diSF6_RCP_Cooling_done : DInt;   // 0,00027777778 hr
+      iSF6_RCP_Res1 : Int;   // 0,1 °C
+      iSF6_RCP_CoolingTemp_need : Int;   // 0,1 °C
+      iSF6_RCP_CoolingTemp_curr : Int;   // 0,1 °C
+      iSF6_RCP_Res2 : Int;   // 0,1 °C
+      usiSF6_RCP_CleanShower_Icon : Byte;
+      usiSF6_RCP_PreCleanMP_Icon : Byte;
+      usiSF6_RCP_Mother_Icon : Byte;
+      usiSF6_RCP_Filling_Icon : Byte;
+      usiSF6_RCP_Pig_Icon : Byte;
+      usiSF6_RCP_PostCleanMP_Icon : Byte;
+      usiSF6_RCP_Ferment_Icon : Byte;
+      usiSF6_RCP_Cooling_Icon : Byte;
+      usiSF6_RCP_Using_Icon : Byte;
+      usiSF6_RCP_TankClean_Icon : Byte;
+      usiSF6_RCP_Agit : Byte;
+      usiSF6_RCP_ProdStatus : Byte;   // stav produktu 1 = young, 2=usable, 3=too old
+      usiSF6_Valve_Water : Byte;
+      usiSF6_Valve_Cooling : Byte;
+      usiSF6_Valve_Output : Byte;
+      usiSF6_AgitStyle : Byte;
+      diSF6_RCP_Age : DInt;   // 0,00027777778 hr
+      diSF6_RCP_AgeReady : DInt;   // 0,00027777778 hr
+      diSF6_RCP_MaxAge : DInt;   // 0,00027777778 hr
+      diSF6_Res1 : DInt;
+      diSF6_Res2 : DInt;
+      iSF6_Res1 : Int;
+      iSF6_Res2 : Int;
+      usiCleanTank_Status : Byte;
+      usiCleanTank_Step : Byte;
+      usiCleanTank_TankId : Byte;
+      usiCleanTank_Owner : Byte;
+      usiCleanTankMan_Status : Byte;
+      usiCleanTankMan_Step : Byte;
+      usiCleanTankMan_TankId : Byte;
+      usiCleanTankMan_Owner : Byte;
+      usiCleanTankShower_Status : Byte;
+      usiCleanTankShower_Step : Byte;
+      usiCleanTankShower_TankId : Byte;
+      usiCleanTankShower_Owner : Byte;
+      usiCleanTankChem_Status : Byte;
+      usiCleanTankChem_Step : Byte;
+      usiCleanTankChem_TankId : Byte;
+      usiCleanTankChem_Owner : Byte;
+      usiDischTank_Status : Byte;
+      usiDischTank_Step : Byte;
+      usiDischTank_TankId : Byte;
+      usiDischTank_Owner : Byte;
+      usiCleanPipe1_Status : Byte;
+      usiCleanPipe1_Step : Byte;
+      usiCleanPipe1_Owner : Byte;
+      usiCleanPipe2_Status : Byte;
+      usiCleanPipe2_Step : Byte;
+      usiCleanPipe2_Owner : Byte;
+      usiPipe1_Status : Byte;
+      usiPipe1_Step : Byte;
+      usiPipe1_Dest : Byte;
+      usiPipe1_Owner : Byte;
+      diPipe1_NeedAmnt : DInt;
+      diPipe1_CurrAmnt : DInt;
+      usiDO_Step : Byte;
+      usiDO_SelTank : Byte;
+      usiDO_MD_Step : Byte;
+      usiDO_MD_Status : Byte;
+      usiDO_MD_Dest : Byte;
+      usiDO_MD_Owner : Byte;
+      diDO_MD_NeedAmnt : DInt;
+      diDO_MD_CurrAmnt : DInt;
+      usiPig1_Status : Byte;
+      usiPig1_Step : Byte;
+      usiPig1_LastPos : Byte;
+      usiPig1_Dest : Byte;
+      usiPig1_Owner : Byte;
+      usiPig2_Status : Byte;
+      usiPig2_Step : Byte;
+      usiPig2_LastPos : Byte;
+      usiPig2_Dest : Byte;
+      usiPig2_Owner : Byte;
+      iValidTemp_SF1 : Int;   // valid temperature
+      iValidTemp_SF2 : Int;
+      iValidTemp_SF3 : Int;
+      iValidTemp_SF4 : Int;
+      iValidTemp_SF5 : Int;
+      iValidTemp_SF6 : Int;
+      iDP1_Owner : Int;
+      iDP2_Owner : Int;
+      iDP3_Owner : Int;
+      iRes4 : Int;
+      bDO_AutoSelect : Bool;
+      bMP_LidOpen : Bool;
+      bSF1_LidOpen : Bool;
+      bSF2_LidOpen : Bool;
+      bSF3_LidOpen : Bool;
+      bSF4_LidOpen : Bool;
+      bSF5_LidOpen : Bool;
+      bSF6_LidOpen : Bool;
+      bSF1_Cool : Bool;
+      bSF2_Cool : Bool;
+      bSF3_Cool : Bool;
+      bSF4_Cool : Bool;
+      bSF5_Cool : Bool;
+      bSF6_Cool : Bool;
+      bLine1_Request : Bool;
+      usiDO_Dest : Byte;
+      usiDO_LN1_Step : Byte;
+      usiDO_LN1_Status : Byte;
+      usiDO_LN1_Mode : Byte;   // 0 - - -, 1=from Esteve, 2=from Buttons
+      diDO_LN1_NeedAmnt : DInt;
+      diDO_LN1_CurrAmnt : DInt;
+      usiDO_DS1_Step : Byte;
+      usiDO_DS1_Status : Byte;
+      diDO_DS1_NeedAmnt : DInt;
+      diDO_DS1_CurrAmnt : DInt;
+      iEnd : Int;   // reserve
+   END_STRUCT;
+
+
+BEGIN
+   iRes4 := 0;
+   bSF2_Cool := false;
+   bSF3_Cool := false;
+   bSF4_Cool := false;
+   bSF5_Cool := false;
+   bSF6_Cool := false;
+
+END_DATA_BLOCK
+

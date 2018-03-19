@@ -1,0 +1,47 @@
+﻿<Window x:Class="ExN2.Datablock.Dlg_ArchCompare"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExN2.Datablock"
+        mc:Ignorable="d"
+        Title="Comparison results (PLC / SQL)" Height="600" Width="600">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Margin="0" Grid.Column="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+             <ListView Grid.Row="0" x:Name="listView" HorizontalAlignment="Stretch" Margin="5" FontSize="11" >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="No." Width="30" DisplayMemberBinding="{Binding iOrderNo}" />
+                        <GridViewColumn Header="Datablock" Width="180" DisplayMemberBinding="{Binding view_PlcItem}" />
+                        <GridViewColumn Header="Diff type" Width="80"  DisplayMemberBinding="{Binding view_DiffType}" />
+                        <GridViewColumn Header="SQL table" Width="180" DisplayMemberBinding="{Binding view_SQLitem}"  />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <TextBox x:Name="textMsg" Grid.Row="1" TextWrapping="Wrap" Text="- result -" FontSize="10" BorderThickness="0" Margin="5" VerticalAlignment="Stretch" Background="AliceBlue"/>
+
+        </Grid>
+
+        <StackPanel Grid.Column="1" Orientation="Vertical" Margin="5" >
+            <TextBox Text="File ops." BorderThickness="0" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <Button HorizontalAlignment="Stretch" Margin="5" Click="btnMakeSql_Click" >
+                <TextBlock>Show<LineBreak/>SQL cmd</TextBlock>
+            </Button>
+            <Button x:Name="btnExec"  HorizontalAlignment="Stretch" Margin="5" Click="btnExecSql_Click" >
+                <TextBlock>Execute<LineBreak/>SQL cmd</TextBlock>
+            </Button>
+            <Button Content="Close" HorizontalAlignment="Stretch" Margin="5" Click="btnCancel_Close" />
+        </StackPanel>
+
+    </Grid>
+</Window>

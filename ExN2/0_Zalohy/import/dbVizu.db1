@@ -1,0 +1,191 @@
+DATA_BLOCK "dbVizu"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+NON_RETAIN
+   STRUCT 
+      iSecond : Int;   // #arNone
+      iWMU_Temp : Int;   // 0,1°C      #t
+      iWMU_Ticks : Int;   // dílky      #ar60
+      diAH1_Weight : DInt;   // 1g     #m
+      diAK1_Weight : DInt;   // 1g     #m
+      diAK2_Weight : DInt;   // 1g     #m
+      iAH1_TempSide : Int;   // 0,1°C      #t
+      iAH1_TempBottom : Int;   // 0,1°C      #t
+      iAK1_TempSide : Int;   // 0,1°C      #t
+      iAK1_TempBottom : Int;   // 0,1°C      #t
+      iAK2_TempSide : Int;   // 0,1°C      #t
+      iAK2_TempBottom : Int;   // 0,1°C      #t
+      iPIG1_Pressure : Int;   // 0,01 Bar      #p
+      iAK1_Pressure : Int;   // 0,01 Bar      #p
+      iAK2_Pressure : Int;   // 0,01 Bar      #p
+      iAH1_RCP_No : Int;   // cislo RCP     #ar60
+      usiAH1_RCP_Status : Byte;   // stav     #ar20;tL:HMIStatus2
+      usiAH1_RCP_Step : Byte;   // krok     #ar20;tL:AH_Step
+      sAH1_RCP_Name : String[40];   // jmeno RCP       #arNone
+      diAH1_RCP_TotalAmount : DInt;   // 0,001 kg     #m
+      iAH1_RCP_Shower_Step : Int;   // #ar20;tL:Showering
+      iAH1_RCP_TA : Int;   // #ar60
+      diAH1_RCP_Mixture_need : DInt;   // 0,001 kg       #m;ar60
+      diAH1_RCP_Mixture_done : DInt;   // 0,001 kg       #m
+      diAH1_RCP_Mixing1_need : DInt;   // 0,016666667 min       #Tm;ar60
+      diAH1_RCP_Mixing1_done : DInt;   // 0,016666667 min       #Tm
+      diAH1_RCP_ManComp1_need : DInt;   // 0,001 kg       #m;ar60
+      diAH1_RCP_ManComp1_done : DInt;   // 0,001 kg       #m
+      diAH1_RCP_Mixing2_need : DInt;   // 0,016666667 min       #Tm;ar60
+      diAH1_RCP_Mixing2_done : DInt;   // 0,016666667 min       #Tm
+      diAH1_RCP_AutComp1_need : DInt;   // 0,001 kg       #m;ar60
+      diAH1_RCP_AutComp1_done : DInt;   // 0,001 kg       #m
+      diAH1_RCP_Mixing3_need : DInt;   // 0,016666667 min       #Tm;ar60
+      diAH1_RCP_Mixing3_done : DInt;   // 0,016666667 min       #Tm
+      iAH1_RCP_Ferm1_Temp : Int;   // 0,1 °C     #t
+      diAH1_RCP_Ferment1_need : DInt;   // 0,00027777778 hr       #Th
+      diAH1_RCP_Ferment1_done : DInt;   // 0,00027777778 hr       #Th
+      diAH1_RCP_ManComp2_need : DInt;   // 0,001 kg       #m;ar60
+      diAH1_RCP_ManComp2_done : DInt;   // 0,001 kg       #m
+      diAH1_RCP_Mixing4_need : DInt;   // 0,016666667 min       #Tm;ar60
+      diAH1_RCP_Mixing4_done : DInt;   // 0,016666667 min       #Tm
+      diAH1_RCP_AutComp2_need : DInt;   // 0,001 kg       #m;ar60
+      diAH1_RCP_AutComp2_done : DInt;   // 0,001 kg       #m
+      diAH1_RCP_Mixing5_done : DInt;   // 0,016666667 min       #Tm;ar60
+      diAH1_RCP_Mixing5_need : DInt;   // 0,016666667 min       #Tm
+      iAH1_RCP_Ferm2_Temp : Int;   // 0,1 °C     #t
+      diAH1_RCP_Ferment2_need : DInt;   // 0,00027777778 hr       #Th
+      diAH1_RCP_Ferment2_done : DInt;   // 0,00027777778 hr       #Th
+      iAH1_RCP_Repump1_Step : Int;   // #ar20;tL:???
+      diAH1_RCP_LastWater_saved : DInt;   // 0,001 kg       #m;ar60
+      diAH1_RCP_LastWater_curr : DInt;   // 0,001 kg       #m
+      iAH1_RCP_Repump2_Step : Int;   // #ar20;tL:???
+      iAH1_RCP_PIG_Step : Int;   // #ar20;tL:Pig::Steps_2
+      iAH1_RCP_Clean_Step : Int;   // #ar20;tL:AutCleanStatus
+      usiAH1_RCP_Dest : Byte;   // #ar20;tL:AK
+      iAH1_Agit_Fwd_On : Int;   // s       #Ts
+      iAH1_Agit_Fwd_Off : Int;   // s       #Ts
+      iAH1_Agit_Fwd_Speed : Int;   // Hz       #f
+      iAH1_Agit_Rev_On : Int;   // s       #Ts
+      iAH1_Agit_Rev_Off : Int;   // s       #Ts
+      iAH1_Agit_Rev_Speed : Int;   // Hz       #f
+      usiAH1_RCP_Shower_Icon : Byte;   // #arNone
+      usiAH1_RCP_Filling_Icon : Byte;   // #arNone
+      usiAH1_RCP_Mixing1_Icon : Byte;   // #arNone
+      usiAH1_RCP_ManComp1_Icon : Byte;   // #arNone
+      usiAH1_RCP_Mixing2_Icon : Byte;   // #arNone
+      usiAH1_RCP_AutComp1_Icon : Byte;   // #arNone
+      usiAH1_RCP_Mixing3_Icon : Byte;   // #arNone
+      usiAH1_RCP_Heat1_Icon : Byte;   // #arNone
+      usiAH1_RCP_Ferment1_Icon : Byte;   // #arNone
+      usiAH1_RCP_ManComp2_Icon : Byte;   // #arNone
+      usiAH1_RCP_Mixing4_Icon : Byte;   // #arNone
+      usiAH1_RCP_AutComp2_Icon : Byte;   // #arNone
+      usiAH1_RCP_Mixing5_Icon : Byte;   // #arNone
+      usiAH1_RCP_Heat2_Icon : Byte;   // #arNone
+      usiAH1_RCP_Ferment2_Icon : Byte;   // #arNone
+      usiAH1_RCP_Repump1_Icon : Byte;   // #arNone
+      usiAH1_RCP_LastWater_Icon : Byte;   // #arNone
+      usiAH1_RCP_Mixing6_Icon : Byte;   // #arNone
+      usiAH1_RCP_Repump2_Icon : Byte;   // #arNone
+      usiAH1_RCP_Pig_Icon : Byte;   // #arNone
+      usiAH1_RCP_Cleaning_Icon : Byte;   // #arNone
+      iAK1_RCP_No : Int;   // cislo RCP     #ar60
+      usiAK1_RCP_Status : Byte;   // stav     #ar20;tL:HMIStatus2
+      usiAK1_RCP_Step : Byte;   // krok     #ar20;tL:AK_Step
+      sAK1_RCP_Name : String[40];   // jmeno RCP    #arNone
+      iAK1_RCP_Shower_Step : Int;   // #ar20;tL:Showering
+      iAK1_RCP_Cooling_Temp : Int;   // 0,1 °C     #t
+      diAK1_RCP_Cooling_need : DInt;   // 0,00027777778 hr       #Th
+      diAK1_RCP_Cooling_done : DInt;   // 0,00027777778 hr       #Th
+      diAK1_RCP_Storing_need : DInt;   // 0,00027777778 hr       #Th
+      diAK1_RCP_Storing_done : DInt;   // 0,00027777778 hr       #Th
+      iAK1_RCP_Storing_Temp : Int;   // 0,1 °C     #t
+      iAK1_RCP_CleanStep : Int;   // krok mytí     #ar20;tL:AutCleanStatus
+      diAK1_RCP_Age : DInt;   // 0,00027777778 hr       #Th
+      diAK1_RCP_AgeReady : DInt;   // 0,00027777778 hr       #Th
+      diAK1_RCP_AgeMax : DInt;   // 0,00027777778 hr       #Th
+      diAK1_BarLength : DInt;   // 0,00027777778 hr       #Th
+      usiAK1_RCP_ProdStatus : Byte;   // #ar20;tL:Stav_Kvas
+      usiAK1_RCP_Showering_Icon : Byte;   // #arNone
+      usiAK1_RCP_Filling_Icon : Byte;   // #arNone
+      usiAK1_RCP_Cooling_Icon : Byte;   // #arNone
+      usiAK1_RCP_Storage_Icon : Byte;   // #arNone
+      usiAK1_RCP_Cleaning_Icon : Byte;   // #arNone
+      iAK1_Agit_Fwd_On : Int;   // s       #Ts
+      iAK1_Agit_Fwd_Off : Int;   // s       #Ts
+      iAK1_Agit_Rev_On : Int;   // s       #Ts
+      iAK1_Agit_Rev_Off : Int;   // s       #Ts
+      iAK1_ProdStatus : Int;   // #ar20;tL:Stav_Kvas
+      iAK1_Res : Int;
+      iAK2_RCP_No : Int;   // cislo RCP     #ar60
+      usiAK2_RCP_Status : Byte;   // stav     #ar20;tL:HMIStatus2
+      usiAK2_RCP_Step : Byte;   // krok     #ar20;tL:AK_Step
+      sAK2_RCP_Name : String[40];   // jmeno RCP    #arNone
+      iAK2_RCP_Shower_Step : Int;   // #ar20;tL:Showering
+      iAK2_RCP_Cooling_Temp : Int;   // 0,1 °C     #t
+      diAK2_RCP_Cooling_need : DInt;   // 0,00027777778 hr       #Th
+      diAK2_RCP_Cooling_done : DInt;   // 0,00027777778 hr       #Th
+      diAK2_RCP_Storing_need : DInt;   // 0,00027777778 hr       #Th
+      diAK2_RCP_Storing_done : DInt;   // 0,00027777778 hr       #Th
+      iAK2_RCP_Storing_Temp : Int;   // 0,1 °C     #t
+      iAK2_RCP_CleanStep : Int;   // krok mytí     #ar20;tL:AutCleanStatus
+      diAK2_RCP_Age : DInt;   // 0,00027777778 hr       #Th
+      diAK2_RCP_AgeReady : DInt;   // 0,00027777778 hr       #Th
+      diAK2_RCP_AgeMax : DInt;   // 0,00027777778 hr       #Th
+      diAK2_BarLength : DInt;   // 0,00027777778 hr       #Th
+      usiAK2_RCP_ProdStatus : Byte;   // #ar20;tL:Stav_Kvas
+      usiAK2_RCP_Showering_Icon : Byte;   // #arNone
+      usiAK2_RCP_Filling_Icon : Byte;   // #arNone
+      usiAK2_RCP_Cooling_Icon : Byte;   // #arNone
+      usiAK2_RCP_Storage_Icon : Byte;   // #arNone
+      usiAK2_RCP_Cleaning_Icon : Byte;   // #arNone
+      iAK2_Agit_Fwd_On : Int;   // s       #Ts
+      iAK2_Agit_Fwd_Off : Int;   // s       #Ts
+      iAK2_Agit_Rev_On : Int;   // s       #Ts
+      iAK2_Agit_Rev_Off : Int;   // s       #Ts
+      iAK2_ProdStatus : Int;   // ar20;tL:Stav_Kvas
+      iAK2_Res : Int;
+      usiCleanTankAut_Status : Byte;   // #ar20;tL:'PCtrl::hst_ProcessStatus_2Ln'
+      usiCleanTankAut_Step : Byte;   // #ar20
+      usiCleanTankAut_TankId : Byte;   // #ar20;tL:AH_AK
+      usiCleanTankAut_Owner : Byte;   // #ar20;tL:id_All
+      usiCleanTankMan_Status : Byte;   // #ar20;tL:'PCtrl::hst_ProcessStatus_2Ln'
+      usiCleanTankMan_Step : Byte;   // #ar20
+      usiCleanTankMan_TankId : Byte;   // #ar20;tL:AH_AK
+      usiCleanTankMan_Owner : Byte;   // #ar20;tL:id_All
+      usiCleanTankWater_Status : Byte;   // #ar20;tL:'PCtrl::hst_ProcessStatus_2Ln'
+      usiCleanTankWater_Step : Byte;   // #ar20
+      usiCleanTankWater_TankId : Byte;   // #ar20;tL:AH_AK
+      usiCleanTankWater_Owner : Byte;   // #ar20;tL:id_All
+      usiCleanTankShower_Status : Byte;   // #ar20;tL:'PCtrl::hst_ProcessStatus_2Ln'
+      usiCleanTankShower_Step : Byte;   // #ar20
+      usiCleanTankShower_TankId : Byte;   // #ar20;tL:AH_AK
+      usiCleanTankShower_Owner : Byte;   // #ar20;tL:id_All
+      usiDischTank_Status : Byte;   // #ar20;tL:'PCtrl::hst_ProcessStatus_2Ln'
+      usiDischTank_Step : Byte;   // #ar20
+      usiDischTank_TankId : Byte;   // #ar20;tL:AH_AK
+      usiDischTank_Owner : Byte;   // #ar20;tL:id_All
+      usiCleanPipe1_Status : Byte;   // #ar20
+      usiCleanPipe1_Step : Byte;   // #ar20
+      usiCleanPipe1_Owner : Byte;   // #ar20
+      usiCleanPipe_Pig_1stStep : Byte;   // #ar20
+      usiCleanPipe_Pig_2ndStep : Byte;   // #ar20
+      usiPig1_Status : Byte;   // #ar20
+      usiPig1_Step : Byte;   // #ar20
+      usiPig1_LastPos : Byte;   // #ar20
+      iPig1_LastDir : Int;   // #ar20;tL:Pig_LastDirection
+      usiPig1_Dest : Byte;   // #ar20
+      usiPig1_Owner : Byte;   // #ar20
+      usiDO_SourceTank : Byte;   // #ar20
+      usiRes1 : Byte;
+      bAH1_RCP_AutoClean : Bool;   // #ar60
+      bAK1_RCP_AutoClean : Bool;   // #ar60
+      bAK2_RCP_AutoClean : Bool;   // #ar60
+      bAH1_LidOpen : Bool;   // #ar20
+      bAK1_LidOpen : Bool;   // #ar20
+      bAK2_LidOpen : Bool;   // #ar20
+      bAH1_RepumAuto : Bool;   // #ar60
+      iEnd : Int;   // #arNone
+   END_STRUCT;
+
+
+BEGIN
+
+END_DATA_BLOCK
+

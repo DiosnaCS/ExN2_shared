@@ -1,0 +1,25 @@
+﻿DATA_BLOCK "db_Vizu2"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+NON_RETAIN
+   STRUCT 
+      iSingle0 : Int;
+      Part1 : Struct    // #d123
+         Subpart0 : Int;
+         Subpart1 : Int;    // #d999
+         diSubpart2 : DInt;
+         usiIcon : USInt;
+      END_STRUCT;
+      Part2 : Struct
+         Subpart0 : Int;
+         Subpart1 : Int;
+      END_STRUCT;
+      iSingle1 : Int;
+      iEnd : Int;
+   END_STRUCT;
+
+
+BEGIN
+
+END_DATA_BLOCK
+

@@ -1,0 +1,57 @@
+﻿            /*string sqlCmd = "SELECT attname, atttypid " +
+                            "FROM pg_attribute, pg_class " +
+                            "WHERE attrelid = pg_class.oid " +
+                            "AND relname = '" + sTabName + "' " +
+                            "AND attstattarget <> 0; ";*/
+
+
+
+
+aspnet_regsql
+
+
+            Stopwatch stopwatch = Stopwatch.StartNew(); //creates and start the instance of Stopwatch
+            connection = new NpgsqlConnection(connstring);
+            connection.Open();
+            stopwatch.Stop();
+            Console.WriteLine(stopwatch.ElapsedMilliseconds);
+
+
+XmlDocument Doc = new XmlDocument();
+XmlDeclaration deklarace = Doc.CreateXmlDeclaration("1.0", "utf-8", null);
+Doc.AppendChild(deklarace);
+XmlElement koren = Doc.CreateElement("loaders");
+
+XmlElement elm = Doc.CreateElement("taskProps");
+elm.SetAttribute("run", "Yes");
+elm.SetAttribute("taskName", "Dubravica");
+koren.AppendChild(elm);
+
+Doc.AppendChild(koren);
+Doc.Save(FullName);
+
+
+
+            #region test
+            /*
+            Priznaky PP = 0;
+            PP = Priznaky.Prvni;
+            PP |= Priznaky.Druha;
+
+            if (PP.HasFlag(Priznaky.Treti)) {
+
+            }
+
+            String S = PP.ToString();
+
+            Byte B = (Byte)PP;
+            */
+
+
+    [Flags]
+    public enum Priznaky : Byte {
+        Prvni = 1,
+        Druha = 2,
+        Treti = 4
+    }
+
