@@ -6,6 +6,22 @@ using System.Windows.Media;
 
 namespace ExN2.CommPlc {
 
+    public class CommProps {
+        // UDP specification
+        public string sPLC_IPaddr;
+        public int iPLC_Port;
+        public string sLocal_IPaddr;
+        public int iLocal_Port;
+        public int iTimeoutMs;
+
+        // SQL specification
+        public string sSQL_ConnectString;
+        public string sSQL_Database;
+        public string sSQL_TablePrefix;
+        public string sSQL_UserId;
+        public string sSQL_Password;
+    }
+
     //-------------------------------------------------------------------
     // Comm_Base = base class for communication with PLC, must be overrided
     //-------------------------------------------------------------------

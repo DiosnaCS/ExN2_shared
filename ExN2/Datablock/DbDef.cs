@@ -105,9 +105,13 @@ namespace ExN2.Datablock {
 
 
     //...............................................................................................
-    class ArchListItem {  // pomocna trida pro predani seznamu archivovanych tabulek
+    public class ArchListItem {  // pomocna trida pro predani seznamu archivovanych tabulek
+        // config. data
         public string sTableName;
         public int iPeriod;
+
+        // runtime data
+        int iLastTime;
     }
 
 

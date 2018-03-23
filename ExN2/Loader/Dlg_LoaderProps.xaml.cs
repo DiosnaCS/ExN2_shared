@@ -15,7 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace ExN2 {
+namespace ExN2.Loader {
 
     /// <summary>
     /// Interaction logic for LoaderProps.xaml
@@ -31,25 +31,26 @@ namespace ExN2 {
                 PropertyChanged(this, new PropertyChangedEventArgs(vlastnost));
         }
 
-
-        // properties binded to Dlg
         public bool Run { get; set; }
         public string DbConnStr { get; set; }
         public string TableName { get; set; }
         public string SysTableName { get; set; }
-        public string UDPSocketLocal { get; set; }          
-        public string UDPSocketRemote { get; set; }         
-        public int ReceiveTimeoutMs { get; set; }           
-        public bool IntelOrder { get; set; }                
-        public bool LastPtrIsFreePtr { get; set; }          
-        public tN4T_version N4T_Version { get; set; }       
-        public int EventBodyLenBytes { get; set; }          
-        public int TypeFieldByteOffs { get; set; }          
-        public int AdjustTimePeriod_Sec { get; set; }       
-        public int AdjustTimeOffset_Sec { get; set; }       
+        public string UDPSocketLocal { get; set; }
+        public string UDPSocketRemote { get; set; }
+        public int ReceiveTimeoutMs { get; set; }
+        public bool IntelOrder { get; set; }
+        public bool LastPtrIsFreePtr { get; set; }
+        public tN4T_version N4T_Version { get; set; }
+        public int EventBodyLenBytes { get; set; }
+        public int TypeFieldByteOffs { get; set; }
+        public int AdjustTimePeriod_Sec { get; set; }
+        public int AdjustTimeOffset_Sec { get; set; }
         public List<EventDef> EventsList { get; set; }
 
-        // reference to edited Loader object
+
+
+
+        // reference to edited object
         EventLoader editedLoader;
 
 
@@ -83,7 +84,7 @@ namespace ExN2 {
             TypeFieldByteOffs = cfg.iTypeFieldByteOffs;
             AdjustTimePeriod_Sec = cfg.iAdjustTimePeriod_Sec;
             AdjustTimeOffset_Sec = cfg.iAdjustTimeOffset_Sec;
-            EventsList = evtCfg;
+            EventsList = evtCfg; 
         }
 
         /// <summary> read data from dialog to Loader cfg objects </summary>

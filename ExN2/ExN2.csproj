@@ -85,6 +85,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Datablock\Class1.cs" />
     <Compile Include="Datablock\ColumnDiff.cs" />
     <Compile Include="Datablock\ControlWebUtils.cs" />
     <Compile Include="Datablock\DatablockAddr.cs" />
@@ -96,7 +97,6 @@
     <Compile Include="Datablock\Dlg_ArchEdit.xaml.cs">
       <DependentUpon>Dlg_ArchEdit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Datablock\SqlTest.cs" />
     <Compile Include="Common\TaskBase.cs" />
     <Compile Include="Common\OpResult.cs" />
     <Compile Include="Common\TaskPlc.cs" />
@@ -115,7 +115,10 @@
     <Compile Include="Wnds\Dlg_About.xaml.cs">
       <DependentUpon>Dlg_About.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Wnds\Dlg_LoaderProps.xaml.cs">
+    <Compile Include="Wnds\Dlg_N4T_Props.xaml.cs">
+      <DependentUpon>Dlg_N4T_Props.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Loader\Dlg_LoaderProps.xaml.cs">
       <DependentUpon>Dlg_LoaderProps.xaml</DependentUpon>
     </Compile>
     <Page Include="Datablock\Dlg_ArchCompare.xaml">
@@ -150,7 +153,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Wnds\Dlg_LoaderProps.xaml">
+    <Page Include="Wnds\Dlg_N4T_Props.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Loader\Dlg_LoaderProps.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

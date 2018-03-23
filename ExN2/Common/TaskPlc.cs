@@ -6,6 +6,7 @@ using ExN2.CommPlc;
 using System.Diagnostics;
 using System.Windows.Media;
 using ExN2.Loader;
+using System.Collections.Generic;
 
 namespace ExN2.Common {
 
@@ -26,21 +27,17 @@ namespace ExN2.Common {
         DbVisu dataBlock = null;
         Comm_N4T comPlc = null;
         EventLoader loader = null;
+        CommProps comProps = null;
 
         public bool bEndReq = false;
         public Thread thread = null;
         Object Lock1 = new Object();
 
-
+            
         // PLC specification
         string sPLC_IPaddr;
         int iPLC_Port;
 
-        // datablock dbVisu
-        int iDbVisuLen;
-
-        // SQL specification
-        string sSQL_IPaddr;
         string sSQL_Database;
         string sSQL_TablePrefix;
         string sSQL_UserId;
@@ -53,7 +50,6 @@ namespace ExN2.Common {
 
         public TaskPlc(int aTaskNo, string aTaskName)
             : base(aTaskNo, aTaskName) {
-
         }
 
         //...............................................................................
@@ -61,9 +57,6 @@ namespace ExN2.Common {
             sPLC_IPaddr = "192.168.2.99";
             iPLC_Port = 2000;
 
-            iDbVisuLen = 800;
-
-            sSQL_IPaddr = "localhost";
             sSQL_Database = "test";
             sSQL_TablePrefix = "ml_";
             sSQL_UserId = "postgres";
@@ -87,6 +80,8 @@ namespace ExN2.Common {
             loader = new EventLoader(iTaskNo);
             //if ()
 
+            comProps = new CommProps();
+
             return true;
         }
 
@@ -103,14 +98,30 @@ namespace ExN2.Common {
             return loader.Edit(aParent);
         }
 
+        public bool EditN4Tprops(Window aParent) {
+            Dlg_N4T_Props Dlg = new Dlg_N4T_Props();
+            Dlg.Owner = aParent;
+            Dlg.SetDlgData(comProps);
+            if (Dlg.ShowDialog() == null)
+                return false;
+            Dlg.GetDlgData(comProps);
+            return false;
+        }
+
         int RoundPktime(int aPktime, int aRoundTo) {
             return (aPktime / aRoundTo) * aRoundTo;   // round to period
         }
 
+
         //...............................................................................
         public void ThreadFun() {
             int iLastTimeRead = RoundPktime( Base.PktimeNow(), iSCH_ReadSnapPeriod);   // round to period
-            int iLastTimeArch = RoundPktime(Base.PktimeNow(), iSCH_Period_Arch); 
+            int iLastTimeArch = RoundPktime(Base.PktimeNow(), iSCH_Period_Arch);
+            List<ArchListItem> archList = new List<ArchListItem>();
+
+            archList = dataBlock.GetArchList();
+            foreach (ArchListItem u in archList)
+
 
             while (!bEndReq) {
                 int iPktime = Base.PktimeNow();

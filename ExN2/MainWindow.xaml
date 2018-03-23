@@ -45,11 +45,11 @@
 
                 <Grid Grid.Row="1" Background="#FFA1B7D1">
                     <StackPanel Orientation="Horizontal" >
-                        <Button Content="RUN" Margin="2" Width="50" Click="treeView_BtnRun"/>
-                        <Button Content="STOP" Margin="2" Width="50" Click="treeView_BtnStop"/>
-                        <Button Content="Edit DB" Margin="2" Click="treeView_BtnEdit"/>
-                        <Button Content="Edit LOADER" Margin="2" Click="treeView_BtnEditLoader"/>
-                        <Button Content="Edit" Margin="2" Width="50"   Click="treeView_BtnEdit"/>
+                        <Button Content="RUN" Margin="2" Width="50" Click="btn_Run_Click"/>
+                        <Button Content="STOP" Margin="2" Width="50" Click="btn_Stop_Click"/>
+                        <Button Content="Edit DB" Margin="2" Click="btn_EditMain_Click"/>
+                        <Button Content="Edit LOADER" Margin="2" Click="btn_EditLoader_Click"/>
+                        <Button Content="Edit N4T" Margin="2" Width="50"   Click="btn_EditN4T_Click"/>
                         <Button Content="-1" Margin="2,2,2,0" Width="30" Height="21" VerticalAlignment="Top" Click="btn_LevelDn_Click"  />
                         <Button Content="+1" Margin="2,0,2,2" Width="30" Height="21" VerticalAlignment="Bottom" Click="bth_LevelUp_Click"  />
                     </StackPanel>

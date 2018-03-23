@@ -704,7 +704,7 @@ namespace ExN2.Datablock {
         }
 
 
-        List<ArchListItem> GetArchList() {
+        public List<ArchListItem> GetArchList() {
             // create a list of all used "arch table names"
             List<ArchListItem> list = new List<ArchListItem>();
             foreach (DbVisuItem u in Items) {

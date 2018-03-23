@@ -98,7 +98,7 @@ namespace ExN2
             //nodes[0].LeafList[1].LeafName = "Zmena";
         }
 
-        private void treeView_BtnRun(object sender, RoutedEventArgs e) {
+        private void btn_Run_Click(object sender, RoutedEventArgs e) {
             if (plcListView.SelectedIndex < 0)      // check if any item is selected
                 return;
             TaskPlc task = (TaskPlc)plcListView.SelectedItem;
@@ -106,21 +106,13 @@ namespace ExN2
         }
 
         //...............................................................................
-        private void treeView_BtnStop(object sender, RoutedEventArgs e) {
+        private void btn_Stop_Click(object sender, RoutedEventArgs e) {
             if (plcListView.SelectedIndex < 0)      // check if any item is selected
                 return;
             TaskPlc task = (TaskPlc)plcListView.SelectedItem;
             task.ThreadEndReq();
         }
 
-        //...............................................................................
-        private void treeView_BtnEdit(object sender, RoutedEventArgs e) {
-            if (plcListView.SelectedIndex < 0)      // check if any item is selected
-                return;
-            TaskBase task = (TaskBase)plcListView.SelectedItem;
-            if (task.Edit(this))
-                plcListView.Items.Refresh();
-        }
 
         //...............................................................................
         private void MenuItem_Help(object sender, RoutedEventArgs e) {
@@ -205,11 +197,28 @@ namespace ExN2
             plcListView.Items.Refresh();
         }
 
-        private void treeView_BtnEditLoader(object sender, RoutedEventArgs e) {
+        //...............................................................................
+        private void btn_EditMain_Click(object sender, RoutedEventArgs e) {
+            if (plcListView.SelectedIndex < 0)      // check if any item is selected
+                return;
+            TaskBase task = (TaskBase)plcListView.SelectedItem;
+            if (task.Edit(this))
+                plcListView.Items.Refresh();
+        }
+
+        private void btn_EditLoader_Click(object sender, RoutedEventArgs e) {
             TaskBase task;
             if ((task = getSelectedTask()) == null)
                 return;
             ((TaskPlc)task).EditLoader(this);
         }
+
+        private void btn_EditN4T_Click(object sender, RoutedEventArgs e) {
+            TaskBase task;
+            if ((task = getSelectedTask()) == null)
+                return;
+            ((TaskPlc)task).EditN4Tprops(this);
+        }
+
     }
 }

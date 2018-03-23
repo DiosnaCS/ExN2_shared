@@ -979,3 +979,163 @@ DoArchive exception: 23505: duplicate key value violates unique constraint "tabu
  SEND request
  RECEIVED, in 2 ms
  SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 7 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 515 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 15 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 4 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 11 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 5 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SQL INSERT, in 5 ms
+ SEND request
+ RECEIVED, in 4 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SQL INSERT, in 315 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 2 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 1 ms
+ SEND request
+ RECEIVED, in 3 ms
+ SQL INSERT, in 8 ms
+ SEND request
+ RECEIVED, in 2 ms

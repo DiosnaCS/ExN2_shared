@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace ExN2.Datablock {
+namespace ExN2.Datablock.Dlg {
     /// <summary>
     /// Interaction logic for Dlg_ArchCompare.xaml
     /// </summary>

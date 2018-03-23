@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 using System.Runtime.InteropServices;
 using ExN2.Common;
+using ExN2.Datablock.Dlg;
 
 namespace ExN2.Datablock {
 

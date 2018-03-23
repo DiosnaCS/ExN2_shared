@@ -10,7 +10,7 @@
     <iOptLen>0</iOptLen>
     <sComment />
     <sCommentFlags />
-    <bArchive>false</bArchive>
+    <bArchive>true</bArchive>
     <iOffsByte>0</iOffsByte>
     <iOffsBit>0</iOffsBit>
     <iPeriod>20</iPeriod>
