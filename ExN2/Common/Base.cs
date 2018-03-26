@@ -10,7 +10,7 @@ namespace ExN2 {
     public class TaskInfo {
         public string sTaskName;
         public string sTaskSubdir;  // with ending backslash
-        public int iLogLevel;
+        public int iLogLevel = 1;
     }
     
     
@@ -35,6 +35,7 @@ namespace ExN2 {
 
         public static int iLOGLEVEL_MAX = 5;
 
+        public const int iDISP_LOG_LINES = 13;
         static List<string>  sLogArr = new List<string>();
 
         //...............................................................................
@@ -115,24 +116,26 @@ namespace ExN2 {
                 System.IO.File.Move(sLogFileName, sLogFileNameOld);
             }
 
-            // append a messge
+            // append a messge to logfile
             using (StreamWriter writer = new StreamWriter(sLogFileName, true)) {
                 string sTime;
                 if (bTimestamp)
-                    sTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + ", ";
+                    sTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 else
                     sTime = "";
                 
                 writer.WriteLine(sTime + aMsg);
             }
 
-            if (sLogArr.Count >= 10)
+            // insert a message to display log buffer
+            if (sLogArr.Count >= iDISP_LOG_LINES)
                 sLogArr.RemoveAt(0);
 
+            string sShortTime = DateTime.Now.ToString("mm:ss");
             if (aTaskNo == 0)
-                sLogArr.Add(aMsg);
+                sLogArr.Add(String.Format("{0}   {1}", sShortTime, aMsg));
             else
-                sLogArr.Add(String.Format("{0:000}: {1}", aTaskNo, aMsg));
+                sLogArr.Add(String.Format("{0}   {1:000}: {2}", sShortTime, aTaskNo, aMsg));
         }
 
         public static string GetSysLogStrings() {

@@ -39,10 +39,10 @@ namespace ExN2.CommPlc {
 
         // SQL specification
         public string sSQL_ConnectString { get; set; }
-        public string sSQL_Database { get; set; }
+        //public string sSQL_Database { get; set; }
         public string sSQL_TablePrefix { get; set; }
-        public string sSQL_UserId { get; set; }
-        public string sSQL_Password { get; set; }
+        //public string sSQL_UserId { get; set; }
+        //public string sSQL_Password { get; set; }
 
 
         public Dlg_N4T_Props() {
@@ -59,20 +59,20 @@ namespace ExN2.CommPlc {
         }
 
         /// <summary> copy data from Loader cfg objects to dialog </summary>
-        public void SetDlgData(CommProps aEditedObj) {
+        public void SetDlgData(TaskComProps aEditedObj) {
             sPLC_IPaddr_port = aEditedObj.sPLC_IPaddr + ":" + aEditedObj.iPLC_Port;
             sLocal_IPaddr_port = aEditedObj.sLocal_IPaddr + ":" + aEditedObj.iLocal_Port;
 
             iTimeoutMs  = aEditedObj.iTimeoutMs;
             sSQL_ConnectString  = aEditedObj.sSQL_ConnectString;
-            sSQL_Database = aEditedObj.sSQL_Database;
+            //sSQL_Database = aEditedObj.sSQL_Database;
             sSQL_TablePrefix = aEditedObj.sSQL_TablePrefix;
-            sSQL_UserId = aEditedObj.sSQL_UserId;
-            sSQL_Password = aEditedObj.sSQL_Password;
+            //sSQL_UserId = aEditedObj.sSQL_UserId;
+            //sSQL_Password = aEditedObj.sSQL_Password;
     }
 
     /// <summary> read data from dialog to Loader cfg objects </summary>
-    public void GetDlgData(CommProps aEditedObj) {
+    public void GetDlgData(TaskComProps aEditedObj) {
             aEditedObj.sPLC_IPaddr = sPLC_IPaddr_port.Split(':')[0];
             aEditedObj.iPLC_Port = int.Parse(sPLC_IPaddr_port.Split(':')[1]);
             aEditedObj.sLocal_IPaddr = sLocal_IPaddr_port.Split(':')[0];
@@ -80,10 +80,10 @@ namespace ExN2.CommPlc {
 
             aEditedObj.iTimeoutMs = iTimeoutMs;
             aEditedObj.sSQL_ConnectString = sSQL_ConnectString;
-            aEditedObj.sSQL_Database = sSQL_Database;
+            //aEditedObj.sSQL_Database = sSQL_Database;
             aEditedObj.sSQL_TablePrefix = sSQL_TablePrefix;
-            aEditedObj.sSQL_UserId = sSQL_UserId;
-            aEditedObj.sSQL_Password = sSQL_Password;
+            //aEditedObj.sSQL_UserId = sSQL_UserId;
+            //aEditedObj.sSQL_Password = sSQL_Password;
         }
 
         private void btn_OK_Click(object sender, RoutedEventArgs e) {

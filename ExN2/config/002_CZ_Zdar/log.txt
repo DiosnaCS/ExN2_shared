@@ -98,3 +98,36 @@ DoArchive exception: 23505: duplicate key value violates unique constraint "tabu
  RECEIVED, in 20 ms
  SEND request
  RECEIVED, in 25 ms
+ ... recieve timeout
+ TIMEOUT
+ ... recieve timeout
+ TIMEOUT
+ ... recieve timeout
+ TIMEOUT
+ ... recieve timeout
+ TIMEOUT
+ SEND request
+ SEND request
+ SEND request
+ SEND request
+ SEND request
+ SEND request
+ SEND request
+ SEND request
+ SEND request
+ SEND request
+ SEND request
+ SEND request
+ SEND request
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+ ... recieve timeout
+Dokument XML obsahuje chybu (2, 2).
+

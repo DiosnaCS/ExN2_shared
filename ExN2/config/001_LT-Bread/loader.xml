@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <HelperLoaderSerialize xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <props>
-    <bRun>true</bRun>
-    <DB_ConnectString>user=postgres password=Nordit0276 dbname=trutnov hostaddr=127.0.0.1 port=5432</DB_ConnectString>
-    <DB_TableName>trutnov_tr</DB_TableName>
-    <DB_SysTableName>trutnov_tr_SYS</DB_SysTableName>
-    <SocketLocal>127.0.0.157059</SocketLocal>
-    <SocketRemote>192.168.23.1057059</SocketRemote>
-    <iEventBodyLenBytes>50</iEventBodyLenBytes>
-    <iRcvTimeoutMs>1200</iRcvTimeoutMs>
-    <bIntelOrder>true</bIntelOrder>
+    <bRun>false</bRun>
+    <iEventBodyLenBytes>0</iEventBodyLenBytes>
+    <iRcvTimeoutMs>0</iRcvTimeoutMs>
+    <bIntelOrder>false</bIntelOrder>
     <bIntelOrderStr>false</bIntelOrderStr>
-    <N4T_version>n4t_ver100</N4T_version>
-    <iTypeFieldByteOffs>4</iTypeFieldByteOffs>
+    <N4T_version>n4t_ver001</N4T_version>
+    <iTypeFieldByteOffs>0</iTypeFieldByteOffs>
     <iRecnoFieldByteOffs>0</iRecnoFieldByteOffs>
     <bLastPtrIsFreePtr>false</bLastPtrIsFreePtr>
     <iAdjustTimePeriod_Sec>0</iAdjustTimePeriod_Sec>

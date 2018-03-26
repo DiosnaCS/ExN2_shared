@@ -350,17 +350,29 @@ namespace ExN2.Datablock {
     }
 
     //=====================================================================================
+    // helper class only for Serialization
+    public class DbVizu_Serial {
+        public List<DbVisuItem> Items;
+        public List<ArchListItem> Sections;
+    }
+
+
+    //=====================================================================================
     // all information about PLC visualization datablock "db_Visu"
     public class DbVisu {
         const string sFILE_NAME = @"\dbVisu.xml";
-        int iTaskNo;
+        public int iTaskNo;
         string sFullNameXML;
 
         public List<DbVisuItem> Items = new List<DbVisuItem>();
+        public List<ArchListItem> Sections = new List<ArchListItem>();
+
+        TaskComProps comProps;  // reference to common props
 
         //...............................................................................................
-        public DbVisu(int aTaskNo) {
+        public DbVisu(int aTaskNo, TaskComProps aComProps) {
             iTaskNo = aTaskNo;
+            comProps = aComProps;
             string sCfgSubdirName = Base.taskInfo[iTaskNo].sTaskSubdir;
             sFullNameXML = Base.sPathAppRoot + Base.sConfigSubdir + sCfgSubdirName + sFILE_NAME;
         }
@@ -372,9 +384,11 @@ namespace ExN2.Datablock {
 
         //...............................................................................................
         public bool DoInit() {
-            string sOutMsg;
-            if (! LoadFromXML(out sOutMsg)) {
-                Log(0, sOutMsg);
+            OpResult res = new OpResult();
+
+            res = LoadFromXML();
+            if (!res.bOK) {
+                Log(0, res.sMsg);
                 return false;
             }
             return true;
@@ -569,8 +583,10 @@ namespace ExN2.Datablock {
             // calculate the physical addresses
             CalcOffsets();
 
+            Sections.AddRange(GetArchList());
+
             if (opRes.bOK)
-                opRes.AddMsg("-Loading OK -");
+                opRes.AddMsg("INI file loaded OK:  " + dlg.FileName);
 
             return opRes;
         }
@@ -586,57 +602,68 @@ namespace ExN2.Datablock {
 
         //...............................................................................................
         public bool Edit(Window aWnd) {
-            Dlg_ArchEdit Dlg = new Dlg_ArchEdit(this);
+            Dlg_DblockEdit Dlg = new Dlg_DblockEdit(this);
             Dlg.Owner = aWnd;
             Dlg.ShowDialog();
             return false;
         }
 
         //...............................................................................................
-        public void SaveToXML(out string aOutErrMsgs) {
-            aOutErrMsgs = "";
+        public OpResult SaveToXML() {
+            var res = new OpResult();
 
-            XmlSerializer xsSubmit = new XmlSerializer(typeof(List<DbVisuItem>));
+            DbVizu_Serial serial = new DbVizu_Serial();
+            serial.Items = Items;
+            serial.Sections = Sections;
+
+            XmlSerializer xsSubmit = new XmlSerializer(typeof(DbVizu_Serial));
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
 
             using (var sww = new System.IO.StreamWriter(sFullNameXML)) {
                 using (XmlWriter writer = XmlWriter.Create(sww, settings)) {
-                    xsSubmit.Serialize(writer, Items);
+                    xsSubmit.Serialize(writer, serial);
                 }
+                res.AddMsg("XML file saved OK:  " + sFullNameXML);
             }
+            return res;
         }
 
         //...............................................................................................
-        public bool LoadFromXML(out string aOutErrMsgs) {
-            aOutErrMsgs = "";
+        public OpResult LoadFromXML() {
+            var res = new OpResult();
 
             Items.RemoveAll(p => true);
-            XmlSerializer xsSubmit = new XmlSerializer(typeof(List<DbVisuItem>));
+            Sections.RemoveAll(p => true);
+            XmlSerializer xsSubmit = new XmlSerializer(typeof(DbVizu_Serial));
 
             try {
                 using (var sww = new System.IO.StreamReader(sFullNameXML)) {
                     using (XmlReader reader = XmlReader.Create(sww)) {
-                        List<DbVisuItem> tmpItems = (List<DbVisuItem>)(xsSubmit.Deserialize(reader));
-                        Items.AddRange(tmpItems);
+                        DbVizu_Serial serial = (DbVizu_Serial)(xsSubmit.Deserialize(reader));
+                        Items.AddRange(serial.Items);
+                        Sections.AddRange(serial.Sections);
                     }
+                    res.AddMsg("XML file loaded OK:  " + sFullNameXML);
                 }
             }
             catch (Exception e) {
-                aOutErrMsgs = e.Message;
-                return false;
+                res.AddErrMsg(e.Message);
             }
 
-            return true;
+            return res;
         }
 
         //...............................................................................................
         public void RemoveAllItems() {
             Items.RemoveAll(p => true);
+            Sections.RemoveAll(p => true);
         }
 
+
         //...............................................................................................
-        public string MakeSqlCmd_CreateTable() {
+        public OpResult MakeSqlCmd_CreateTable(ArchListItem tableSpec) {
+            OpResult res = new OpResult();
             string sCols = "";
 
             // example:
@@ -646,21 +673,22 @@ namespace ExN2.Datablock {
             foreach (DbVisuItem u in Items) {
                 if (!u.bArchive)
                     continue;
+                if (!tableSpec.sTableName.Equals(u.MakeTableName()))     // not our table
+                    continue;
                 sCols += ",\"" + u.sVarName + "\" " + MakeSqlTypeName(u.Type, u.iOptLen);
             }
 
-            string S = String.Format("CREATE TABLE {0} ({1},CONSTRAINT {0}_pkey PRIMARY KEY (\"pktime\"))", "tabul1", sCols);
-            return S;
+            res.AddMsg(String.Format("CREATE TABLE {0} ({1},CONSTRAINT {0}_pkey PRIMARY KEY (\"pktime\"))", tableSpec.sTableName, sCols));
+            return res;
         }
 
         //...............................................................................................
-        public string MakeSqlCmd_Insert(bool aRealData, int aPktime) {
+        public string MakeSqlCmd_Insert(ArchListItem tableSpec, int aPktime, bool aRealData = true ) {
             string sCols = "";
             string sVals = "";
 
             // example:
             //    INSERT INTO tabul1 ( "pktime", "iWMU_Ticks", "diWMU_Dose", "sSF1_RCP_Name" ) VALUES (123456789, 1, 111, 'ahoj' )
-
 
             sCols = "\"pktime\"";
             if (aRealData) {
@@ -671,6 +699,8 @@ namespace ExN2.Datablock {
 
             foreach (DbVisuItem u in Items) {
                 if (!u.bArchive)
+                    continue;
+                if (!tableSpec.sTableName.Equals(u.MakeTableName()))     // not our table
                     continue;
                 sCols += ",";
                 sVals += ",";
@@ -683,7 +713,7 @@ namespace ExN2.Datablock {
                     sVals += "'" + 12345 + "'";
             }
 
-            string S = String.Format("INSERT INTO {0} ({1}) VALUES ({2})", "tabul1", sCols, sVals);
+            string S = String.Format("INSERT INTO {0} ({1}) VALUES ({2})", tableSpec.sTableName, sCols, sVals);
             return S;
         }
 
@@ -715,20 +745,8 @@ namespace ExN2.Datablock {
             return list;
         }
 
-
-
-
         //...............................................................................................
-        public OpResult MakeDiffList_TableStruct(out int aCntMissing, out int aCntMore) {
-            OpResult res = new OpResult();
-            aCntMissing = 0;
-            aCntMore = 0;
-
-            return res;
-        }
-
-        //...............................................................................................
-        public OpResult CheckTableStruct(out List<ColumnDiff> aDiffList) {
+        public OpResult CheckTableStruct(ArchListItem tableSpec, out List<ColumnDiff> aDiffList) {
             OpResult res = new OpResult();
             NpgsqlConnection conn;
 
@@ -736,11 +754,10 @@ namespace ExN2.Datablock {
             // at least one record must be present in a table
             List<SQLColumnInfo> colList = new List<SQLColumnInfo>();
             SQLColumnInfo newInfo;
-            string sTabName = "tabul1";
-            conn = new NpgsqlConnection(String.Format("Server={0};Port=5432;User Id={1};Password={2};Database={3}", "127.0.0.1", "postgres", "Nordit0276", "Test"));
+            conn = new NpgsqlConnection(comProps.sSQL_ConnectString);
             try {
                 conn.Open();
-                string sqlCmd = String.Format("SELECT * FROM {0} LIMIT 1", sTabName);   // select any row
+                string sqlCmd = String.Format("SELECT * FROM {0} LIMIT 1", tableSpec.sTableName);   // select any row
                 NpgsqlCommand cmd = new NpgsqlCommand(sqlCmd, conn);
                 NpgsqlDataReader r = cmd.ExecuteReader();
                 bool bAnyRecord = false;
@@ -758,7 +775,7 @@ namespace ExN2.Datablock {
                 r.Close();
                 cmd.Dispose();
                 if (!bAnyRecord)
-                    res.AddErrMsg("CheckTableStruct: table EMPTY, structure check not possible");
+                    res.AddErrMsg("CheckTableStruct: table is EMPTY, structure check not possible");
             }
             catch (Exception e) {
                 res.AddErrMsg("CheckTableStruct error: " + e.Message);
@@ -772,6 +789,8 @@ namespace ExN2.Datablock {
             // find the items only in Datablock
             foreach (DbVisuItem u in Items) {
                 if (!u.bArchive)   // items marked as "not archived" are not checked
+                    continue;
+                if (!tableSpec.sTableName.Equals(u.MakeTableName()))   // this is not our table
                     continue;
                 if (colList.Exists(p => p.colName.Equals(u.sVarName)))
                     continue;
@@ -798,7 +817,7 @@ namespace ExN2.Datablock {
         }
 
         //...............................................................................................
-        public static OpResult MakeSqlCmd_Modify(List<ColumnDiff> aDiffList, out string aDropSqlCmd, out string aAddSqlCmd) {
+        public static OpResult MakeSqlCmd_Modify(ArchListItem tableSpec, List<ColumnDiff> aDiffList, out string aDropSqlCmd, out string aAddSqlCmd) {
             OpResult res = new OpResult();
             //NpgsqlConnection conn;
 
@@ -818,7 +837,7 @@ namespace ExN2.Datablock {
             string sDropCols = "";
             bool bDoADD, bDoDROP;
             foreach (ColumnDiff diff in aDiffList) {
-                bDoADD =  bDoDROP = false;
+                bDoADD = bDoDROP = false;
                 switch (diff.diffType) {
                     case tDiffType.OnlyInDB:
                         bDoADD = true;
@@ -846,27 +865,27 @@ namespace ExN2.Datablock {
 
             if (sDropCols.Length > 0) {
                 sDropCols = sDropCols.Remove(sDropCols.Length - 1);   // remove trailning ','
-                aDropSqlCmd = "ALTER TABLE " + "tabul1" + " " + sDropCols + ";";
+                aDropSqlCmd = "ALTER TABLE " + tableSpec.sTableName + " " + sDropCols + ";";
                 res.AddMsg(aDropSqlCmd);
             }
 
             if (sAddCols.Length > 0) {
                 sAddCols = sAddCols.Remove(sAddCols.Length - 1);   // remove trailning ','
-                aAddSqlCmd = "ALTER TABLE " + "tabul1" + " " + sAddCols + ";";
+                aAddSqlCmd = "ALTER TABLE " + tableSpec.sTableName + " " + sAddCols + ";";
                 res.AddMsg(aAddSqlCmd);
             }
 
             return res;
         }
 
-
-        public void DoArchive(int aPktime) {
+        // store data related to specification in "aItem" = typically data in one table
+        public void DoArchive(int aPktime, ArchListItem aItem) {
             string sSqlCmd;
             Stopwatch clock = Stopwatch.StartNew(); //creates and start the instance of Stopwatch
 
-            sSqlCmd = MakeSqlCmd_Insert(true, aPktime);
+            sSqlCmd = MakeSqlCmd_Insert(aItem, aPktime, true);
 
-            NpgsqlConnection conn = new NpgsqlConnection(String.Format("Server={0};Port=5432;User Id={1};Password={2};Database={3}", "127.0.0.1", "postgres", "Nordit0276", "Test"));
+            NpgsqlConnection conn = new NpgsqlConnection(comProps.sSQL_ConnectString);
             try {
                 conn.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand(sSqlCmd, conn);
@@ -883,6 +902,27 @@ namespace ExN2.Datablock {
             clock.Stop();
             Log(2, " SQL INSERT, in " + clock.ElapsedMilliseconds + " ms");
         }
-    }
-}
 
+        //...............................................................................................
+        public OpResult DoQuery(string sQuery) {
+            OpResult res = new OpResult();
+
+            //string sTabName = "tabul1";
+            NpgsqlConnection conn;
+            conn = new NpgsqlConnection(comProps.sSQL_ConnectString);
+            try {
+                conn.Open();
+                NpgsqlCommand cmd = new NpgsqlCommand(sQuery, conn);
+                int iRowsAffected = cmd.ExecuteNonQuery();
+                res.AddMsg(" SQL command OK");
+            }
+            catch (Exception ex) {
+                res.AddErrMsg(" SQL command error: " + ex.Message);
+            }
+            conn.Close();
+            return res;
+        } 
+
+    }
+
+}

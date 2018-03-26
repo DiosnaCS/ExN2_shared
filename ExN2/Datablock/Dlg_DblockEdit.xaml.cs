@@ -22,14 +22,16 @@ namespace ExN2.Datablock {
 
     //=====================================================================================
     // Interaction logic for Dlg_ArchEdit.xaml
-    public partial class Dlg_ArchEdit : Window {
+    public partial class Dlg_DblockEdit : Window {
         DbVisu Obj;
 
+
         //...............................................................................................
-        public Dlg_ArchEdit(DbVisu aDatablock) {
+        public Dlg_DblockEdit(DbVisu aDatablock) {
             Obj = aDatablock;
             InitializeComponent();
             listView.ItemsSource = Obj.Items;
+            listViewTables.ItemsSource = Obj.Sections;
         }
 
         //...............................................................................................
@@ -69,34 +71,36 @@ namespace ExN2.Datablock {
             opRes.SetTextbox(textMsg);
 
             listView.Items.Refresh();
+            listViewTables.Items.Refresh();
         }
 
         //...............................................................................................
         private void btnLoadFromXML_Click(object sender, RoutedEventArgs e) {
-            string sOutMsg;
-            Obj.LoadFromXML(out sOutMsg);
+            OpResult res;
+            res = Obj.LoadFromXML();
+            res.SetTextbox(textMsg);
             listView.Items.Refresh();
+            listViewTables.Items.Refresh();
         }
 
         //...............................................................................................
         private void btnSaveXML_Click(object sender, RoutedEventArgs e) {
-            string sOutMsg;
-            Obj.SaveToXML(out sOutMsg);
+            OpResult res;
+            res = Obj.SaveToXML();
+            res.SetTextbox(textMsg);
         }
 
         //...............................................................................................
         private void btnClear_Click(object sender, RoutedEventArgs e) {
+            OpResult res = new OpResult();
+            res.AddMsg("cleared OK");
+
             Obj.RemoveAllItems();
+            res.SetTextbox(textMsg);
+
             listView.Items.Refresh();
+            listViewTables.Items.Refresh();
         }
-
-        //...............................................................................................
-        private void btnEdit_Click(object sender, RoutedEventArgs e) {
-            string sOutMsg = Obj.MakeSqlCmd_CreateTable();
-            textMsg.Text = sOutMsg;
-        }
-
-
 
         //...............................................................................................
         private void btnCancel_Click(object sender, RoutedEventArgs e) {
@@ -104,40 +108,73 @@ namespace ExN2.Datablock {
         }
 
         //...............................................................................................
-        private void btnTest1_Click(object sender, RoutedEventArgs e) {
-            textMsg.Text = Obj.MakeSqlCmd_CreateTable();
+        private void btnMakeSqlCreate_Click(object sender, RoutedEventArgs e) {
+
+            // find the item selected in ListView
+            ArchListItem selTable = (ArchListItem)listViewTables.SelectedItem;
+            if (selTable == null)
+                return;
+
+            // construct the SQL command
+            OpResult res = Obj.MakeSqlCmd_CreateTable(selTable);
+            res.SetTextbox(textMsg);
+            if (! res.bOK)
+                return;
+
+            // final question box
+            MessageBoxResult result = MessageBox.Show(this, "Really CREATE the new SQL table ?", "SQL command: CREATE TABLE", MessageBoxButton.OKCancel, MessageBoxImage.Question);
+            if (result != MessageBoxResult.OK) {
+                res.AddErrMsg("Operation cancelled");
+                res.SetTextbox(textMsg);
+                return;
+            }
+
+            // execute
+            OpResult res3 = Obj.DoQuery(res.sMsg);
+            res3.SetTextbox(textMsg);
         }
 
         //...............................................................................................
-        private void btnTest2_Click(object sender, RoutedEventArgs e) {
-            textMsg.Text = Obj.MakeSqlCmd_Insert(false, 0);
+        private void btnMakeSqlInsert_Click(object sender, RoutedEventArgs e) {
+            // find the item selected in ListView
+            ArchListItem selTable = (ArchListItem)listViewTables.SelectedItem;
+            if (selTable == null)
+                return;
+
+            textMsg.Text = Obj.MakeSqlCmd_Insert(selTable, 0, false);
         }
 
         //...............................................................................................
         private void btnCwSchedule_Click(object sender, RoutedEventArgs e) {
 
-            /*OpResult res1 = Obj.CW_Create_SchedulePart(@"c:\Akce\C#\ExN2\ExN2\import\cw_sched.txt");
-            OpResult res2 = Obj.CW_Create_ArchivePart(@"c:\Akce\C#\ExN2\ExN2\import\cw_arch.txt");
+            OpResult res1 = ControlWebUtils.CW_Create_SchedulePart(Obj);
+            OpResult res2 = ControlWebUtils.CW_Create_ArchivePart(Obj);
             res1.Combine(res2);
-            res1.SetTextbox(textMsg); */
+            res1.SetTextbox(textMsg);
         }
 
+
         //...............................................................................................
-        private void btnChkStuct_Click(object sender, RoutedEventArgs e) {
+        private void btnTableCheck_Click(object sender, RoutedEventArgs e) {
             OpResult res;
             List<ColumnDiff> diffList;
 
+            ArchListItem selTable = (ArchListItem)listViewTables.SelectedItem;
+            if (selTable == null)
+                return;
+
             // compare structures and create the list of differences
-            res = Obj.CheckTableStruct(out diffList);
+            res = Obj.CheckTableStruct(selTable, out diffList);
             res.SetTextbox(textMsg);
 
             // show the difference list and allow some modification
-            Dlg_ArchCompare dlg = new Dlg_ArchCompare(diffList);
+            var dlg = new Dlg_DblockCompare(selTable, diffList);
             dlg.Owner = this;
             if (dlg.ShowDialog() == true) {
             }
 
             res.SetTextbox(textMsg);
+
         }
     }
 }

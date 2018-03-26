@@ -96,8 +96,6 @@ archive ar_norm {period = 20; period_offset = 0; period_origin = midnight};
     bSF3_NotEmpty = sch_vizd.bSF3_NotEmpty;
     bPF1_RepumpAuto = sch_vizd.bPF1_RepumpAuto;
     bPF2_RepumpAuto = sch_vizd.bPF2_RepumpAuto;
-    rShortReal = sch_vizd.rShortReal;
-    rLongReal = sch_vizd.rLongReal;
 end_archive;
 
 archive ar_slow {period = 60; period_offset = 0; period_origin = midnight};

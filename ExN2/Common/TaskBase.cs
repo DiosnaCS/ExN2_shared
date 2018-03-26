@@ -1,8 +1,32 @@
-﻿using System.ComponentModel;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Media;
 
 namespace ExN2.Common {
+
+    public class TaskComProps {
+        // UDP specification
+        public string sPLC_IPaddr;
+        public int iPLC_Port;
+        public string sLocal_IPaddr;
+        public int iLocal_Port;
+        public int iTimeoutMs;
+
+        // SQL specification
+        public string sSQL_ConnectString;
+        public string sSQL_TablePrefix;
+
+        public TaskComProps() {     // constructor only for Debug
+            sPLC_IPaddr = "192.168.2.111";
+            iPLC_Port = 2000;
+            sLocal_IPaddr = "";
+            iLocal_Port = 0;
+            iTimeoutMs = 1000;
+
+            sSQL_ConnectString = string.Format("Server={0};Port=5432;User Id={1};Password={2};Database={3}", "127.0.0.1", "postgres", "Nordit0276", "Test");
+            sSQL_TablePrefix = "ml_";
+        }
+
+    } 
 
     public enum tThreadState {
         NULL,       // not created
@@ -38,14 +62,14 @@ namespace ExN2.Common {
 
         public Brush view_InfoColor {
             get {
-                TaskShowInfo info = getTaskProgress();
+                ShowTaskInfo info = getTaskProgress();
                 return info.brush;
             }
         }
 
         public string view_InfoText {
             get {
-                TaskShowInfo info = getTaskProgress();
+                ShowTaskInfo info = getTaskProgress();
                 return info.sText;
             }
         }
@@ -100,8 +124,8 @@ namespace ExN2.Common {
                 info.iLogLevel--;
         }
 
-        virtual public TaskShowInfo getTaskProgress() {
-            return new TaskShowInfo();
+        virtual public ShowTaskInfo getTaskProgress() {
+            return new ShowTaskInfo();
         }
     }
 }

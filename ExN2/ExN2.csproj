@@ -85,17 +85,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Datablock\Class1.cs" />
     <Compile Include="Datablock\ColumnDiff.cs" />
     <Compile Include="Datablock\ControlWebUtils.cs" />
     <Compile Include="Datablock\DatablockAddr.cs" />
     <Compile Include="Datablock\DbDef.cs" />
     <Compile Include="Datablock\DbVisu.cs" />
-    <Compile Include="Datablock\Dlg_ArchCompare.xaml.cs">
-      <DependentUpon>Dlg_ArchCompare.xaml</DependentUpon>
+    <Compile Include="Datablock\Dlg_DblockCompare.xaml.cs">
+      <DependentUpon>Dlg_DblockCompare.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Datablock\Dlg_ArchEdit.xaml.cs">
-      <DependentUpon>Dlg_ArchEdit.xaml</DependentUpon>
+    <Compile Include="Datablock\Dlg_DblockEdit.xaml.cs">
+      <DependentUpon>Dlg_DblockEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\TaskBase.cs" />
     <Compile Include="Common\OpResult.cs" />
@@ -121,11 +120,11 @@
     <Compile Include="Loader\Dlg_LoaderProps.xaml.cs">
       <DependentUpon>Dlg_LoaderProps.xaml</DependentUpon>
     </Compile>
-    <Page Include="Datablock\Dlg_ArchCompare.xaml">
+    <Page Include="Datablock\Dlg_DblockCompare.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Datablock\Dlg_ArchEdit.xaml">
+    <Page Include="Datablock\Dlg_DblockEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

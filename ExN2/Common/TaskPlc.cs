@@ -27,25 +27,16 @@ namespace ExN2.Common {
         DbVisu dataBlock = null;
         Comm_N4T comPlc = null;
         EventLoader loader = null;
-        CommProps comProps = null;
+        TaskComProps comProps = null;
 
         public bool bEndReq = false;
         public Thread thread = null;
         Object Lock1 = new Object();
 
             
-        // PLC specification
-        string sPLC_IPaddr;
-        int iPLC_Port;
-
-        string sSQL_Database;
-        string sSQL_TablePrefix;
-        string sSQL_UserId;
-        string sSQL_Password;
-
         // scheduler
-        int iSCH_ReadSnapPeriod;
-        int iSCH_Period_Arch;
+        int iSCH_ReadSnapPeriod = 5;
+        bool bSleeping = false;
 
 
         public TaskPlc(int aTaskNo, string aTaskName)
@@ -54,22 +45,15 @@ namespace ExN2.Common {
 
         //...............................................................................
         public void FillTestData() {
-            sPLC_IPaddr = "192.168.2.99";
-            iPLC_Port = 2000;
 
-            sSQL_Database = "test";
-            sSQL_TablePrefix = "ml_";
-            sSQL_UserId = "postgres";
-            sSQL_Password = "Nordit0276";
-
-            iSCH_ReadSnapPeriod = 5;
-            iSCH_Period_Arch = 20;
         }
 
         override public bool DoInit() {
             FillTestData();
 
-            dataBlock = new DbVisu(iTaskNo);
+            comProps = new TaskComProps();
+
+            dataBlock = new DbVisu(iTaskNo, comProps);
             if (!dataBlock.DoInit())
                 return false;
 
@@ -79,8 +63,6 @@ namespace ExN2.Common {
 
             loader = new EventLoader(iTaskNo);
             //if ()
-
-            comProps = new CommProps();
 
             return true;
         }
@@ -114,43 +96,104 @@ namespace ExN2.Common {
 
 
         //...............................................................................
+        /// <summary> Read the whole datablock and refresh the values stored in image </summary>
+        tCommResult ReadSnap() {   // returns true, if succeeded
+
+            Log(2, " SEND request");
+
+            Stopwatch clock = Stopwatch.StartNew(); //creates and start the instance of Stopwatch
+            byte[] buf;
+            tCommResult resCode = comPlc.comm_ReadDbVisu(out buf);
+            clock.Stop();
+
+            if (resCode == tCommResult.Timeout) {
+                return resCode;
+            }
+            Log(2, " RECEIVED, in " + clock.ElapsedMilliseconds + " ms");
+
+            // analyze incoming data
+            dataBlock.AcceptDataBuf(buf);
+            return tCommResult.OK;
+        }
+
+        //...............................................................................
+        void MySleep(int iSeconds) {
+            // sleeping is interrupted by EndReq
+            for (int i = 0; i < iSeconds; i++) {
+                Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                if (bEndReq)
+                    break;
+            }
+        }
+
+        //...............................................................................
         public void ThreadFun() {
+            const int iERR_MAX = 5;
+            const int iSLEEP_TIMEs = 60; // station dead - sleep time
+
+            // Snap reading is executed most frequently of all
             int iLastTimeRead = RoundPktime( Base.PktimeNow(), iSCH_ReadSnapPeriod);   // round to period
-            int iLastTimeArch = RoundPktime(Base.PktimeNow(), iSCH_Period_Arch);
-            List<ArchListItem> archList = new List<ArchListItem>();
 
-            archList = dataBlock.GetArchList();
+            // create and initialize the scheduler for Archiving
+            List<ArchListItem> archList = dataBlock.GetArchList();
             foreach (ArchListItem u in archList)
+                u.iLastTime1 = RoundPktime(Base.PktimeNow(), u.iPeriod);
 
+            int iConseqErrCnt = 0;    // number of consecutive timeouts = dead station detection
 
+            // main Thread loop
             while (!bEndReq) {
                 int iPktime = Base.PktimeNow();
 
-                if ((iPktime - iLastTimeRead) < iSCH_ReadSnapPeriod) {
-                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
-                    continue;
+                // - - - - snap reading - - - -
+                if (iPktime >= (iLastTimeRead + iSCH_ReadSnapPeriod)) {
+                    tCommResult resCode = ReadSnap();
+
+                    // handle the timeout
+                    if (resCode == tCommResult.Timeout) {
+                        if (iConseqErrCnt < iERR_MAX)
+                            iConseqErrCnt++;
+                        if (iConseqErrCnt < iERR_MAX)
+                            continue;                       // this is immediate "retry"
+
+                        // station is dead - sleep for some time
+                        bSleeping = true;
+                        Log(1, " SLEEP mode entered");
+                        MySleep(iSLEEP_TIMEs);
+                        bSleeping = false;
+                        continue;       // do "retry" after waiting
+                    }
+
+                    // handle the general error
+                    if (resCode == tCommResult.GenErr) {
+                        if (iConseqErrCnt < iERR_MAX)
+                            iConseqErrCnt++;
+                        if (iConseqErrCnt < iERR_MAX)
+                            continue;                       // this is immediate "retry"
+
+                        // connection is BAD - sleep for some time
+                        bSleeping = true;
+                        Log(1, " SLEEP mode entered");
+                        MySleep(iSLEEP_TIMEs);
+                        bSleeping = false;
+                        continue;       // do "retry" after waiting
+                    }
+
+                    // here the correct reply is recieved
+                    iLastTimeRead = RoundPktime(iPktime, iSCH_ReadSnapPeriod);
+                    iConseqErrCnt = 0;
                 }
 
-                Log(2, " SEND request");
-                Stopwatch clock = Stopwatch.StartNew(); //creates and start the instance of Stopwatch
-                byte[] buf = comPlc.comm_ReadDbVisu();
-                if (buf == null) {
-                    continue;
+                // - - - - Archiving - - - -
+                foreach (ArchListItem u in archList) {
+                    int iOptimalArchTime = u.iLastTime1 + u.iPeriod;
+                    if (iPktime >= iOptimalArchTime) {
+                        dataBlock.DoArchive(iOptimalArchTime, u);
+                        u.iLastTime1 = RoundPktime(iPktime, u.iPeriod) + u.iOffset;  // pro jistotu znovu provedeme zaokrouhleni
+                    }
                 }
-                clock.Stop();
-                Log(2, " RECEIVED, in " + clock.ElapsedMilliseconds + " ms");
-                iLastTimeRead = RoundPktime(Base.PktimeNow(), iSCH_ReadSnapPeriod);
 
-                // analyze incoming data
-                dataBlock.AcceptDataBuf(buf);
-
-                if ((iPktime - iLastTimeArch) < iSCH_Period_Arch) {
-                    continue;
-                }
-                iLastTimeArch = RoundPktime(Base.PktimeNow(), iSCH_Period_Arch);
-                dataBlock.DoArchive(iLastTimeArch);
-
-                //MainWindow.LogAdd(sCfgSubdirName + "  " + iPktime + ".\n");
+                Thread.Sleep(TimeSpan.FromMilliseconds(1000));  // reduce the CPU load by some passive waiting
             }
             lock (Lock1) {
                 thread = null;
@@ -185,8 +228,13 @@ namespace ExN2.Common {
             return state;
         }
 
-        override public TaskShowInfo getTaskProgress() {
-            TaskShowInfo info = comPlc.getTaskProgress();
+        override public ShowTaskInfo getTaskProgress() {
+            ShowTaskInfo info = comPlc.getTaskProgress();
+
+            if (bSleeping) {
+                info.sText += ", SLEEP";
+                info.brush = Brushes.Orange;
+            }
             if (thread == null)
                 info.brush = Brushes.Yellow;
             return info;

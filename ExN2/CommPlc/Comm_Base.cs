@@ -6,20 +6,11 @@ using System.Windows.Media;
 
 namespace ExN2.CommPlc {
 
-    public class CommProps {
-        // UDP specification
-        public string sPLC_IPaddr;
-        public int iPLC_Port;
-        public string sLocal_IPaddr;
-        public int iLocal_Port;
-        public int iTimeoutMs;
-
-        // SQL specification
-        public string sSQL_ConnectString;
-        public string sSQL_Database;
-        public string sSQL_TablePrefix;
-        public string sSQL_UserId;
-        public string sSQL_Password;
+    // result of communication request
+    public enum tCommResult {
+        OK,         // received OK
+        Timeout,    // no reply
+        GenErr      // other error
     }
 
     //-------------------------------------------------------------------
@@ -36,7 +27,7 @@ namespace ExN2.CommPlc {
 
         // abstract methods
         virtual public bool DoInit() { return false; }
-        virtual public byte[] comm_ReadDbVisu() { return null; }
+        virtual public tCommResult comm_ReadDbVisu(out byte[] aReturnBuff) { aReturnBuff = null; return tCommResult.GenErr; }   // only placeholder
 
         //...............................................................................
         public Comm_Base(int aTaskNo) {
@@ -83,8 +74,8 @@ namespace ExN2.CommPlc {
             }
         }
 
-        void Log(string aMsg, bool bTimestamp) {
-            Base.Log_Task(iTaskNo, aMsg, bTimestamp);
+        void Log(int aLevel, string aMsg, bool bTimestamp) {
+            Base.Log_TaskLevel(iTaskNo, aLevel, aMsg, bTimestamp);
         }
 
         void CountOK() {
@@ -99,8 +90,8 @@ namespace ExN2.CommPlc {
                 iErrBalance--;
         }
 
-        public TaskShowInfo getTaskProgress() {
-            TaskShowInfo res = new TaskShowInfo();
+        public ShowTaskInfo getTaskProgress() {
+            ShowTaskInfo res = new ShowTaskInfo();
 
             // generate info text
             res.sText = "ok:" + lCnt_OK + ", err:" + lCnt_Err;
@@ -117,9 +108,10 @@ namespace ExN2.CommPlc {
 
         //...............................................................................
         /// <summary> Read the data from remote site, Returns NULL in case of error </summary>
-        override public byte[] comm_ReadDbVisu() {
-            byte[] abRcvBuf = new byte[iMAX_PACKET_SIZE];
+        override public tCommResult comm_ReadDbVisu(out byte[] aReturnBuff) {
+            aReturnBuff = null;
 
+            byte[] abRcvBuf = new byte[iMAX_PACKET_SIZE];
             try {
                 byte[] snd = new byte[14] { 0x4e, 0x34, 01, 00, 0x54, 0x00, 03, 03, 00, 00, 01, 00, 00, 00 };
                 lCnt_Send++;
@@ -127,29 +119,33 @@ namespace ExN2.CommPlc {
                 socket.SendTo(snd, target);
             }
             catch (Exception ex) {
-                Log(" ... send error: " + ex.Message, false);
+                Log(1, " ... send error: " + ex.Message, false);
                 CountErr();
-                return null;
+                return tCommResult.GenErr;
             }
 
             int N = 0;
+            tCommResult resultCode = tCommResult.GenErr;
             try {
                 socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReceiveTimeout, 2000);
                 N = socket.Receive(abRcvBuf);
             }
             catch (SocketException ex) {
                 string S;
-                if (ex.NativeErrorCode == 10060)
+                if (ex.NativeErrorCode == 10060) {
                     S = " ... recieve timeout";
-                else 
+                    resultCode = tCommResult.Timeout;
+                }
+                else {
                     S = " ... recieve error: " + ex.Message;
-                CountErr();
-                Log(S, false);
+                    resultCode = tCommResult.GenErr;
+                }
+                Log(1, S, false);
             }
 
-            if (N <= 0) {         // no data recieved
+            if (N <= 0) {         // no data recieved for any reason
                 CountErr();
-                return null;
+                return resultCode;
             }
 
             CountOK();
@@ -158,7 +154,8 @@ namespace ExN2.CommPlc {
             byte[] abResBuf = new byte[iMAX_PACKET_SIZE];
             for (int i = 0; i < iMAX_PACKET_SIZE-10; i++)
                 abResBuf[i] = abRcvBuf[i+10];
-            return abResBuf;
+            aReturnBuff = abResBuf;
+            return tCommResult.OK;
         }
 
 

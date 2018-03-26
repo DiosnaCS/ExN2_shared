@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace ExN2.Datablock {
 
@@ -105,13 +106,37 @@ namespace ExN2.Datablock {
 
 
     //...............................................................................................
-    public class ArchListItem {  // pomocna trida pro predani seznamu archivovanych tabulek
+    // pomocna trida pro:
+    // - predani seznamu archivovanych tabulek
+    // - spousteni archivaci v scheduleru
+    [Serializable]
+    public class ArchListItem {
         // config. data
         public string sTableName;
-        public int iPeriod;
+        public int iPeriod;     // seconds
+        public int iOffset;     // seconds
 
         // runtime data
-        int iLastTime;
+        [XmlIgnore]
+        public int iLastTime1;          // Pktime of latest start
+
+        // binding for dialog
+        public string view_sTableName1 {
+            get { return sTableName; }
+        }
+
+        public string view_sVerify {
+            get { return "- - -"; }
+        }
+
+        public int view_iPeriod {
+            get { return iPeriod; }
+        }
+
+        public int view_iOffset {
+            get { return iOffset; }
+        }
+
     }
 
 

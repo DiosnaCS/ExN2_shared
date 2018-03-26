@@ -18,12 +18,14 @@ namespace ExN2.Datablock.Dlg {
     /// <summary>
     /// Interaction logic for Dlg_ArchCompare.xaml
     /// </summary>
-    public partial class Dlg_ArchCompare : Window {
+    public partial class Dlg_DblockCompare : Window {
         List<ColumnDiff>    diffList;
+        ArchListItem        tableSpec;
 
-        public Dlg_ArchCompare(List<ColumnDiff> aDiffList) {
+        public Dlg_DblockCompare(ArchListItem aTableSpec, List<ColumnDiff> aDiffList) {
             InitializeComponent();
             diffList = aDiffList;
+            tableSpec = aTableSpec;
             listView.ItemsSource = aDiffList;
             btnExec.IsEnabled = true;
 
@@ -40,7 +42,7 @@ namespace ExN2.Datablock.Dlg {
             string sAddCmd;
 
             // prepare statements ALTER TABLE ADD/DROP COLUMN
-            res = DbVisu.MakeSqlCmd_Modify(diffList, out sDropCmd, out sAddCmd);
+            res = DbVisu.MakeSqlCmd_Modify(tableSpec, diffList, out sDropCmd, out sAddCmd);
             res.SetTextbox(textMsg);
         }
 
@@ -51,7 +53,7 @@ namespace ExN2.Datablock.Dlg {
             string sAddCmd;
 
             // prepare statements ALTER TABLE ADD/DROP COLUMN
-            res = DbVisu.MakeSqlCmd_Modify(diffList, out sDropCmd, out sAddCmd);
+            res = DbVisu.MakeSqlCmd_Modify(tableSpec, diffList, out sDropCmd, out sAddCmd);
             if (!res.bOK) {
                 return;
             }

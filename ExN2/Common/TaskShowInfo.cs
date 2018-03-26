@@ -10,7 +10,7 @@ namespace ExN2.Common {
     /// <summary>
     /// class for displaying short task inormation
     /// </summary>
-    public class TaskShowInfo {
+    public class ShowTaskInfo {
         public string sText = "- - -";
         public Brush brush = Brushes.White;
     }

@@ -298,5 +298,7 @@ schedule sch_vizd {period = 10; period_offset = 0; period_origin = midnight};
     uSF3_TimeBar_diReady = program_Low_High_DINT.Solve_Hours(drv_XXX.1990461, drv_XXX.1990460);
     uSF3_TimeBar_diMax = program_Low_High_DINT.Solve_Hours(drv_XXX.1990463, drv_XXX.1990462);
     uSF3_TimeBar_diLength = program_Low_High_DINT.Solve_Hours(drv_XXX.1990465, drv_XXX.1990464);
+    rShortReal = drv_XXX.1990466  /* Real not implemented */;
+    rLongReal = drv_XXX.1990468  /* Long not implemented */;
     iEnd = drv_XXX.1990472;
 end_schedule;
