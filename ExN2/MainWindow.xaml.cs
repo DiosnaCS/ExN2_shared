@@ -26,6 +26,7 @@ namespace ExN2
             InitializeComponent();
 
             Base.Log_Sys("- - - PROGRAM START, " + Base.version + " - - -", true);
+            //Base.Log_Sys("CurrPath: " + System.IO.Directory.GetCurrentDirectory());
             Base.SearchTaskSubdirs();
             Base.InitTasks();
 
@@ -45,7 +46,7 @@ namespace ExN2
         }
 
         private void dispatcherTimer_Tick(object sender, EventArgs e) { 
-            textbox_Log.Text = Base.GetSysLogStrings(); //"CurrPath: " + System.IO.Directory.GetCurrentDirectory() + "\n" + sLog;
+            textbox_Log.Text = Base.GetSysLogStrings(); 
 
             foreach (TaskPlc task in Base.Tasks) {
                 task.ThreadRefreshState();

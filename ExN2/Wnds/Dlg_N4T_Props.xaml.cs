@@ -17,83 +17,71 @@ using System.Windows.Shapes;
 
 namespace ExN2.CommPlc {
 
-    /// <summary>
-    /// Interaction logic for LoaderProps.xaml
-    /// </summary>
-    public partial class Dlg_N4T_Props : Window, INotifyPropertyChanged {
-
-        // implement the "Property changed" mechanism
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        // normalne se tato metoda vola v kazdem setteru, my ji volame hromadne z RefreshAllDlgItem
-        protected void OnPropertyChanged(string vlastnost) {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(vlastnost));
-        }
-
+    public partial class Dlg_N4T_Props : Window {
 
         // properties binded to Dlg
         public string sPLC_IPaddr_port { get; set; }
         public string sLocal_IPaddr_port { get; set; }
         public int iTimeoutMs { get; set; }
-
-        // SQL specification
+        public bool bIntelOrder { get; set; }
+        public tN4T_version N4Tversion { get; set; }
         public string sSQL_ConnectString { get; set; }
-        //public string sSQL_Database { get; set; }
         public string sSQL_TablePrefix { get; set; }
-        //public string sSQL_UserId { get; set; }
-        //public string sSQL_Password { get; set; }
 
+        TaskComProps editedObj;
 
-        public Dlg_N4T_Props() {
+        //...............................................................................
+        public Dlg_N4T_Props(TaskComProps aComProps) {
+            editedObj = aComProps;
             InitializeComponent();
             DataContext = this;    // data binding
+            SetDlgData();
         }
 
-        /// <summary> force all Dlg items to be redrawn </summary>
-        public void RefreshAllDlgItem() {
-            var propsInfo = this.GetType().GetProperties();
-            foreach (System.Reflection.PropertyInfo info in propsInfo) {
-                OnPropertyChanged(info.Name);
-            } 
-        }
-
+        //...............................................................................
         /// <summary> copy data from Loader cfg objects to dialog </summary>
-        public void SetDlgData(TaskComProps aEditedObj) {
-            sPLC_IPaddr_port = aEditedObj.sPLC_IPaddr + ":" + aEditedObj.iPLC_Port;
-            sLocal_IPaddr_port = aEditedObj.sLocal_IPaddr + ":" + aEditedObj.iLocal_Port;
-
-            iTimeoutMs  = aEditedObj.iTimeoutMs;
-            sSQL_ConnectString  = aEditedObj.sSQL_ConnectString;
-            //sSQL_Database = aEditedObj.sSQL_Database;
-            sSQL_TablePrefix = aEditedObj.sSQL_TablePrefix;
-            //sSQL_UserId = aEditedObj.sSQL_UserId;
-            //sSQL_Password = aEditedObj.sSQL_Password;
-    }
-
-    /// <summary> read data from dialog to Loader cfg objects </summary>
-    public void GetDlgData(TaskComProps aEditedObj) {
-            aEditedObj.sPLC_IPaddr = sPLC_IPaddr_port.Split(':')[0];
-            aEditedObj.iPLC_Port = int.Parse(sPLC_IPaddr_port.Split(':')[1]);
-            aEditedObj.sLocal_IPaddr = sLocal_IPaddr_port.Split(':')[0];
-            aEditedObj.iLocal_Port = int.Parse(sLocal_IPaddr_port.Split(':')[1]);
-
-            aEditedObj.iTimeoutMs = iTimeoutMs;
-            aEditedObj.sSQL_ConnectString = sSQL_ConnectString;
-            //aEditedObj.sSQL_Database = sSQL_Database;
-            aEditedObj.sSQL_TablePrefix = sSQL_TablePrefix;
-            //aEditedObj.sSQL_UserId = sSQL_UserId;
-            //aEditedObj.sSQL_Password = sSQL_Password;
+        public void SetDlgData() {
+            sPLC_IPaddr_port = editedObj.sPLC_IPaddr + ":" + editedObj.iPLC_Port;
+            sLocal_IPaddr_port = editedObj.sLocal_IPaddr + ":" + editedObj.iLocal_Port;
+            bIntelOrder = editedObj.bIntelOrder;
+            N4Tversion = editedObj.N4Tversion;
+            iTimeoutMs = editedObj.iTimeoutMs;
+            sSQL_ConnectString  = editedObj.sSQL_ConnectString;
+            sSQL_TablePrefix = editedObj.sSQL_TablePrefix;
         }
 
+        //...............................................................................
+        /// <summary> read data from dialog to Loader cfg objects </summary>
+        public bool GetDlgData() {
+            try {
+                editedObj.sPLC_IPaddr = sPLC_IPaddr_port.Split(':')[0];
+                editedObj.iPLC_Port = int.Parse(sPLC_IPaddr_port.Split(':')[1]);
+                editedObj.sLocal_IPaddr = sLocal_IPaddr_port.Split(':')[0];
+                editedObj.iLocal_Port = int.Parse(sLocal_IPaddr_port.Split(':')[1]);
+            }
+            catch (Exception){  // catch Splitting errors
+                return false;
+            }
+            editedObj.bIntelOrder = bIntelOrder;
+            editedObj.N4Tversion = N4Tversion;
+            editedObj.iTimeoutMs = iTimeoutMs;
+            editedObj.sSQL_ConnectString = sSQL_ConnectString;
+            editedObj.sSQL_TablePrefix = sSQL_TablePrefix;
+            return true;
+        }
+
+        //...............................................................................
         private void btn_OK_Click(object sender, RoutedEventArgs e) {
+            if (! GetDlgData()) {
+                MessageBoxResult result = MessageBox.Show(this, "Format error", "Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                return;
+            }
             DialogResult = true;
-            Close();
         }
 
+        //...............................................................................
         private void btn_Cancel_Click(object sender, RoutedEventArgs e) {
             DialogResult = false;
-            Close();
         }
     }
 }

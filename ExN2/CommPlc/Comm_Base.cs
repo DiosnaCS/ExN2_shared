@@ -61,7 +61,7 @@ namespace ExN2.CommPlc {
             // Bind vaze lokalni stranu, musel by byt svazan pokazde s jinym portem, takze to necham automaticky
             //socket.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"),
 
-            target = new IPEndPoint(IPAddress.Parse("192.168.2.111"), 2000);
+            target = new IPEndPoint(IPAddress.Parse("192.168.92.210"), 2000);
 
             return true;
         }

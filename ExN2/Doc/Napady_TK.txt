@@ -56,3 +56,26 @@ Doc.Save(FullName);
     }
 
 
+
+	        public event PropertyChangedEventHandler PropertyChanged;         // implement the "Property changed" mechanism
+
+        // normalne se tato metoda vola v kazdem setteru, my ji volame hromadne z RefreshAllDlgItem
+        protected void OnPropertyChanged(string vlastnost) {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(vlastnost));
+        }
+
+
+        /// <summary> force all Dlg items to be redrawn </summary>
+        public void RefreshAllDlgItems() {
+            var propsInfo = this.GetType().GetProperties();
+            foreach (System.Reflection.PropertyInfo info in propsInfo) {
+                OnPropertyChanged(info.Name);
+            } 
+        }
+
+
+        <TextBox Text="{Binding iTimeoutMs,StringFormat=N0}"  HorizontalAlignment="Left" Height="23" Margin="136,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+
+
+

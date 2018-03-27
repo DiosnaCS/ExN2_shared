@@ -1,0 +1,18 @@
+﻿<Window x:Class="ExN2.Wnds.Test_PROPS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExN2.Wnds"
+        mc:Ignorable="d"
+        Title="Test_PROPS" Height="500" Width="800" WindowStyle="ToolWindow" >
+    <Grid>
+        <CheckBox x:Name="checkBox_Intel_Order" Content="Snap - periodic read" HorizontalAlignment="Left" Margin="28,41,0,0" VerticalAlignment="Top" IsChecked="{Binding bIntelOrder}"/>
+        <Label Content="N4T functions" HorizontalAlignment="Left" Margin="11,10,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox_Intel_Order_Copy" Content="Archives - equidistant " HorizontalAlignment="Left" Margin="28,75,0,0" VerticalAlignment="Top" IsChecked="{Binding bIntelOrder}" Checked="checkBox_Intel_Order_Copy_Checked"/>
+        <CheckBox x:Name="checkBox_Intel_Order_Copy1" Content="Alarm archive" HorizontalAlignment="Left" Margin="28,110,0,0" VerticalAlignment="Top" IsChecked="{Binding bIntelOrder}" Checked="checkBox_Intel_Order_Copy_Checked"/>
+        <CheckBox x:Name="checkBox_Intel_Order_Copy2" Content="Event loader" HorizontalAlignment="Left" Margin="28,146,0,0" VerticalAlignment="Top" IsChecked="{Binding bIntelOrder}" Checked="checkBox_Intel_Order_Copy_Checked"/>
+        <CheckBox x:Name="checkBox_Intel_Order_Copy3" Content="PLC real time adjust" HorizontalAlignment="Left" Margin="28,180,0,0" VerticalAlignment="Top" IsChecked="{Binding bIntelOrder}" Checked="checkBox_Intel_Order_Copy_Checked"/>
+
+    </Grid>
+</Window>

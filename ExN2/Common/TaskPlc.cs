@@ -49,22 +49,24 @@ namespace ExN2.Common {
         }
 
         override public bool DoInit() {
+            bool bRes = true;
+
             FillTestData();
 
             comProps = new TaskComProps();
 
             dataBlock = new DbVisu(iTaskNo, comProps);
             if (!dataBlock.DoInit())
-                return false;
+                bRes = false;
 
             comPlc = new Comm_N4T(iTaskNo);
             if (!comPlc.DoInit())
-                return false;
+                bRes = false;
 
             loader = new EventLoader(iTaskNo);
             //if ()
 
-            return true;
+            return bRes;
         }
 
         //...............................................................................................
@@ -81,12 +83,12 @@ namespace ExN2.Common {
         }
 
         public bool EditN4Tprops(Window aParent) {
-            Dlg_N4T_Props Dlg = new Dlg_N4T_Props();
+            Dlg_N4T_Props Dlg = new Dlg_N4T_Props(comProps);
             Dlg.Owner = aParent;
-            Dlg.SetDlgData(comProps);
+            //Dlg.SetDlgData(comProps);
             if (Dlg.ShowDialog() == null)
                 return false;
-            Dlg.GetDlgData(comProps);
+            //Dlg.GetDlgData(comProps);
             return false;
         }
 
@@ -229,7 +231,11 @@ namespace ExN2.Common {
         }
 
         override public ShowTaskInfo getTaskProgress() {
-            ShowTaskInfo info = comPlc.getTaskProgress();
+            ShowTaskInfo info;
+            if (comPlc != null)
+                info = comPlc.getTaskProgress();
+            else
+                info = new ShowTaskInfo();
 
             if (bSleeping) {
                 info.sText += ", SLEEP";

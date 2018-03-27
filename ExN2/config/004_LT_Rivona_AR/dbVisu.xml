@@ -1,0 +1,3842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DbVizu_Serial xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iSecond</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>0</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iWMU_Temp</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1°C      </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>2</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iWMU_Ticks</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> dílky      </sComment>
+      <sCommentFlags>ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>4</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_Weight</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 1g     </sComment>
+      <sCommentFlags>m</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>6</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_Weight</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 1g     </sComment>
+      <sCommentFlags>m</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>10</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_Weight</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 1g     </sComment>
+      <sCommentFlags>m</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>14</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_TempSide</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1°C      </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>18</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_TempBottom</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1°C      </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>20</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_TempSide</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1°C      </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>22</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_TempBottom</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1°C      </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>24</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_TempSide</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1°C      </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>26</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_TempBottom</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1°C      </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>28</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iPIG1_Pressure</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,01 Bar      </sComment>
+      <sCommentFlags>p</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>30</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>Bar</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>100</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_Pressure</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,01 Bar      </sComment>
+      <sCommentFlags>p</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>32</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>Bar</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>100</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_Pressure</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,01 Bar      </sComment>
+      <sCommentFlags>p</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>34</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>Bar</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>100</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_RCP_No</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> cislo RCP     </sComment>
+      <sCommentFlags>ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>36</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Status</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> stav     </sComment>
+      <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>38</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>hmistatus2</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> krok     </sComment>
+      <sCommentFlags>tL:AH_Step</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>39</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>ah_step</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>sAH1_RCP_Name</sVarName>
+      <Type>String</Type>
+      <iOptLen>40</iOptLen>
+      <sComment> jmeno RCP</sComment>
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>40</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_TotalAmount</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg     </sComment>
+      <sCommentFlags>m</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>82</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_RCP_TA</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>86</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_FirstWater_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>88</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_FirstWater_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>92</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_ManComp1a_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>96</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_ManComp1b_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>100</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_ManComp1ab_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>104</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Comp1Heat_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,016666667 min       </sComment>
+      <sCommentFlags>Tm;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>108</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>min</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>60</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Comp1Heat_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,016666667 min      </sComment>
+      <sCommentFlags>Tm</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>112</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>min</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>60</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_RCP_Comp1Heat_Temp</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1 °C     </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>116</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Flour_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>118</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Flour_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>122</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Water_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>126</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Water_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>130</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_ManComp2_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>134</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_ManComp2_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>138</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Comp2_MixTime_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,016666667 min       </sComment>
+      <sCommentFlags>Tm;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>142</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>min</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>60</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Comp2_MixTime_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,016666667 min       </sComment>
+      <sCommentFlags>Tm</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>146</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>min</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>60</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_RCP_Ferm1_Temp</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1 °C     </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>150</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Ferment1_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>152</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Ferment1_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>156</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_RCP_Ferm2_Temp</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1 °C     </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>160</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Ferment2_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>162</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_Ferment2_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>166</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_LastWater_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>170</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_LastWater_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>174</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_LastWaterMix_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,016666667 min       </sComment>
+      <sCommentFlags>Tm;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>178</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>min</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>60</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAH1_RCP_LastWaterMix_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,016666667 min       </sComment>
+      <sCommentFlags>Tm</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>182</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>min</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>60</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_RCP_PIG_Step</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>tL:Pig::Steps_2</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>186</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>pig::steps_2</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_RCP_Clean_Step</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>tL:AutCleanStatus</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>188</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>autcleanstatus</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Dest</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>tL:AK</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>190</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>ak</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_Agit_Fwd_On</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>192</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_Agit_Fwd_Off</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>194</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_Agit_Fwd_Speed</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> Hz       </sComment>
+      <sCommentFlags>f</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>196</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>Hz</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_Agit_Rev_On</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>198</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_Agit_Rev_Off</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>200</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_Agit_Rev_Speed</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> Hz       </sComment>
+      <sCommentFlags>f</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>202</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>Hz</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_FirstWater_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>204</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Comp1Insert_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>205</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Comp1Heat_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>206</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Filling_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>207</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Comp2Insert_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>208</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Comp2Heat_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>209</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Ferment1_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>210</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Ferment2_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>211</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_ConfirmDest_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>212</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Repump1_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>213</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_LastWater_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>214</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_LastWaterMix_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>215</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Repump2_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>216</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Pig_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>217</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_RCP_Cleaning_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>218</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_RCP_No</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> cislo RCP     </sComment>
+      <sCommentFlags>ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>220</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_RCP_Status</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> stav     </sComment>
+      <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>222</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>hmistatus2</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_RCP_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> krok     </sComment>
+      <sCommentFlags>tL:AK_Step</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>223</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>ak_step</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>sAK1_RCP_Name</sVarName>
+      <Type>String</Type>
+      <iOptLen>40</iOptLen>
+      <sComment> jmeno RCP</sComment>
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>224</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_RCP_TotalAmount</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>266</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_RCP_Cooling_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>270</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_RCP_Cooling_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>274</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_RCP_Cooling_Temp</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1 °C     </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>278</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_RCP_Storing_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>280</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_RCP_Storing_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>284</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_RCP_Storing_Temp</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1 °C     </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>288</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_RCP_CleanStep</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> krok mytí     </sComment>
+      <sCommentFlags>tL:AutCleanStatus</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>290</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>autcleanstatus</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_RCP_Age</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>292</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_RCP_AgeReady</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>296</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_RCP_AgeMax</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>300</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_BarLength</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>304</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_RCP_ProdStatus</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>tL:Stav_Kvas</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>308</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>stav_kvas</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_RCP_Filling_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>309</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_RCP_Cooling_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>310</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_RCP_Storage_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>311</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_RCP_Cleaning_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>312</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_Agit_Fwd_On</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>314</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_Agit_Fwd_Off</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>316</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_Agit_Rev_On</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>318</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_Agit_Rev_Off</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>320</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK1_ProdStatus</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20;tL:Stav_Kvas</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>322</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>stav_kvas</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_RCP_No</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> cislo RCP     </sComment>
+      <sCommentFlags>ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>324</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_RCP_Status</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> stav     </sComment>
+      <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>326</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>hmistatus2</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_RCP_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> krok     </sComment>
+      <sCommentFlags>tL:AK_Step</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>327</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>ak_step</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>sAK2_RCP_Name</sVarName>
+      <Type>String</Type>
+      <iOptLen>40</iOptLen>
+      <sComment> jmeno RCP</sComment>
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>328</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_RCP_TotalAmount</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,001 kg       </sComment>
+      <sCommentFlags>m;ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>370</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <sUnit>kg</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1000</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_RCP_Cooling_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>374</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_RCP_Cooling_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>378</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_RCP_Cooling_Temp</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1 °C     </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>382</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_RCP_Storing_need</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>384</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_RCP_Storing_done</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>388</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_RCP_Storing_Temp</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,1 °C     </sComment>
+      <sCommentFlags>t</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>392</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit>°C</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>10</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_RCP_CleanStep</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> krok mytí     </sComment>
+      <sCommentFlags>tL:AutCleanStatus</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>394</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>autcleanstatus</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_RCP_Age</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>396</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_RCP_AgeReady</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>400</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_RCP_AgeMax</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>404</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_BarLength</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0,00027777778 hr       </sComment>
+      <sCommentFlags>Th</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>408</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>hr</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>3600</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_RCP_ProdStatus</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>tL:Stav_Kvas</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>412</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>stav_kvas</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_RCP_Filling_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>413</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_RCP_Cooling_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>414</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_RCP_Storage_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>415</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_RCP_Cleaning_Icon</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>416</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_Agit_Fwd_On</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>418</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_Agit_Fwd_Off</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>420</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_Agit_Rev_On</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>422</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_Agit_Rev_Off</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> s       </sComment>
+      <sCommentFlags>Ts;ar300</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>424</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>300</iPeriod>
+      <sUnit>s</sUnit>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAK2_ProdStatus</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20;tL:Stav_Kvas</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>426</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>stav_kvas</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankAut_Status</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:'PCtrl::hst_ProcessStatus_2Ln'</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>428</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>'pctrl::hst_processstatus_2ln'</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankAut_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>429</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankAut_TankId</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:AH_AK</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>430</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>ah_ak</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankAut_Owner</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:id_All</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>431</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>id_all</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankMan_Status</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:'PCtrl::hst_ProcessStatus_2Ln'</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>432</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>'pctrl::hst_processstatus_2ln'</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankMan_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>433</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankMan_TankId</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:AH_AK</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>434</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>ah_ak</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankMan_Owner</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:id_All</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>435</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>id_all</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankWater_Status</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:'PCtrl::hst_ProcessStatus_2Ln'</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>436</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>'pctrl::hst_processstatus_2ln'</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankWater_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>437</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankWater_TankId</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:AH_AK</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>438</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>ah_ak</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankWater_Owner</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:id_All</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>439</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>id_all</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankShower_Status</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:'PCtrl::hst_ProcessStatus_2Ln'</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>440</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>'pctrl::hst_processstatus_2ln'</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankShower_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>441</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankShower_TankId</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:AH_AK</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>442</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>ah_ak</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanTankShower_Owner</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:id_All</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>443</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>id_all</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiDischTank_Status</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:'PCtrl::hst_ProcessStatus_2Ln'</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>444</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>'pctrl::hst_processstatus_2ln'</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiDischTank_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>445</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiDischTank_TankId</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:AH_AK</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>446</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>ah_ak</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiDischTank_Owner</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:id_All</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>447</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>id_all</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanPipe1_Status</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>448</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanPipe1_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>449</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiCleanPipe1_Owner</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>450</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiPig1_Status</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20;tL:HMIStatus2</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>451</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>hmistatus2</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiPig1_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20;tL:HMIStatus2</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>452</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>hmistatus2</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiPig1_LastPos</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>453</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iPig1_LastDir</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>454</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiPig1_Dest</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>456</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiPig1_Owner</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment>  </sComment>
+      <sCommentFlags>tL:Pig_LastDirection</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>457</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>pig_lastdirection</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiDO_SourceTank</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>458</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiDO_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>459</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiPipe1_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>460</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>hmistatus2</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiPipe2_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>461</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>hmistatus2</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiPipe3_Step</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>tL:HMIStatus2</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>462</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <sUnit />
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+      <sTextlist>hmistatus2</sTextlist>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_Valve_Flour</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>463</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_Valve_Water</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>464</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_Valve_Clean</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>465</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_Valve_Heat</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>466</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_Valve_Bottom</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>467</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_Valve_Gully</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>468</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_Valve_Transfer</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>469</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_Pump</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>470</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAH1_Agit</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>471</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_Valve_ProdIn</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>472</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_Valve_Clean</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>473</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_Valve_Cool</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>474</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_Valve_Bottom</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>475</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_Valve_Gully</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>476</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_Valve_Transfer</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>477</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_Pump</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>478</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK1_Agit</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>479</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_Valve_ProdIn</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>480</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_Valve_Clean</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>481</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_Valve_Cool</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>482</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_Valve_Bottom</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>483</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_Valve_Gully</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>484</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_Valve_Transfer</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>485</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_Pump</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>486</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiAK2_Agit</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>487</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiRes_1</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>488</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiRes_2</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>489</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiRes_3</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>490</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>usiRes_4</sVarName>
+      <Type>Byte</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>491</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAH1_RCP_AutoClean</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>492</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK1_RCP_AutoClean</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>492</iOffsByte>
+      <iOffsBit>1</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK2_RCP_AutoClean</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar60</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>492</iOffsByte>
+      <iOffsBit>2</iOffsBit>
+      <iPeriod>60</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAH1_LidOpen</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>492</iOffsByte>
+      <iOffsBit>3</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK1_LidOpen</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>492</iOffsByte>
+      <iOffsBit>4</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK2_LidOpen</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> </sComment>
+      <sCommentFlags>ar20</sCommentFlags>
+      <bArchive>true</bArchive>
+      <iOffsByte>492</iOffsByte>
+      <iOffsBit>5</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bDO_AutoSelectTank</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>492</iOffsByte>
+      <iOffsBit>6</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bDO_DoseToGully</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0 = Dávkuje se do kanálu; 1 = dávkuje se do linky</sComment>
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>492</iOffsByte>
+      <iOffsBit>7</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bClnPipe_Enb_Pig1st</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>493</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bClnPipe_Enb_LN1_Bowl</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>493</iOffsByte>
+      <iOffsBit>1</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bClnPipe_Enb_AK1_Tank</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>493</iOffsByte>
+      <iOffsBit>2</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bClnPipe_Enb_AK2_Tank</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>493</iOffsByte>
+      <iOffsBit>3</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bClnPipe_Enb_Pig2nd</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>493</iOffsByte>
+      <iOffsBit>4</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAH1_Level_EnbAgit</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>493</iOffsByte>
+      <iOffsBit>5</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK1_Level_EnbAgit</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>493</iOffsByte>
+      <iOffsBit>6</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK2_Level_EnbAgit</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>493</iOffsByte>
+      <iOffsBit>7</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK1_Level_EnbCool</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>494</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK2_Level_EnbCool</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>494</iOffsByte>
+      <iOffsBit>1</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAH1_RemoteStart_Start</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>494</iOffsByte>
+      <iOffsBit>2</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK1_RemoteStart_Start</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>494</iOffsByte>
+      <iOffsBit>3</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK2_RemoteStart_Start</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>494</iOffsByte>
+      <iOffsBit>4</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK1_RemoteStart_FillFinished</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>494</iOffsByte>
+      <iOffsBit>5</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>bAK2_RemoteStart_FillFinished</sVarName>
+      <Type>Bool</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>494</iOffsByte>
+      <iOffsBit>6</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iDO_ReqType</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment> 0-none, 1-interface, 2-buttons</sComment>
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>496</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diDO_AmntDone</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>498</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diDO_AmntReq</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>502</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iAH1_RemoteStart_SkipTo</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>506</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK1_RemoteStart_Age</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>508</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>diAK2_RemoteStart_Age</sVarName>
+      <Type>Dint</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>512</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+    <DbVisuItem>
+      <Value_Int>0</Value_Int>
+      <Value_Real>0</Value_Real>
+      <Value_String />
+      <ForceRounding>None</ForceRounding>
+      <sVarName>iEnd</sVarName>
+      <Type>Int</Type>
+      <iOptLen>0</iOptLen>
+      <sComment />
+      <sCommentFlags />
+      <bArchive>false</bArchive>
+      <iOffsByte>516</iOffsByte>
+      <iOffsBit>0</iOffsBit>
+      <iPeriod>20</iPeriod>
+      <rScaling>1</rScaling>
+      <iDivisor>1</iDivisor>
+    </DbVisuItem>
+  </Items>
+  <Sections>
+    <ArchListItem>
+      <sTableName>ar_norm</sTableName>
+      <iPeriod>20</iPeriod>
+      <iOffset>0</iOffset>
+    </ArchListItem>
+    <ArchListItem>
+      <sTableName>ar_slow</sTableName>
+      <iPeriod>60</iPeriod>
+      <iOffset>0</iOffset>
+    </ArchListItem>
+    <ArchListItem>
+      <sTableName>ar_xslow</sTableName>
+      <iPeriod>300</iPeriod>
+      <iOffset>0</iOffset>
+    </ArchListItem>
+  </Sections>
+</DbVizu_Serial>

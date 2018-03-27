@@ -120,6 +120,9 @@
     <Compile Include="Loader\Dlg_LoaderProps.xaml.cs">
       <DependentUpon>Dlg_LoaderProps.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Wnds\Test_PROPS.xaml.cs">
+      <DependentUpon>Test_PROPS.xaml</DependentUpon>
+    </Compile>
     <Page Include="Datablock\Dlg_DblockCompare.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -157,6 +160,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Loader\Dlg_LoaderProps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wnds\Test_PROPS.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
