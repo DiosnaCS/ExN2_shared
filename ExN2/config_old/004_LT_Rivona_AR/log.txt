@@ -1,0 +1,343 @@
+Soubor c:\Akce\C#\ExN2\ExN2\config\004_LT_Rivona_AR\dbVisu.xml nebyl nalezen.
+
+Soubor c:\Akce\C#\ExN2\ExN2\config\004_LT_Rivona_AR\dbVisu.xml nebyl nalezen.
+
+Soubor c:\Akce\C#\ExN2\ExN2\config\004_LT_Rivona_AR\dbVisu.xml nebyl nalezen.
+
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SEND request
+ ... recieve timeout
+ SLEEP mode entered
+ SEND request
+ RECEIVED, in 163 ms
+ SEND request
+ RECEIVED, in 107 ms
+ SQL INSERT, in 215 ms
+ SEND request
+ RECEIVED, in 95 ms
+ SEND request
+ RECEIVED, in 171 ms
+ SEND request
+ RECEIVED, in 375 ms
+ SEND request
+ RECEIVED, in 119 ms
+ SQL INSERT, in 322 ms
+ SEND request
+ RECEIVED, in 118 ms
+ SEND request
+ RECEIVED, in 140 ms
+ SEND request
+ RECEIVED, in 95 ms
+ SEND request
+ RECEIVED, in 97 ms
+ SQL INSERT, in 1 ms
+ SQL INSERT, in 1 ms
+ SEND request
+ RECEIVED, in 95 ms
+ SEND request
+ RECEIVED, in 107 ms
+ SEND request
+ RECEIVED, in 108 ms
+ SEND request
+ RECEIVED, in 157 ms
+ SQL INSERT, in 8 ms
+ SEND request
+ RECEIVED, in 89 ms
+ SEND request
+ RECEIVED, in 95 ms
+ SEND request
+ RECEIVED, in 115 ms
+ SEND request
+ RECEIVED, in 110 ms
+ SQL INSERT, in 4 ms
+ SEND request
+ RECEIVED, in 85 ms
+ SEND request
+ RECEIVED, in 163 ms
+ SEND request
+ RECEIVED, in 109 ms
+ SEND request
+ RECEIVED, in 139 ms
+ SQL INSERT, in 2 ms
+ SQL INSERT, in 1 ms
+ SQL INSERT, in 1 ms
+ SEND request
+ RECEIVED, in 124 ms
+ SEND request
+ ... recieve timeout
+ SEND request
+ RECEIVED, in 308 ms
+ SEND request
+ RECEIVED, in 308 ms
+ SEND request
+ RECEIVED, in 121 ms
+ SQL INSERT, in 3 ms
+ SEND request
+ RECEIVED, in 132 ms
+ SEND request
+ RECEIVED, in 268 ms
+ SEND request
+ RECEIVED, in 90 ms
+ SEND request
+ RECEIVED, in 163 ms
+ SQL INSERT, in 4 ms
+ SEND request
+ RECEIVED, in 84 ms
+ SEND request
+ RECEIVED, in 111 ms
+ SEND request
+ RECEIVED, in 94 ms
+ SEND request
+ RECEIVED, in 110 ms
+ SQL INSERT, in 316 ms
+ SQL INSERT, in 1 ms
+ SEND request
+ RECEIVED, in 98 ms
+ SEND request
+ RECEIVED, in 120 ms
+ SEND request
+ RECEIVED, in 103 ms
+ SEND request
+ RECEIVED, in 90 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 151 ms
+ SEND request
+ RECEIVED, in 103 ms
+ SEND request
+ RECEIVED, in 110 ms
+ SEND request
+ RECEIVED, in 98 ms
+ SQL INSERT, in 4 ms
+ SEND request
+ RECEIVED, in 97 ms
+ SEND request
+ RECEIVED, in 88 ms
+ SEND request
+ RECEIVED, in 112 ms
+ SEND request
+ RECEIVED, in 82 ms
+ SQL INSERT, in 1 ms
+ SQL INSERT, in 0 ms
+ SEND request
+ RECEIVED, in 103 ms
+ SEND request
+ RECEIVED, in 95 ms
+ SEND request
+ RECEIVED, in 88 ms
+ SEND request
+ RECEIVED, in 94 ms
+ SQL INSERT, in 4 ms
+ SEND request
+ RECEIVED, in 103 ms
+ ... recieve timeout
+ SEND request
+ RECEIVED, in 66 ms
+ SEND request
+ RECEIVED, in 68 ms
+ SEND request
+ RECEIVED, in 184 ms
+ SEND request
+ RECEIVED, in 58 ms
+ SQL INSERT, in 403 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 71 ms
+ SEND request
+ RECEIVED, in 55 ms
+ SEND request
+ RECEIVED, in 68 ms
+ SEND request
+ RECEIVED, in 60 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 60 ms
+ SEND request
+ RECEIVED, in 58 ms
+ SEND request
+ RECEIVED, in 57 ms
+ SEND request
+ RECEIVED, in 56 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 128 ms
+ SEND request
+ RECEIVED, in 80 ms
+ SEND request
+ RECEIVED, in 70 ms
+ SEND request
+ RECEIVED, in 152 ms
+ SQL INSERT, in 3 ms
+ SQL INSERT, in 0 ms
+ SEND request
+ RECEIVED, in 69 ms
+ SEND request
+ RECEIVED, in 67 ms
+ SEND request
+ RECEIVED, in 64 ms
+ SQL INSERT, in 310 ms
+ SEND request
+ RECEIVED, in 55 ms
+ SEND request
+ RECEIVED, in 79 ms
+ SEND request
+ RECEIVED, in 176 ms
+ SEND request
+ RECEIVED, in 67 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 90 ms
+ SEND request
+ RECEIVED, in 72 ms
+ SEND request
+ RECEIVED, in 82 ms
+ SEND request
+ RECEIVED, in 64 ms
+ SQL INSERT, in 1 ms
+ SEND request
+ RECEIVED, in 67 ms
+ SEND request
+ RECEIVED, in 75 ms
+ SEND request
+ RECEIVED, in 69 ms
+ SEND request
+ RECEIVED, in 69 ms
+ SEND request
+ RECEIVED, in 58 ms
+ SQL INSERT, in 3 ms
+ SEND request
+ RECEIVED, in 58 ms
+ SEND request
+ RECEIVED, in 84 ms
+ SEND request
+ RECEIVED, in 73 ms
+ SEND request
+ RECEIVED, in 154 ms
+ SQL INSERT, in 2 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 75 ms
+ SEND request
+ RECEIVED, in 64 ms
+ SEND request
+ RECEIVED, in 75 ms
+ SEND request
+ RECEIVED, in 70 ms
+ SQL INSERT, in 1 ms
+ SEND request
+ RECEIVED, in 68 ms
+ SEND request
+ RECEIVED, in 66 ms
+ SEND request
+ RECEIVED, in 63 ms
+ SEND request
+ RECEIVED, in 74 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 67 ms
+ SEND request
+ RECEIVED, in 61 ms
+ SEND request
+ RECEIVED, in 64 ms
+ SEND request
+ RECEIVED, in 63 ms
+ SQL INSERT, in 2 ms
+ SQL INSERT, in 0 ms
+ SEND request
+ RECEIVED, in 204 ms
+ SEND request
+ RECEIVED, in 86 ms
+ SEND request
+ RECEIVED, in 67 ms
+ SEND request
+ RECEIVED, in 55 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 59 ms
+ SEND request
+ RECEIVED, in 212 ms
+ SEND request
+ RECEIVED, in 66 ms
+ SEND request
+ RECEIVED, in 60 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 65 ms
+ SEND request
+ RECEIVED, in 66 ms
+ SEND request
+ RECEIVED, in 213 ms
+ SEND request
+ RECEIVED, in 69 ms
+ SQL INSERT, in 1 ms
+ SQL INSERT, in 0 ms
+ SEND request
+ RECEIVED, in 60 ms
+ SEND request
+ RECEIVED, in 58 ms
+ SEND request
+ RECEIVED, in 75 ms
+ SEND request
+ RECEIVED, in 60 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 62 ms
+ SEND request
+ RECEIVED, in 67 ms
+ SEND request
+ RECEIVED, in 93 ms
+ SEND request
+ RECEIVED, in 64 ms
+ SEND request
+ RECEIVED, in 140 ms
+ SEND request
+ RECEIVED, in 86 ms
+ SQL INSERT, in 7 ms
+ SEND request
+ RECEIVED, in 62 ms
+ SEND request
+ RECEIVED, in 63 ms
+ SEND request
+ RECEIVED, in 64 ms
+ SEND request
+ RECEIVED, in 56 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 61 ms
+ SEND request
+ RECEIVED, in 68 ms
+ SEND request
+ RECEIVED, in 70 ms
+ SEND request
+ RECEIVED, in 208 ms
+ SQL INSERT, in 1 ms
+ SQL INSERT, in 2 ms
+ SQL INSERT, in 3 ms
+ SEND request
+ RECEIVED, in 69 ms
+ SEND request
+ RECEIVED, in 60 ms
+ SEND request
+ RECEIVED, in 56 ms
+ SEND request
+ RECEIVED, in 69 ms
+ SQL INSERT, in 2 ms
+ SEND request
+ RECEIVED, in 65 ms
+ SEND request
+ RECEIVED, in 63 ms
+ SEND request
+ RECEIVED, in 68 ms
+ SEND request
+ RECEIVED, in 217 ms
+ SQL INSERT, in 337 ms
+ SQL INSERT, in 6 ms
+ SEND request
+ RECEIVED, in 79 ms

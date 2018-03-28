@@ -21,11 +21,15 @@ namespace ExN2.Datablock.Dlg {
     public partial class Dlg_DblockCompare : Window {
         List<ColumnDiff>    diffList;
         ArchListItem        tableSpec;
+        TaskComPropsData    comProps;
 
-        public Dlg_DblockCompare(ArchListItem aTableSpec, List<ColumnDiff> aDiffList) {
+        public Dlg_DblockCompare(ArchListItem aTableSpec, List<ColumnDiff> aDiffList, TaskComPropsData aComProps) {
             InitializeComponent();
+
             diffList = aDiffList;
             tableSpec = aTableSpec;
+            comProps = aComProps;
+
             listView.ItemsSource = aDiffList;
             btnExec.IsEnabled = true;
 
@@ -80,7 +84,7 @@ namespace ExN2.Datablock.Dlg {
 
             //string sTabName = "tabul1";
             NpgsqlConnection conn;
-            conn = new NpgsqlConnection(String.Format("Server={0};Port=5432;User Id={1};Password={2};Database={3}", "127.0.0.1", "postgres", "Nordit0276", "Test"));
+            conn = new NpgsqlConnection(comProps.sSQL_ConnectString);
             try {
                 conn.Open();
                 // do the DROP COLUMN command

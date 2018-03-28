@@ -601,8 +601,8 @@ namespace ExN2.Datablock {
         }
 
         //...............................................................................................
-        public bool Edit(Window aWnd) {
-            Dlg_DblockEdit Dlg = new Dlg_DblockEdit(this);
+        public bool Edit(Window aWnd, TaskComPropsData aComProps) {
+            Dlg_DblockEdit Dlg = new Dlg_DblockEdit(this, aComProps);
             Dlg.Owner = aWnd;
             Dlg.ShowDialog();
             return false;
@@ -754,7 +754,7 @@ namespace ExN2.Datablock {
             // at least one record must be present in a table
             List<SQLColumnInfo> colList = new List<SQLColumnInfo>();
             SQLColumnInfo newInfo;
-            conn = new NpgsqlConnection(comProps.sSQL_ConnectString);
+            conn = new NpgsqlConnection(comProps.Data.sSQL_ConnectString);
             try {
                 conn.Open();
                 string sqlCmd = String.Format("SELECT * FROM {0} LIMIT 1", tableSpec.sTableName);   // select any row
@@ -885,7 +885,7 @@ namespace ExN2.Datablock {
 
             sSqlCmd = MakeSqlCmd_Insert(aItem, aPktime, true);
 
-            NpgsqlConnection conn = new NpgsqlConnection(comProps.sSQL_ConnectString);
+            NpgsqlConnection conn = new NpgsqlConnection(comProps.Data.sSQL_ConnectString);
             try {
                 conn.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand(sSqlCmd, conn);
@@ -909,7 +909,7 @@ namespace ExN2.Datablock {
 
             //string sTabName = "tabul1";
             NpgsqlConnection conn;
-            conn = new NpgsqlConnection(comProps.sSQL_ConnectString);
+            conn = new NpgsqlConnection(comProps.Data.sSQL_ConnectString);
             try {
                 conn.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand(sQuery, conn);

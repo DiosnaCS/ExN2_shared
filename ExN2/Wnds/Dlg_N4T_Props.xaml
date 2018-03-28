@@ -7,7 +7,7 @@
         xmlns:local1="clr-namespace:ExN2.Loader"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="N4T connection properties" Height="390" Width="821" ShowInTaskbar="False" ResizeMode="NoResize" WindowStyle="ToolWindow" WindowStartupLocation="CenterOwner">
+        Title="N4T common properties" Height="415" Width="821" ShowInTaskbar="False" ResizeMode="NoResize" WindowStyle="ToolWindow" WindowStartupLocation="CenterOwner">
     <Window.Resources>
         <ObjectDataProvider x:Key="N4T_version_type" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
             <ObjectDataProvider.MethodParameters>
@@ -15,30 +15,83 @@
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
     </Window.Resources>
-    <Grid Margin="0,3,0,3">
-        <Label Content="UDP Socket Local" HorizontalAlignment="Left" Margin="11,10,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding sLocal_IPaddr_port}"  HorizontalAlignment="Left" Height="23" Margin="135,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
-        <Label Content="(use localhost:0 for automatic local binding)" HorizontalAlignment="Left" Margin="338,7,0,0" VerticalAlignment="Top"/>
 
-        <Label Content="UDP Socket Remote" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding sPLC_IPaddr_port}"  HorizontalAlignment="Left" Height="23" Margin="136,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+    <StackPanel>
 
-        <Label Content="Receive timeout [ms]" HorizontalAlignment="Left" Margin="11,62,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding iTimeoutMs}"  HorizontalAlignment="Left" Height="23" Margin="136,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+        <GroupBox Header="Socket options" Margin="5" Background="WhiteSmoke">
+            <Grid Margin="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-        <CheckBox x:Name="checkBox_Intel_Order" Content="Intel Order" HorizontalAlignment="Left" Margin="67,104,0,0" VerticalAlignment="Top" IsChecked="{Binding bIntelOrder}"/>
+                <Label Content="UDP Socket Local" HorizontalAlignment="Left" />
+                <TextBox Text="{Binding sLocal_IPaddr_port}" Grid.Column="1" HorizontalAlignment="Stretch" TextWrapping="Wrap" Margin="2"/>
+                <Label Content="(use localhost:0 for automatic local binding)" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-        <Label Content="N4T version" HorizontalAlignment="Left" Margin="59,125,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="N4T_ver" ItemsSource="{Binding Source={StaticResource N4T_version_type}}" SelectedItem="{Binding Path=N4Tversion}" HorizontalAlignment="Left" Margin="136,129,0,0" VerticalAlignment="Top" Width="120"/>
+                <Label Content="UDP Socket Remote" Grid.Row="1" HorizontalAlignment="Left" />
+                <TextBox Text="{Binding sPLC_IPaddr_port}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch"  TextWrapping="Wrap" Margin="2"/>
 
-        <Label x:Name="label_DbConSstr" Content="DB conn.string" HorizontalAlignment="Left" Margin="11,168,0,0" VerticalAlignment="Top"/>
-        <TextBox  HorizontalAlignment="Left" Height="49" Margin="10,194,0,0" TextWrapping="Wrap" Text="{Binding sSQL_ConnectString}" VerticalAlignment="Top" Width="795"/>
+                <Label Content="Receive timeout [ms]" Grid.Row="2" HorizontalAlignment="Left" />
+                <TextBox Text="{Binding iTimeoutMs}"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left"  TextWrapping="Wrap" Width="67" Margin="2"/>
+            </Grid>
+        </GroupBox>
 
-        <Button x:Name="btn_OK" Content="OK" HorizontalAlignment="Left" Margin="223,329,0,0" VerticalAlignment="Top" Width="75" Click="btn_OK_Click"  />
-        <Button x:Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="432,329,0,0" VerticalAlignment="Top" Width="75" Click="btn_Cancel_Click"  />
-        <Label x:Name="label_DbConSstr_Copy" Content="SQL table name prefix (including underscore)" HorizontalAlignment="Left" Margin="11,248,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding sSQL_TablePrefix}"  HorizontalAlignment="Left" Height="23" Margin="259,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
+        <GroupBox Header="N4T protocol options" Margin="5" Background="WhiteSmoke">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-    </Grid>
+                <Label Content="Byte order" HorizontalAlignment="Left" />
+                <CheckBox x:Name="checkBox_Intel_Order" Grid.Column="1" Content="Intel Order" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" IsChecked="{Binding bIntelOrder}"/>
 
+                <Label Content="N4T version" Grid.Row="1" HorizontalAlignment="Left" />
+                <ComboBox x:Name="N4T_ver" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding Source={StaticResource N4T_version_type}}" SelectedItem="{Binding Path=N4Tversion}" HorizontalAlignment="Left" Width="120"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="SQL database" Margin="5" Background="WhiteSmoke">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="28"/>
+                    <RowDefinition Height="26"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="DB conn.string" HorizontalAlignment="Left" />
+                <TextBox  Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Stretch" Margin="2" Text="{Binding sSQL_ConnectString}" />
+
+                <Label Grid.Row="1" Grid.Column="0" Content="example: " HorizontalAlignment="Right"/>
+                <Label Grid.Row="1" Grid.Column="1" Content="Server=192.168.x.x;Port=5432;User Id=postgres;Password=Xxxxx;Database=Test" HorizontalAlignment="Left" />
+
+                <Label Grid.Row="2" Content="SQL table name prefix (including underscore)" HorizontalAlignment="Left" />
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding sSQL_TablePrefix}"  HorizontalAlignment="Left" Height="23" Margin="2" TextWrapping="Wrap" Width="85"/>
+
+            </Grid>
+        </GroupBox>
+
+        <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Stretch">
+            <Button x:Name="btn_LoadXML" Content="Load XML" Width="75" Click="btn_LoadXML_Click" Margin="10" />
+            <Button x:Name="btn_SaveXML" Content="SaveXML" Width="75" Click="btn_SaveXML_Click" Margin="10" />
+            <Button x:Name="btn_OK" Content="OK" Width="75" Click="btn_OK_Click" Margin="200,10,10,10" />
+            <Button x:Name="btn_Cancel" Content="Cancel" Width="75" Click="btn_Cancel_Click" Margin="10" />
+        </StackPanel>
+
+    </StackPanel>
 </Window>

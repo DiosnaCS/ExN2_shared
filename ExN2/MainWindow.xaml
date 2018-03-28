@@ -47,9 +47,6 @@
                     <StackPanel Orientation="Horizontal" >
                         <Button Content="RUN" Margin="2" Width="50" Click="btn_Run_Click"/>
                         <Button Content="STOP" Margin="2" Width="50" Click="btn_Stop_Click"/>
-                        <Button Content="Edit Dblock" Margin="2" Click="btn_EditMain_Click"/>
-                        <Button Content="Edit LOADER" Margin="2" Click="btn_EditLoader_Click"/>
-                        <Button Content="Edit N4T" Margin="2" Width="50"   Click="btn_EditN4T_Click"/>
                         <Button Content="-1" Margin="2,2,2,0" Width="30" Height="21" VerticalAlignment="Top" Click="btn_LevelDn_Click"  />
                         <Button Content="+1" Margin="2,0,2,2" Width="30" Height="21" VerticalAlignment="Bottom" Click="bth_LevelUp_Click"  />
                     </StackPanel>
@@ -75,7 +72,7 @@
                                         <TextBlock Margin="1,0" Text="{Binding view_InfoText}" Background="{Binding view_InfoColor}"/>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
-                                
+
                             </GridViewColumn>
 
                         </GridView>
@@ -97,12 +94,35 @@
             </TextBox>
         </Grid>
 
-        <Grid Grid.Row="2">
-            <Label x:Name="label2" Content="Process detail" Height="25" VerticalAlignment="Top" FontSize="11"/>
-            <ScrollViewer Margin="5,20,5,5" Background="#FFB4B4B4"  >
-                sdsdsdasdsd dsdasdsds sdas asd asd asd
-            </ScrollViewer>
+        <Grid Grid.Row="2" Width="300" HorizontalAlignment="Left" >
+            <Grid  Visibility="Visible" Margin="5,5" ShowGridLines="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Label Content="Selected process detail:" FontWeight="Bold" Grid.Row="0" VerticalAlignment="Top" FontSize="11"/>
+                <Button Content="Edit Common props." Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"  Click="btn_EditN4T_Click"/>
+
+                <CheckBox Content="Snap - periodic read" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" IsChecked="{Binding bSnapRead}"/>
+                <Button Content="Edit Dblock" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Click="btn_EditMain_Click"/>
+                
+                <CheckBox Content="Archives - equidistant " Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center"  IsChecked="{Binding bArchive}" />
+
+                <CheckBox  Content="Alarm archive" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center"  IsChecked="{Binding bAlarm}" />
+                
+                <CheckBox  Content="Event loader" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center"  IsChecked="{Binding bLoader}" />
+                <Button Content="Edit LOADER" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center"  Click="btn_EditLoader_Click"/>
+
+                <CheckBox  Content="PLC real time adjust" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center"  IsChecked="{Binding bTimeAdj}" />
+            </Grid>
         </Grid>
+        <ScrollViewer Grid.Row="2" Margin="320,5,5,5" Background="#FFB4B4B4"  >
+            sdsdsdasdsd dsdasdsds sdas asd asd asd
+        </ScrollViewer>
 
     </Grid>
 

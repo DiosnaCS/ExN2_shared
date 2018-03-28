@@ -24,11 +24,14 @@ namespace ExN2.Datablock {
     // Interaction logic for Dlg_ArchEdit.xaml
     public partial class Dlg_DblockEdit : Window {
         DbVisu Obj;
+        TaskComPropsData comProps;
 
 
         //...............................................................................................
-        public Dlg_DblockEdit(DbVisu aDatablock) {
+        public Dlg_DblockEdit(DbVisu aDatablock, TaskComPropsData aComProps) {
             Obj = aDatablock;
+            comProps = aComProps;
+
             InitializeComponent();
             listView.ItemsSource = Obj.Items;
             listViewTables.ItemsSource = Obj.Sections;
@@ -168,7 +171,7 @@ namespace ExN2.Datablock {
             res.SetTextbox(textMsg);
 
             // show the difference list and allow some modification
-            var dlg = new Dlg_DblockCompare(selTable, diffList);
+            var dlg = new Dlg_DblockCompare(selTable, diffList, comProps);
             dlg.Owner = this;
             if (dlg.ShowDialog() == true) {
             }

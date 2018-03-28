@@ -19,7 +19,8 @@ namespace ExN2 {
     //-------------------------------------------------------------------
     public static class Base {
         // all paths must end with backslash
-        public static string sPathAppRoot   = @"c:\Akce\C#\ExN2\ExN2\";
+        public static string sPathAppRoot   = @".\";
+        //public static string sPathAppRoot = @"c:\Akce\C#\ExN2\ExN2\";
         public static string sConfigSubdir  = @"config\";
 
         //public static string cfgFilesPath   = @"c:\Akce\C#\ExN2\ExN2\import\";

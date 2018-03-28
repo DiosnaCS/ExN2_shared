@@ -54,13 +54,15 @@ namespace ExN2.Common {
             FillTestData();
 
             comProps = new TaskComProps();
+            if (! comProps.DoInit(iTaskNo))
+                bRes = false;
 
             dataBlock = new DbVisu(iTaskNo, comProps);
             if (!dataBlock.DoInit())
                 bRes = false;
 
             comPlc = new Comm_N4T(iTaskNo);
-            if (!comPlc.DoInit())
+            if (!comPlc.DoInit(comProps.Data.sPLC_IPaddr, comProps.Data.iPLC_Port))
                 bRes = false;
 
             loader = new EventLoader(iTaskNo);
@@ -75,7 +77,7 @@ namespace ExN2.Common {
         }
 
         override public bool Edit(Window aParent) {
-            return dataBlock.Edit(aParent);
+            return dataBlock.Edit(aParent, comProps.Data);
         }
 
         public bool EditLoader(Window aParent) {
@@ -83,13 +85,7 @@ namespace ExN2.Common {
         }
 
         public bool EditN4Tprops(Window aParent) {
-            Dlg_N4T_Props Dlg = new Dlg_N4T_Props(comProps);
-            Dlg.Owner = aParent;
-            //Dlg.SetDlgData(comProps);
-            if (Dlg.ShowDialog() == null)
-                return false;
-            //Dlg.GetDlgData(comProps);
-            return false;
+            return comProps.Edit(aParent, iTaskNo);
         }
 
         int RoundPktime(int aPktime, int aRoundTo) {
@@ -143,60 +139,69 @@ namespace ExN2.Common {
 
             int iConseqErrCnt = 0;    // number of consecutive timeouts = dead station detection
 
-            // main Thread loop
-            while (!bEndReq) {
-                int iPktime = Base.PktimeNow();
+            try {
 
-                // - - - - snap reading - - - -
-                if (iPktime >= (iLastTimeRead + iSCH_ReadSnapPeriod)) {
-                    tCommResult resCode = ReadSnap();
+                // main Thread loop
+                while (!bEndReq) {
+                    int iPktime = Base.PktimeNow();
 
-                    // handle the timeout
-                    if (resCode == tCommResult.Timeout) {
-                        if (iConseqErrCnt < iERR_MAX)
-                            iConseqErrCnt++;
-                        if (iConseqErrCnt < iERR_MAX)
-                            continue;                       // this is immediate "retry"
+                    // - - - - snap reading - - - -
+                    if (iPktime >= (iLastTimeRead + iSCH_ReadSnapPeriod)) {
+                        tCommResult resCode = ReadSnap();
 
-                        // station is dead - sleep for some time
-                        bSleeping = true;
-                        Log(1, " SLEEP mode entered");
-                        MySleep(iSLEEP_TIMEs);
-                        bSleeping = false;
-                        continue;       // do "retry" after waiting
+                        // handle the timeout
+                        if (resCode == tCommResult.Timeout) {
+                            if (iConseqErrCnt < iERR_MAX)
+                                iConseqErrCnt++;
+                            if (iConseqErrCnt < iERR_MAX)
+                                continue;                       // this is immediate "retry"
+
+                            // station is dead - sleep for some time
+                            bSleeping = true;
+                            Log(1, " SLEEP mode entered");
+                            MySleep(iSLEEP_TIMEs);
+                            bSleeping = false;
+                            continue;       // do "retry" after waiting
+                        }
+
+                        // handle the general error
+                        if (resCode == tCommResult.GenErr) {
+                            if (iConseqErrCnt < iERR_MAX)
+                                iConseqErrCnt++;
+                            if (iConseqErrCnt < iERR_MAX)
+                                continue;                       // this is immediate "retry"
+
+                            // connection is BAD - sleep for some time
+                            bSleeping = true;
+                            Log(1, " SLEEP mode entered");
+                            MySleep(iSLEEP_TIMEs);
+                            bSleeping = false;
+                            continue;       // do "retry" after waiting
+                        }
+
+                        // here the correct reply is recieved
+                        iLastTimeRead = RoundPktime(iPktime, iSCH_ReadSnapPeriod);
+                        iConseqErrCnt = 0;
                     }
 
-                    // handle the general error
-                    if (resCode == tCommResult.GenErr) {
-                        if (iConseqErrCnt < iERR_MAX)
-                            iConseqErrCnt++;
-                        if (iConseqErrCnt < iERR_MAX)
-                            continue;                       // this is immediate "retry"
-
-                        // connection is BAD - sleep for some time
-                        bSleeping = true;
-                        Log(1, " SLEEP mode entered");
-                        MySleep(iSLEEP_TIMEs);
-                        bSleeping = false;
-                        continue;       // do "retry" after waiting
+                    // - - - - Archiving - - - -
+                    foreach (ArchListItem u in archList) {
+                        int iOptimalArchTime = u.iLastTime1 + u.iPeriod;
+                        if (iPktime >= iOptimalArchTime) {
+                            dataBlock.DoArchive(iOptimalArchTime, u);
+                            u.iLastTime1 = RoundPktime(iPktime, u.iPeriod) + u.iOffset;  // pro jistotu znovu provedeme zaokrouhleni
+                        }
                     }
 
-                    // here the correct reply is recieved
-                    iLastTimeRead = RoundPktime(iPktime, iSCH_ReadSnapPeriod);
-                    iConseqErrCnt = 0;
+                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));  // reduce the CPU load by some passive waiting
                 }
 
-                // - - - - Archiving - - - -
-                foreach (ArchListItem u in archList) {
-                    int iOptimalArchTime = u.iLastTime1 + u.iPeriod;
-                    if (iPktime >= iOptimalArchTime) {
-                        dataBlock.DoArchive(iOptimalArchTime, u);
-                        u.iLastTime1 = RoundPktime(iPktime, u.iPeriod) + u.iOffset;  // pro jistotu znovu provedeme zaokrouhleni
-                    }
-                }
-
-                Thread.Sleep(TimeSpan.FromMilliseconds(1000));  // reduce the CPU load by some passive waiting
             }
+            catch (Exception e) {
+                Base.Log_Sys("Thread killed by exception: " + e.Message, true);
+            }
+
+
             lock (Lock1) {
                 thread = null;
             }

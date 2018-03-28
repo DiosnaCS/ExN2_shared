@@ -1722,7 +1722,7 @@
       <iOptLen>0</iOptLen>
       <sComment> </sComment>
       <sCommentFlags>ar20;tL:Stav_Kvas</sCommentFlags>
-      <bArchive>true</bArchive>
+      <bArchive>false</bArchive>
       <iOffsByte>322</iOffsByte>
       <iOffsBit>0</iOffsBit>
       <iPeriod>20</iPeriod>

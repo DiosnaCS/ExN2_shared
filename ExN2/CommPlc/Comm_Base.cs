@@ -26,7 +26,7 @@ namespace ExN2.CommPlc {
         public int iErrBalance;
 
         // abstract methods
-        virtual public bool DoInit() { return false; }
+        virtual public bool DoInit(string aIPaddr, int aPortNo) { return false; }
         virtual public tCommResult comm_ReadDbVisu(out byte[] aReturnBuff) { aReturnBuff = null; return tCommResult.GenErr; }   // only placeholder
 
         //...............................................................................
@@ -54,14 +54,14 @@ namespace ExN2.CommPlc {
         }
 
         //...............................................................................
-        override public bool DoInit() {
+        override public bool DoInit(string aIPaddr, int aPortNo) {
 
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
             // Bind vaze lokalni stranu, musel by byt svazan pokazde s jinym portem, takze to necham automaticky
             //socket.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"),
 
-            target = new IPEndPoint(IPAddress.Parse("192.168.92.210"), 2000);
+            target = new IPEndPoint(IPAddress.Parse(aIPaddr), aPortNo);
 
             return true;
         }

@@ -15,6 +15,14 @@ using System.Windows.Media;
 namespace ExN2
 {
 
+    public class Props1 {
+        public bool bSnapRead { get; set; }
+        public bool bArchive { get; set; }
+        public bool bAlarm { get; set; }
+        public bool bLoader { get; set; }
+        public bool bTimeAdj { get; set; }
+    }
+
     public partial class MainWindow : Window {
 
         string sLog = "";
@@ -25,8 +33,18 @@ namespace ExN2
             pMainWnd = this;
             InitializeComponent();
 
+            // config subdirectory is essential for program
+            string sCurrDirName = Directory.GetCurrentDirectory();
+            string sCfgDirName = sCurrDirName + @"\" + Base.sConfigSubdir;
+            if (! Directory.Exists(sCfgDirName) ) {
+                MessageBox.Show("'config' subdirectory not found.\n\ncurrent dir: " + sCurrDirName,
+                                "ExN2 - Startup error", MessageBoxButton.OK);
+                Close();
+                return;
+            }
+
             Base.Log_Sys("- - - PROGRAM START, " + Base.version + " - - -", true);
-            //Base.Log_Sys("CurrPath: " + System.IO.Directory.GetCurrentDirectory());
+
             Base.SearchTaskSubdirs();
             Base.InitTasks();
 
@@ -103,6 +121,7 @@ namespace ExN2
             if (plcListView.SelectedIndex < 0)      // check if any item is selected
                 return;
             TaskPlc task = (TaskPlc)plcListView.SelectedItem;
+            task.DoInit();
             task.ThreadNew();
         }
 
